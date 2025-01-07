@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background with gradient -->
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#040d21;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0c1b3b;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="1200" height="800" fill="url(#grad1)"/>
+    
+    <!-- Title -->
+    <text x="600" y="60" text-anchor="middle" font-family="Arial" font-size="32" font-weight="bold" fill="#38bdf8">
+        Cloud-Native Architecture Pattern
+    </text>
+
+    <!-- Client Layer -->
+    <g transform="translate(100,150)">
+        <rect width="1000" height="100" rx="10" fill="#0c1b3b" stroke="#38bdf8" stroke-width="2"/>
+        <text x="100" y="35" font-family="Arial" font-size="20" fill="#38bdf8">Client Layer</text>
+        <!-- Client Components -->
+        <rect x="250" y="20" width="120" height="60" rx="5" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1"/>
+        <text x="310" y="55" text-anchor="middle" font-family="Arial" font-size="14" fill="#fff">Web App</text>
+        
+        <rect x="450" y="20" width="120" height="60" rx="5" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1"/>
+        <text x="510" y="55" text-anchor="middle" font-family="Arial" font-size="14" fill="#fff">Mobile App</text>
+        
+        <rect x="650" y="20" width="120" height="60" rx="5" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1"/>
+        <text x="710" y="55" text-anchor="middle" font-family="Arial" font-size="14" fill="#fff">API Clients</text>
+    </g>
+
+    <!-- API Gateway -->
+    <g transform="translate(100,300)">
+        <rect width="1000" height="80" rx="10" fill="#0c1b3b" stroke="#38bdf8" stroke-width="2"/>
+        <text x="100" y="45" font-family="Arial" font-size="20" fill="#38bdf8">API Gateway</text>
+        <!-- Gateway Features -->
+        <text x="300" y="35" font-family="Arial" font-size="14" fill="#94a3b8">Authentication</text>
+        <text x="500" y="35" font-family="Arial" font-size="14" fill="#94a3b8">Rate Limiting</text>
+        <text x="700" y="35" font-family="Arial" font-size="14" fill="#94a3b8">Load Balancing</text>
+        <text x="400" y="65" font-family="Arial" font-size="14" fill="#94a3b8">SSL Termination</text>
+        <text x="600" y="65" font-family="Arial" font-size="14" fill="#94a3b8">Request Routing</text>
+    </g>
+
+    <!-- Microservices Layer -->
+    <g transform="translate(100,430)">
+        <rect width="1000" height="160" rx="10" fill="#0c1b3b" stroke="#38bdf8" stroke-width="2"/>
+        <text x="100" y="45" font-family="Arial" font-size="20" fill="#38bdf8">Microservices</text>
+        <!-- Service Boxes -->
+        <rect x="250" y="20" width="140" height="60" rx="5" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1"/>
+        <text x="320" y="55" text-anchor="middle" font-family="Arial" font-size="14" fill="#fff">Auth Service</text>
+        
+        <rect x="430" y="20" width="140" height="60" rx="5" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1"/>
+        <text x="500" y="55" text-anchor="middle" font-family="Arial" font-size="14" fill="#fff">User Service</text>
+        
+        <rect x="610" y="20" width="140" height="60" rx="5" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1"/>
+        <text x="680" y="55" text-anchor="middle" font-family="Arial" font-size="14" fill="#fff">Data Service</text>
+        
+        <rect x="430" y="90" width="140" height="60" rx="5" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1"/>
+        <text x="500" y="125" text-anchor="middle" font-family="Arial" font-size="14" fill="#fff">Analytics</text>
+    </g>
+
+    <!-- Data Layer -->
+    <g transform="translate(100,640)">
+        <rect width="1000" height="100" rx="10" fill="#0c1b3b" stroke="#38bdf8" stroke-width="2"/>
+        <text x="100" y="35" font-family="Arial" font-size="20" fill="#38bdf8">Data Layer</text>
+        <!-- Databases -->
+        <rect x="250" y="20" width="120" height="60" rx="5" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1"/>
+        <text x="310" y="55" text-anchor="middle" font-family="Arial" font-size="14" fill="#fff">PostgreSQL</text>
+        
+        <rect x="450" y="20" width="120" height="60" rx="5" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1"/>
+        <text x="510" y="55" text-anchor="middle" font-family="Arial" font-size="14" fill="#fff">MongoDB</text>
+        
+        <rect x="650" y="20" width="120" height="60" rx="5" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1"/>
+        <text x="710" y="55" text-anchor="middle" font-family="Arial" font-size="14" fill="#fff">Redis Cache</text>
+    </g>
+
+    <!-- Connecting Lines -->
+    <line x1="600" y1="250" x2="600" y2="300" stroke="#38bdf8" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="600" y1="380" x2="600" y2="430" stroke="#38bdf8" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="600" y1="590" x2="600" y2="640" stroke="#38bdf8" stroke-width="2" stroke-dasharray="5,5"/>
+
+    <!-- Cloud Provider Frame -->
+    <rect x="50" y="270" width="1100" height="500" rx="15" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="10,10"/>
+    <text x="150" y="300" font-family="Arial" font-size="16" fill="#38bdf8">Cloud Provider (AWS/Azure/GCP)</text>
+</svg>

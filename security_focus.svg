@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background with radial gradient -->
+    <defs>
+        <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color:#1a1b26;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#13141f;stop-opacity:1" />
+        </radialGradient>
+    </defs>
+    <rect width="1200" height="600" fill="url(#grad1)"/>
+    
+    <!-- Title -->
+    <text x="600" y="60" text-anchor="middle" font-family="Arial" font-size="32" font-weight="bold" fill="#bb9af7">
+        Security Expertise &amp; Focus Areas
+    </text>
+
+    <!-- Central Shield Icon -->
+    <path d="M600 150 L500 200 L500 350 L600 400 L700 350 L700 200 Z" 
+          fill="#1a1b26" stroke="#bb9af7" stroke-width="3"/>
+    <text x="600" y="290" text-anchor="middle" font-family="Arial" font-size="20" fill="#bb9af7">Core</text>
+    <text x="600" y="320" text-anchor="middle" font-family="Arial" font-size="20" fill="#bb9af7">Security</text>
+
+    <!-- Application Security -->
+    <g transform="translate(300,200)">
+        <rect x="0" y="0" width="160" height="100" rx="10" fill="#1a1b26" stroke="#7aa2f7" stroke-width="2"/>
+        <text x="80" y="35" text-anchor="middle" font-family="Arial" font-size="16" fill="#7aa2f7">Application</text>
+        <text x="80" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#7aa2f7">Security</text>
+        <!-- Sub-items -->
+        <text x="80" y="85" text-anchor="middle" font-family="Arial" font-size="12" fill="#a9b1d6">OWASP, SAST/DAST</text>
+    </g>
+
+    <!-- Cloud Security -->
+    <g transform="translate(740,200)">
+        <rect x="0" y="0" width="160" height="100" rx="10" fill="#1a1b26" stroke="#7aa2f7" stroke-width="2"/>
+        <text x="80" y="35" text-anchor="middle" font-family="Arial" font-size="16" fill="#7aa2f7">Cloud</text>
+        <text x="80" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#7aa2f7">Security</text>
+        <!-- Sub-items -->
+        <text x="80" y="85" text-anchor="middle" font-family="Arial" font-size="12" fill="#a9b1d6">AWS, Azure, GCP</text>
+    </g>
+
+    <!-- Network Security -->
+    <g transform="translate(300,350)">
+        <rect x="0" y="0" width="160" height="100" rx="10" fill="#1a1b26" stroke="#7aa2f7" stroke-width="2"/>
+        <text x="80" y="35" text-anchor="middle" font-family="Arial" font-size="16" fill="#7aa2f7">Network</text>
+        <text x="80" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#7aa2f7">Security</text>
+        <!-- Sub-items -->
+        <text x="80" y="85" text-anchor="middle" font-family="Arial" font-size="12" fill="#a9b1d6">Firewalls, IDS/IPS</text>
+    </g>
+
+    <!-- Identity & Access -->
+    <g transform="translate(740,350)">
+        <rect x="0" y="0" width="160" height="100" rx="10" fill="#1a1b26" stroke="#7aa2f7" stroke-width="2"/>
+        <text x="80" y="35" text-anchor="middle" font-family="Arial" font-size="16" fill="#7aa2f7">Identity &amp;</text>
+        <text x="80" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#7aa2f7">Access</text>
+        <!-- Sub-items -->
+        <text x="80" y="85" text-anchor="middle" font-family="Arial" font-size="12" fill="#a9b1d6">OAuth, OIDC, IAM</text>
+    </g>
+
+    <!-- Security Operations -->
+    <g transform="translate(520,450)">
+        <rect x="0" y="0" width="160" height="100" rx="10" fill="#1a1b26" stroke="#7aa2f7" stroke-width="2"/>
+        <text x="80" y="35" text-anchor="middle" font-family="Arial" font-size="16" fill="#7aa2f7">Security</text>
+        <text x="80" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#7aa2f7">Operations</text>
+        <!-- Sub-items -->
+        <text x="80" y="85" text-anchor="middle" font-family="Arial" font-size="12" fill="#a9b1d6">SIEM, Monitoring</text>
+    </g>
+
+    <!-- Connecting Lines -->
+    <line x1="460" y1="250" x2="500" y2="275" stroke="#7aa2f7" stroke-width="2" opacity="0.5"/>
+    <line x1="740" y1="250" x2="700" y2="275" stroke="#7aa2f7" stroke-width="2" opacity="0.5"/>
+    <line x1="460" y1="400" x2="500" y2="350" stroke="#7aa2f7" stroke-width="2" opacity="0.5"/>
+    <line x1="740" y1="400" x2="700" y2="350" stroke="#7aa2f7" stroke-width="2" opacity="0.5"/>
+    <line x1="600" y1="400" x2="600" y2="450" stroke="#7aa2f7" stroke-width="2" opacity="0.5"/>
+
+    <!-- Decorative Elements -->
+    <circle cx="600" cy="150" r="5" fill="#bb9af7"/>
+    <circle cx="500" cy="200" r="5" fill="#bb9af7"/>
+    <circle cx="700" cy="200" r="5" fill="#bb9af7"/>
+    <circle cx="500" cy="350" r="5" fill="#bb9af7"/>
+    <circle cx="700" cy="350" r="5" fill="#bb9af7"/>
+    <circle cx="600" cy="400" r="5" fill="#bb9af7"/>
+</svg>

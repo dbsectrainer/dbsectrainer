@@ -16,6 +16,7 @@
 <!-- Table of Contents -->
 ## 📑 Table of Contents
 - [About Me](#-about-me)
+- [Technical Skills](#-technical-skills)
 - [Technical Arsenal](#%EF%B8%8F-technical-arsenal)
 - [What I'm Up To](#-what-im-up-to)
 - [Key Projects](#-key-projects)
@@ -39,6 +40,57 @@ class TechArchitect:
         self.daily_fuel = ["☕ Coffee", "🎵 Music", "💡 Innovation"]
         self.mission = "Building secure, scalable, and innovative solutions"
 ```
+
+<!-- Technical Skills Section -->
+### 💻 Technical Skills
+
+<details open>
+<summary>🌌 Tech Skills Universe</summary>
+<br>
+<p align="center">
+  <img src="tech_skills_universe.svg" alt="Tech Skills Universe" width="100%">
+</p>
+</details>
+
+<details open>
+<summary>🏗️ Development Stack</summary>
+<br>
+<p align="center">
+  <img src="dev_stack.svg" alt="Development Stack" width="100%">
+</p>
+</details>
+
+<details open>
+<summary>🔮 Emerging Technologies</summary>
+<br>
+<p align="center">
+  <img src="emerging_tech.svg" alt="Emerging Technologies" width="100%">
+</p>
+</details>
+
+<details open>
+<summary>📈 Learning Journey</summary>
+<br>
+<p align="center">
+  <img src="learning_journey.svg" alt="Learning Journey" width="100%">
+</p>
+</details>
+
+<details open>
+<summary>🛡️ Security Focus</summary>
+<br>
+<p align="center">
+  <img src="security_focus.svg" alt="Security Expertise" width="100%">
+</p>
+</details>
+
+<details open>
+<summary>🏛️ Architecture Pattern</summary>
+<br>
+<p align="center">
+  <img src="architecture_overview.svg" alt="Architecture Overview" width="100%">
+</p>
+</details>
 
 <!-- Expertise Section -->
 ### 🛠️ Technical Arsenal

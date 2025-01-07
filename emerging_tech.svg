@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background with gradient -->
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="1200" height="800" fill="url(#grad1)"/>
+    
+    <!-- Title -->
+    <text x="600" y="60" text-anchor="middle" font-family="Arial" font-size="32" font-weight="bold" fill="#ffd700">
+        Emerging Technologies &amp; Specialized Domains
+    </text>
+
+    <!-- AI/ML Section -->
+    <g transform="translate(150,150)">
+        <rect x="0" y="0" width="250" height="200" rx="15" fill="#1e3a8a" stroke="#ffd700" stroke-width="2"/>
+        <text x="125" y="40" text-anchor="middle" font-family="Arial" font-size="20" fill="#ffd700">AI/ML</text>
+        <rect x="20" y="60" width="210" height="25" rx="5" fill="#2563eb" opacity="0.8"/>
+        <text x="125" y="77" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">TensorFlow</text>
+        <rect x="20" y="95" width="210" height="25" rx="5" fill="#2563eb" opacity="0.8"/>
+        <text x="125" y="112" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">PyTorch</text>
+        <rect x="20" y="130" width="210" height="25" rx="5" fill="#2563eb" opacity="0.8"/>
+        <text x="125" y="147" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Scikit-learn</text>
+        <rect x="20" y="165" width="210" height="25" rx="5" fill="#2563eb" opacity="0.8"/>
+        <text x="125" y="182" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Natural Language Processing</text>
+    </g>
+
+    <!-- Blockchain Section -->
+    <g transform="translate(475,150)">
+        <rect x="0" y="0" width="250" height="200" rx="15" fill="#3d1e8a" stroke="#ffd700" stroke-width="2"/>
+        <text x="125" y="40" text-anchor="middle" font-family="Arial" font-size="20" fill="#ffd700">Blockchain</text>
+        <rect x="20" y="60" width="210" height="25" rx="5" fill="#6d28d9" opacity="0.8"/>
+        <text x="125" y="77" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Ethereum</text>
+        <rect x="20" y="95" width="210" height="25" rx="5" fill="#6d28d9" opacity="0.8"/>
+        <text x="125" y="112" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Solana</text>
+        <rect x="20" y="130" width="210" height="25" rx="5" fill="#6d28d9" opacity="0.8"/>
+        <text x="125" y="147" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Smart Contracts</text>
+        <rect x="20" y="165" width="210" height="25" rx="5" fill="#6d28d9" opacity="0.8"/>
+        <text x="125" y="182" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">DeFi Development</text>
+    </g>
+
+    <!-- IoT Section -->
+    <g transform="translate(800,150)">
+        <rect x="0" y="0" width="250" height="200" rx="15" fill="#1e8a8a" stroke="#ffd700" stroke-width="2"/>
+        <text x="125" y="40" text-anchor="middle" font-family="Arial" font-size="20" fill="#ffd700">IoT</text>
+        <rect x="20" y="60" width="210" height="25" rx="5" fill="#2dd4bf" opacity="0.8"/>
+        <text x="125" y="77" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Edge Computing</text>
+        <rect x="20" y="95" width="210" height="25" rx="5" fill="#2dd4bf" opacity="0.8"/>
+        <text x="125" y="112" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Embedded Systems</text>
+        <rect x="20" y="130" width="210" height="25" rx="5" fill="#2dd4bf" opacity="0.8"/>
+        <text x="125" y="147" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">IoT Protocols</text>
+        <rect x="20" y="165" width="210" height="25" rx="5" fill="#2dd4bf" opacity="0.8"/>
+        <text x="125" y="182" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Sensor Integration</text>
+    </g>
+
+    <!-- Mobile Development Section -->
+    <g transform="translate(150,400)">
+        <rect x="0" y="0" width="250" height="200" rx="15" fill="#8a1e1e" stroke="#ffd700" stroke-width="2"/>
+        <text x="125" y="40" text-anchor="middle" font-family="Arial" font-size="20" fill="#ffd700">Mobile Dev</text>
+        <rect x="20" y="60" width="210" height="25" rx="5" fill="#ef4444" opacity="0.8"/>
+        <text x="125" y="77" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">React Native</text>
+        <rect x="20" y="95" width="210" height="25" rx="5" fill="#ef4444" opacity="0.8"/>
+        <text x="125" y="112" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Flutter</text>
+        <rect x="20" y="130" width="210" height="25" rx="5" fill="#ef4444" opacity="0.8"/>
+        <text x="125" y="147" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Native iOS (Swift)</text>
+        <rect x="20" y="165" width="210" height="25" rx="5" fill="#ef4444" opacity="0.8"/>
+        <text x="125" y="182" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Native Android (Kotlin)</text>
+    </g>
+
+    <!-- Data Engineering Section -->
+    <g transform="translate(475,400)">
+        <rect x="0" y="0" width="250" height="200" rx="15" fill="#1e8a3d" stroke="#ffd700" stroke-width="2"/>
+        <text x="125" y="40" text-anchor="middle" font-family="Arial" font-size="20" fill="#ffd700">Data Engineering</text>
+        <rect x="20" y="60" width="210" height="25" rx="5" fill="#22c55e" opacity="0.8"/>
+        <text x="125" y="77" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Apache Spark</text>
+        <rect x="20" y="95" width="210" height="25" rx="5" fill="#22c55e" opacity="0.8"/>
+        <text x="125" y="112" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Apache Kafka</text>
+        <rect x="20" y="130" width="210" height="25" rx="5" fill="#22c55e" opacity="0.8"/>
+        <text x="125" y="147" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Apache Airflow</text>
+        <rect x="20" y="165" width="210" height="25" rx="5" fill="#22c55e" opacity="0.8"/>
+        <text x="125" y="182" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">ETL Pipelines</text>
+    </g>
+
+    <!-- Testing & QA Section -->
+    <g transform="translate(800,400)">
+        <rect x="0" y="0" width="250" height="200" rx="15" fill="#8a1e8a" stroke="#ffd700" stroke-width="2"/>
+        <text x="125" y="40" text-anchor="middle" font-family="Arial" font-size="20" fill="#ffd700">Testing &amp; QA</text>
+        <rect x="20" y="60" width="210" height="25" rx="5" fill="#d946ef" opacity="0.8"/>
+        <text x="125" y="77" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Selenium</text>
+        <rect x="20" y="95" width="210" height="25" rx="5" fill="#d946ef" opacity="0.8"/>
+        <text x="125" y="112" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Cypress</text>
+        <rect x="20" y="130" width="210" height="25" rx="5" fill="#d946ef" opacity="0.8"/>
+        <text x="125" y="147" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Jest</text>
+        <rect x="20" y="165" width="210" height="25" rx="5" fill="#d946ef" opacity="0.8"/>
+        <text x="125" y="182" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">Performance Testing</text>
+    </g>
+
+    <!-- Connecting Lines -->
+    <path d="M 275 350 L 475 350 L 675 350 L 875 350" stroke="#ffd700" stroke-width="2" opacity="0.3" fill="none"/>
+    <path d="M 275 600 L 475 600 L 675 600 L 875 600" stroke="#ffd700" stroke-width="2" opacity="0.3" fill="none"/>
+</svg>

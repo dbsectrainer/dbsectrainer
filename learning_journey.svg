@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="1200" height="400" fill="#0d1117"/>
+    
+    <!-- Title -->
+    <text x="600" y="50" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#58a6ff">
+        Learning Journey Timeline
+    </text>
+
+    <!-- Timeline Base -->
+    <line x1="100" y1="200" x2="1100" y2="200" stroke="#30363d" stroke-width="4"/>
+
+    <!-- Timeline Nodes -->
+    <!-- Early Years -->
+    <circle cx="200" cy="200" r="15" fill="#238636"/>
+    <text x="200" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#58a6ff">2015</text>
+    <text x="200" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
+        Core Programming
+    </text>
+    <text x="200" y="270" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
+        Java, Python, JavaScript
+    </text>
+
+    <!-- Web Development -->
+    <circle cx="400" cy="200" r="15" fill="#238636"/>
+    <text x="400" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#58a6ff">2017</text>
+    <text x="400" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
+        Web Development
+    </text>
+    <text x="400" y="270" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
+        React, Node.js, MongoDB
+    </text>
+
+    <!-- Cloud & DevOps -->
+    <circle cx="600" cy="200" r="15" fill="#238636"/>
+    <text x="600" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#58a6ff">2019</text>
+    <text x="600" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
+        Cloud & DevOps
+    </text>
+    <text x="600" y="270" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
+        AWS, Docker, Kubernetes
+    </text>
+
+    <!-- Security Focus -->
+    <circle cx="800" cy="200" r="15" fill="#238636"/>
+    <text x="800" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#58a6ff">2021</text>
+    <text x="800" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
+        Security Expertise
+    </text>
+    <text x="800" y="270" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
+        Pen Testing, SecOps
+    </text>
+
+    <!-- Current -->
+    <circle cx="1000" cy="200" r="15" fill="#238636"/>
+    <text x="1000" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#58a6ff">2023</text>
+    <text x="1000" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
+        Advanced Architecture
+    </text>
+    <text x="1000" y="270" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
+        Zero Trust, Cloud Native
+    </text>
+
+    <!-- Connecting Lines -->
+    <line x1="215" y1="200" x2="385" y2="200" stroke="#238636" stroke-width="2"/>
+    <line x1="415" y1="200" x2="585" y2="200" stroke="#238636" stroke-width="2"/>
+    <line x1="615" y1="200" x2="785" y2="200" stroke="#238636" stroke-width="2"/>
+    <line x1="815" y1="200" x2="985" y2="200" stroke="#238636" stroke-width="2"/>
+
+    <!-- Progress Indicator -->
+    <text x="1100" y="205" font-family="Arial" font-size="24" fill="#238636">→</text>
+</svg>

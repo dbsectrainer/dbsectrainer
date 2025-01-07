@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="900" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="1200" height="900" fill="#1a1a2e"/>
+    
+    <!-- Title -->
+    <text x="600" y="60" text-anchor="middle" font-family="Arial" font-size="32" font-weight="bold" fill="#e94560">
+        Tech Skills Universe
+    </text>
+
+    <!-- Central Hub -->
+    <circle cx="600" cy="450" r="100" fill="#16213e" stroke="#e94560" stroke-width="3"/>
+    <text x="600" y="440" text-anchor="middle" font-family="Arial" font-size="24" fill="#fff">Core</text>
+    <text x="600" y="470" text-anchor="middle" font-family="Arial" font-size="24" fill="#fff">Technical</text>
+    <text x="600" y="500" text-anchor="middle" font-family="Arial" font-size="24" fill="#fff">Skills</text>
+
+    <!-- Programming Languages Cluster -->
+    <g transform="translate(300,200)">
+        <circle cx="0" cy="0" r="80" fill="#0f3460" stroke="#e94560" stroke-width="2"/>
+        <text x="0" y="-10" text-anchor="middle" font-family="Arial" font-size="16" fill="#fff">Programming</text>
+        <text x="0" y="20" text-anchor="middle" font-family="Arial" font-size="16" fill="#fff">Languages</text>
+        <!-- Mini icons -->
+        <circle cx="-40" cy="-30" r="15" fill="#ffd700"/> <!-- Python -->
+        <circle cx="40" cy="-30" r="15" fill="#68a063"/> <!-- Node.js -->
+        <circle cx="0" cy="40" r="15" fill="#f89820"/> <!-- Java -->
+    </g>
+
+    <!-- Web Development Cluster -->
+    <g transform="translate(900,200)">
+        <circle cx="0" cy="0" r="80" fill="#0f3460" stroke="#e94560" stroke-width="2"/>
+        <text x="0" y="-10" text-anchor="middle" font-family="Arial" font-size="16" fill="#fff">Web</text>
+        <text x="0" y="20" text-anchor="middle" font-family="Arial" font-size="16" fill="#fff">Development</text>
+        <!-- Mini icons -->
+        <circle cx="-40" cy="-30" r="15" fill="#61dafb"/> <!-- React -->
+        <circle cx="40" cy="-30" r="15" fill="#41b883"/> <!-- Vue -->
+        <circle cx="0" cy="40" r="15" fill="#dd0031"/> <!-- Angular -->
+    </g>
+
+    <!-- Cloud Computing Cluster -->
+    <g transform="translate(900,700)">
+        <circle cx="0" cy="0" r="80" fill="#0f3460" stroke="#e94560" stroke-width="2"/>
+        <text x="0" y="-10" text-anchor="middle" font-family="Arial" font-size="16" fill="#fff">Cloud</text>
+        <text x="0" y="20" text-anchor="middle" font-family="Arial" font-size="16" fill="#fff">Computing</text>
+        <!-- Mini icons -->
+        <circle cx="-40" cy="-30" r="15" fill="#ff9900"/> <!-- AWS -->
+        <circle cx="40" cy="-30" r="15" fill="#4285f4"/> <!-- GCP -->
+        <circle cx="0" cy="40" r="15" fill="#0089d6"/> <!-- Azure -->
+    </g>
+
+    <!-- DevOps Cluster -->
+    <g transform="translate(300,700)">
+        <circle cx="0" cy="0" r="80" fill="#0f3460" stroke="#e94560" stroke-width="2"/>
+        <text x="0" y="-10" text-anchor="middle" font-family="Arial" font-size="16" fill="#fff">DevOps</text>
+        <text x="0" y="20" text-anchor="middle" font-family="Arial" font-size="16" fill="#fff">&amp; CI/CD</text>
+        <!-- Mini icons -->
+        <circle cx="-40" cy="-30" r="15" fill="#2496ed"/> <!-- Docker -->
+        <circle cx="40" cy="-30" r="15" fill="#326ce5"/> <!-- Kubernetes -->
+        <circle cx="0" cy="40" r="15" fill="#d24939"/> <!-- Jenkins -->
+    </g>
+
+    <!-- Database Cluster -->
+    <g transform="translate(150,450)">
+        <circle cx="0" cy="0" r="80" fill="#0f3460" stroke="#e94560" stroke-width="2"/>
+        <text x="0" y="-10" text-anchor="middle" font-family="Arial" font-size="16" fill="#fff">Database</text>
+        <text x="0" y="20" text-anchor="middle" font-family="Arial" font-size="16" fill="#fff">Management</text>
+        <!-- Mini icons -->
+        <circle cx="-40" cy="-30" r="15" fill="#00758f"/> <!-- MySQL -->
+        <circle cx="40" cy="-30" r="15" fill="#589636"/> <!-- MongoDB -->
+        <circle cx="0" cy="40" r="15" fill="#336791"/> <!-- PostgreSQL -->
+    </g>
+
+    <!-- AI/ML Cluster -->
+    <g transform="translate(1050,450)">
+        <circle cx="0" cy="0" r="80" fill="#0f3460" stroke="#e94560" stroke-width="2"/>
+        <text x="0" y="-10" text-anchor="middle" font-family="Arial" font-size="16" fill="#fff">AI/ML</text>
+        <text x="0" y="20" text-anchor="middle" font-family="Arial" font-size="16" fill="#fff">Data Science</text>
+        <!-- Mini icons -->
+        <circle cx="-40" cy="-30" r="15" fill="#ff6f00"/> <!-- TensorFlow -->
+        <circle cx="40" cy="-30" r="15" fill="#ee4c2c"/> <!-- PyTorch -->
+        <circle cx="0" cy="40" r="15" fill="#3499cd"/> <!-- scikit-learn -->
+    </g>
+
+    <!-- Connecting Lines -->
+    <line x1="600" y1="350" x2="300" y2="200" stroke="#e94560" stroke-width="2" opacity="0.5"/>
+    <line x1="600" y1="350" x2="900" y2="200" stroke="#e94560" stroke-width="2" opacity="0.5"/>
+    <line x1="600" y1="550" x2="300" y2="700" stroke="#e94560" stroke-width="2" opacity="0.5"/>
+    <line x1="600" y1="550" x2="900" y2="700" stroke="#e94560" stroke-width="2" opacity="0.5"/>
+    <line x1="500" y1="450" x2="230" y2="450" stroke="#e94560" stroke-width="2" opacity="0.5"/>
+    <line x1="700" y1="450" x2="970" y2="450" stroke="#e94560" stroke-width="2" opacity="0.5"/>
+
+    <!-- Orbital Paths -->
+    <circle cx="600" cy="450" r="300" fill="none" stroke="#e94560" stroke-width="1" opacity="0.2"/>
+    <circle cx="600" cy="450" r="250" fill="none" stroke="#e94560" stroke-width="1" opacity="0.2"/>
+    <circle cx="600" cy="450" r="200" fill="none" stroke="#e94560" stroke-width="1" opacity="0.2"/>
+</svg>

@@ -81,14 +81,14 @@ const currentProjects = {
 <!-- Key Projects Section -->
 ### 🌟 Key Projects
 
-- [Project One](https://github.com/YourUsername/ProjectOne): A brief description of what this project is about.
-- [Project Two](https://github.com/YourUsername/ProjectTwo): A brief description of what this project is about.
+- [Project One](https://github.com/dbsectrainer/ProjectOne): A brief description of what this project is about.
+- [Project Two](https://github.com/dbsectrainer/ProjectTwo): A brief description of what this project is about.
 
 <!-- Connect Section -->
 ### 🤝 Let's Connect
 
 <p align="left">
-  <a href="https://linkedin.com/in/YourProfile" target="_blank">
+  <a href="https://linkedin.com/in/dbsectrainer" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="mailto:your.email@example.com" target="_blank">
@@ -109,7 +109,7 @@ const currentProjects = {
 
 <!-- Interactive Elements -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YourUsername&show_icons=true&theme=radical" alt="GitHub Stats">
+  <img src="https://github-readme-stats.vercel.app/api?username=dbsectrainer&show_icons=true&theme=radical" alt="GitHub Stats">
 </p>
 
 <!-- Footer -->

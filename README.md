@@ -43,26 +43,59 @@ class TechArchitect:
         self.mission = "Building secure, scalable, and innovative solutions"
 ```
 
-<!-- Technical Journey Section -->
-### 📈 Technical Journey
+<!-- Technical Skills Section -->
+### 💻 Technical Skills
 
+<details open>
+<summary>🌌 Core Technical Skills</summary>
+<br>
+<p align="center">
+  <img src="tech_skills_universe.svg" alt="Tech Skills Universe" width="100%">
+</p>
+</details>
+
+<details open>
+<summary>🏗️ Development Stack</summary>
+<br>
+<p align="center">
+  <img src="dev_stack.svg" alt="Development Stack" width="100%">
+</p>
+</details>
+
+<details open>
+<summary>🔮 Emerging Technologies</summary>
+<br>
+<p align="center">
+  <img src="emerging_tech.svg" alt="Emerging Technologies" width="100%">
+</p>
+</details>
+
+<!-- Professional Journey Section -->
+### 📈 Professional Journey
+
+<details open>
+<summary>⏳ Learning Timeline</summary>
+<br>
 <p align="center">
   <img src="learning_journey.svg" alt="Learning Journey" width="100%">
 </p>
+</details>
 
-<!-- Security Expertise Section -->
-### 🔒 Security Expertise
-
+<details open>
+<summary>🛡️ Security Focus</summary>
+<br>
 <p align="center">
   <img src="security_focus.svg" alt="Security Focus Areas" width="100%">
 </p>
+</details>
 
-<!-- Architecture & Design Section -->
-### 🏗️ Architecture & Design
-
+<details open>
+<summary>🏛️ Architecture Pattern</summary>
+<br>
 <p align="center">
   <img src="architecture_overview.svg" alt="Cloud-Native Architecture" width="100%">
 </p>
+</details>
 
 <!-- Expertise Section -->
 ### 🛠️ Technical Arsenal

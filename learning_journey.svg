@@ -1,73 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1200" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <!-- Background -->
-    <rect width="1200" height="400" fill="#0d1117"/>
+    <rect width="800" height="600" fill="#f8f9fa"/>
     
     <!-- Title -->
-    <text x="600" y="50" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#58a6ff">
-        Learning Journey Timeline
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#2c3e50">
+        Technical Learning Journey
     </text>
 
-    <!-- Timeline Base -->
-    <line x1="100" y1="200" x2="1100" y2="200" stroke="#30363d" stroke-width="4"/>
+    <!-- Timeline Container -->
+    <rect x="50" y="70" width="700" height="480" rx="15" fill="#f1f8ff" stroke="#3498db" stroke-width="2"/>
+    <text x="380" y="95" font-family="Arial" font-size="16" fill="#3498db">Professional Development Timeline</text>
 
-    <!-- Timeline Nodes -->
-    <!-- Early Years -->
-    <circle cx="200" cy="200" r="15" fill="#238636"/>
-    <text x="200" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#58a6ff">2015</text>
-    <text x="200" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
-        Core Programming
-    </text>
-    <text x="200" y="270" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
-        Java, Python, JavaScript
-    </text>
+    <!-- 2015: Core Programming -->
+    <rect x="70" y="110" width="200" height="100" rx="10" fill="#fff" stroke="#e67e22" stroke-width="2"/>
+    <text x="170" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#e67e22">2015</text>
+    <text x="170" y="160" text-anchor="middle" font-family="Arial" font-size="12">Core Programming</text>
+    <text x="170" y="180" text-anchor="middle" font-family="Arial" font-size="11">Java, Python, JavaScript</text>
 
-    <!-- Web Development -->
-    <circle cx="400" cy="200" r="15" fill="#238636"/>
-    <text x="400" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#58a6ff">2017</text>
-    <text x="400" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
-        Web Development
-    </text>
-    <text x="400" y="270" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
-        React, Node.js, MongoDB
-    </text>
+    <!-- 2017: Web Development -->
+    <rect x="300" y="110" width="200" height="100" rx="10" fill="#fff" stroke="#2ecc71" stroke-width="2"/>
+    <text x="400" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#2ecc71">2017</text>
+    <text x="400" y="160" text-anchor="middle" font-family="Arial" font-size="12">Web Development</text>
+    <text x="400" y="180" text-anchor="middle" font-family="Arial" font-size="11">React, Node.js, MongoDB</text>
 
-    <!-- Cloud & DevOps -->
-    <circle cx="600" cy="200" r="15" fill="#238636"/>
-    <text x="600" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#58a6ff">2019</text>
-    <text x="600" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
-        Cloud & DevOps
-    </text>
-    <text x="600" y="270" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
-        AWS, Docker, Kubernetes
-    </text>
+    <!-- 2019: Cloud & DevOps -->
+    <rect x="530" y="110" width="200" height="100" rx="10" fill="#fff" stroke="#9b59b6" stroke-width="2"/>
+    <text x="630" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#9b59b6">2019</text>
+    <text x="630" y="160" text-anchor="middle" font-family="Arial" font-size="12">Cloud & DevOps</text>
+    <text x="630" y="180" text-anchor="middle" font-family="Arial" font-size="11">AWS, Docker, Kubernetes</text>
 
-    <!-- Security Focus -->
-    <circle cx="800" cy="200" r="15" fill="#238636"/>
-    <text x="800" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#58a6ff">2021</text>
-    <text x="800" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
-        Security Expertise
-    </text>
-    <text x="800" y="270" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
-        Pen Testing, SecOps
-    </text>
+    <!-- 2021: Security Focus -->
+    <rect x="70" y="240" width="200" height="100" rx="10" fill="#fff" stroke="#e74c3c" stroke-width="2"/>
+    <text x="170" y="265" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#e74c3c">2021</text>
+    <text x="170" y="290" text-anchor="middle" font-family="Arial" font-size="12">Security Expertise</text>
+    <text x="170" y="310" text-anchor="middle" font-family="Arial" font-size="11">Pen Testing, SecOps</text>
 
-    <!-- Current -->
-    <circle cx="1000" cy="200" r="15" fill="#238636"/>
-    <text x="1000" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#58a6ff">2023</text>
-    <text x="1000" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
-        Advanced Architecture
-    </text>
-    <text x="1000" y="270" text-anchor="middle" font-family="Arial" font-size="12" fill="#8b949e">
-        Zero Trust, Cloud Native
-    </text>
+    <!-- 2023: Advanced Architecture -->
+    <rect x="300" y="240" width="430" height="100" rx="10" fill="#fff" stroke="#3498db" stroke-width="2"/>
+    <text x="515" y="265" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#3498db">2023</text>
+    <text x="515" y="290" text-anchor="middle" font-family="Arial" font-size="12">Advanced Architecture</text>
+    <text x="515" y="310" text-anchor="middle" font-family="Arial" font-size="11">Zero Trust, Cloud Native</text>
+
+    <!-- Skills Growth Section -->
+    <rect x="70" y="370" width="660" height="160" rx="10" fill="#fff" stroke="#34495e" stroke-width="2"/>
+    <text x="400" y="395" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#34495e">Skills Growth</text>
+
+    <!-- Skill Categories -->
+    <rect x="90" y="410" width="150" height="30" rx="5" fill="#ecf0f1"/>
+    <text x="165" y="430" text-anchor="middle" font-family="Arial" font-size="12">Programming Languages</text>
+
+    <rect x="260" y="410" width="150" height="30" rx="5" fill="#ecf0f1"/>
+    <text x="335" y="430" text-anchor="middle" font-family="Arial" font-size="12">Web Technologies</text>
+
+    <rect x="430" y="410" width="150" height="30" rx="5" fill="#ecf0f1"/>
+    <text x="505" y="430" text-anchor="middle" font-family="Arial" font-size="12">Cloud & DevOps</text>
+
+    <rect x="90" y="450" width="150" height="30" rx="5" fill="#ecf0f1"/>
+    <text x="165" y="470" text-anchor="middle" font-family="Arial" font-size="12">Security</text>
+
+    <rect x="260" y="450" width="150" height="30" rx="5" fill="#ecf0f1"/>
+    <text x="335" y="470" text-anchor="middle" font-family="Arial" font-size="12">Architecture</text>
+
+    <rect x="430" y="450" width="150" height="30" rx="5" fill="#ecf0f1"/>
+    <text x="505" y="470" text-anchor="middle" font-family="Arial" font-size="12">Best Practices</text>
 
     <!-- Connecting Lines -->
-    <line x1="215" y1="200" x2="385" y2="200" stroke="#238636" stroke-width="2"/>
-    <line x1="415" y1="200" x2="585" y2="200" stroke="#238636" stroke-width="2"/>
-    <line x1="615" y1="200" x2="785" y2="200" stroke="#238636" stroke-width="2"/>
-    <line x1="815" y1="200" x2="985" y2="200" stroke="#238636" stroke-width="2"/>
-
-    <!-- Progress Indicator -->
-    <text x="1100" y="205" font-family="Arial" font-size="24" fill="#238636">→</text>
+    <line x1="270" y1="160" x2="300" y2="160" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="500" y1="160" x2="530" y2="160" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="270" y1="290" x2="300" y2="290" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
 </svg>

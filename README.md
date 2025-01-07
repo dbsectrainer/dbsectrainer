@@ -1,3 +1,8 @@
+<!-- Profile Picture -->
+<p align="center">
+  <img src="https://via.placeholder.com/150" alt="Profile Picture" width="150" height="150">
+</p>
+
 <!-- Header with wave animation -->
 <h1 align="center">
   👋 Welcome to My Digital Universe! 
@@ -7,6 +12,15 @@
 <p align="center">
   <strong>🚀 Full-Stack Developer & Technical Architect | 🔐 Security Expert | 🎯 Solution Designer</strong>
 </p>
+
+<!-- Table of Contents -->
+## 📑 Table of Contents
+- [About Me](#-about-me)
+- [Technical Arsenal](#%EF%B8%8F-technical-arsenal)
+- [What I'm Up To](#-what-im-up-to)
+- [Key Projects](#-key-projects)
+- [Let's Connect](#-lets-connect)
+- [Fun Facts](#-fun-facts)
 
 <!-- Divider -->
 <p align="center">
@@ -64,12 +78,24 @@ const currentProjects = {
 };
 ```
 
+<!-- Key Projects Section -->
+### 🌟 Key Projects
+
+- [Project One](https://github.com/YourUsername/ProjectOne): A brief description of what this project is about.
+- [Project Two](https://github.com/YourUsername/ProjectTwo): A brief description of what this project is about.
+
 <!-- Connect Section -->
 ### 🤝 Let's Connect
 
 <p align="left">
   <a href="https://linkedin.com/in/YourProfile" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="mailto:your.email@example.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  <a href="https://yourwebsite.com" target="_blank">
+    <img src="https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website"/>
   </a>
 </p>
 
@@ -80,6 +106,11 @@ const currentProjects = {
 - 🌱 Always learning and exploring new technologies
 - 🎵 Code better with music
 - 🌍 Tech communities make us stronger
+
+<!-- Interactive Elements -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=YourUsername&show_icons=true&theme=radical" alt="GitHub Stats">
+</p>
 
 <!-- Footer -->
 <p align="center">

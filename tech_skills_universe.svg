@@ -2,103 +2,63 @@
 <svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <!-- Background -->
     <rect width="800" height="600" fill="#f8f9fa"/>
-    
     <!-- Title -->
-    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#2c3e50">
-        Technical Skills Universe
-    </text>
-
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#2c3e50">Technical Skills Universe</text>
     <!-- Main Container -->
     <rect x="50" y="70" width="700" height="480" rx="15" fill="#f1f8ff" stroke="#3498db" stroke-width="2"/>
     <text x="380" y="95" font-family="Arial" font-size="16" fill="#3498db">Core Technical Competencies</text>
-
     <!-- Programming Languages -->
     <rect x="70" y="110" width="200" height="160" rx="10" fill="#fff" stroke="#e67e22" stroke-width="2"/>
-    <text x="170" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#e67e22">
-        Programming Languages
-    </text>
-    
+    <text x="170" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#e67e22">Programming Languages</text>
     <rect x="80" y="150" width="180" height="30" rx="5" fill="#fff3e0"/>
     <text x="170" y="170" text-anchor="middle" font-family="Arial" font-size="12">Python, Java</text>
-    
     <rect x="80" y="190" width="180" height="30" rx="5" fill="#fff3e0"/>
     <text x="170" y="210" text-anchor="middle" font-family="Arial" font-size="12">JavaScript, TypeScript</text>
-    
     <rect x="80" y="230" width="180" height="30" rx="5" fill="#fff3e0"/>
     <text x="170" y="250" text-anchor="middle" font-family="Arial" font-size="12">Go, Ruby</text>
-
     <!-- Web Development -->
     <rect x="300" y="110" width="200" height="160" rx="10" fill="#fff" stroke="#2ecc71" stroke-width="2"/>
-    <text x="400" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#2ecc71">
-        Web Development
-    </text>
-    
+    <text x="400" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#2ecc71">Web Development</text>
     <rect x="310" y="150" width="180" height="30" rx="5" fill="#e8f5e9"/>
     <text x="400" y="170" text-anchor="middle" font-family="Arial" font-size="12">React, Angular, Vue</text>
-    
     <rect x="310" y="190" width="180" height="30" rx="5" fill="#e8f5e9"/>
     <text x="400" y="210" text-anchor="middle" font-family="Arial" font-size="12">Node.js, Express</text>
-    
     <rect x="310" y="230" width="180" height="30" rx="5" fill="#e8f5e9"/>
     <text x="400" y="250" text-anchor="middle" font-family="Arial" font-size="12">HTML5, CSS3</text>
-
-    <!-- Cloud & DevOps -->
+    <!-- Cloud &amp; DevOps -->
     <rect x="530" y="110" width="200" height="160" rx="10" fill="#fff" stroke="#9b59b6" stroke-width="2"/>
-    <text x="630" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#9b59b6">
-        Cloud & DevOps
-    </text>
-    
+    <text x="630" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#9b59b6">Cloud &amp; DevOps</text>
     <rect x="540" y="150" width="180" height="30" rx="5" fill="#f3e5f5"/>
     <text x="630" y="170" text-anchor="middle" font-family="Arial" font-size="12">AWS, Azure, GCP</text>
-    
     <rect x="540" y="190" width="180" height="30" rx="5" fill="#f3e5f5"/>
     <text x="630" y="210" text-anchor="middle" font-family="Arial" font-size="12">Docker, Kubernetes</text>
-    
     <rect x="540" y="230" width="180" height="30" rx="5" fill="#f3e5f5"/>
     <text x="630" y="250" text-anchor="middle" font-family="Arial" font-size="12">Jenkins, GitLab CI</text>
-
     <!-- Databases -->
     <rect x="70" y="290" width="320" height="120" rx="10" fill="#fff" stroke="#e74c3c" stroke-width="2"/>
-    <text x="230" y="315" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#e74c3c">
-        Databases
-    </text>
-    
+    <text x="230" y="315" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#e74c3c">Databases</text>
     <rect x="90" y="330" width="130" height="30" rx="5" fill="#fadbd8"/>
     <text x="155" y="350" text-anchor="middle" font-family="Arial" font-size="12">PostgreSQL</text>
-    
     <rect x="240" y="330" width="130" height="30" rx="5" fill="#fadbd8"/>
     <text x="305" y="350" text-anchor="middle" font-family="Arial" font-size="12">MongoDB</text>
-    
     <rect x="90" y="370" width="280" height="30" rx="5" fill="#fadbd8"/>
     <text x="230" y="390" text-anchor="middle" font-family="Arial" font-size="12">Redis, Elasticsearch</text>
-
     <!-- AI/ML -->
     <rect x="410" y="290" width="320" height="120" rx="10" fill="#fff" stroke="#3498db" stroke-width="2"/>
-    <text x="570" y="315" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#3498db">
-        AI/ML
-    </text>
-    
+    <text x="570" y="315" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#3498db">AI/ML</text>
     <rect x="430" y="330" width="130" height="30" rx="5" fill="#ebf5fb"/>
     <text x="495" y="350" text-anchor="middle" font-family="Arial" font-size="12">TensorFlow</text>
-    
     <rect x="580" y="330" width="130" height="30" rx="5" fill="#ebf5fb"/>
     <text x="645" y="350" text-anchor="middle" font-family="Arial" font-size="12">PyTorch</text>
-    
     <rect x="430" y="370" width="280" height="30" rx="5" fill="#ebf5fb"/>
     <text x="570" y="390" text-anchor="middle" font-family="Arial" font-size="12">Scikit-learn, NLP</text>
-
-    <!-- Tools & Practices -->
+    <!-- Tools &amp; Practices -->
     <rect x="70" y="430" width="660" height="100" rx="10" fill="#fff" stroke="#34495e" stroke-width="2"/>
-    <text x="400" y="455" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#34495e">
-        Tools & Best Practices
-    </text>
-    
+    <text x="400" y="455" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#34495e">Tools &amp; Best Practices</text>
     <rect x="90" y="470" width="180" height="30" rx="5" fill="#ecf0f1"/>
     <text x="180" y="490" text-anchor="middle" font-family="Arial" font-size="12">Git, GitHub</text>
-    
     <rect x="310" y="470" width="180" height="30" rx="5" fill="#ecf0f1"/>
     <text x="400" y="490" text-anchor="middle" font-family="Arial" font-size="12">Agile, Scrum</text>
-    
     <rect x="530" y="470" width="180" height="30" rx="5" fill="#ecf0f1"/>
     <text x="620" y="490" text-anchor="middle" font-family="Arial" font-size="12">TDD, CI/CD</text>
 </svg>

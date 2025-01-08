@@ -164,11 +164,6 @@ const currentProjects = {
 - 🎵 Code better with music
 - 🌍 Tech communities make us stronger
 
-<!-- Interactive Elements -->
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=dbsectrainer&show_icons=true&theme=radical" alt="GitHub Stats">
-</p>
-
 <!-- Footer -->
 <p align="center">
   <i>Let's build something amazing together!</i>

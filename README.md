@@ -138,8 +138,8 @@ const currentProjects = {
 <!-- Key Projects Section -->
 ### 🌟 Key Projects
 
-- [Project One](https://github.com/dbsectrainer/ProjectOne): A brief description of what this project is about.
-- [Project Two](https://github.com/dbsectrainer/ProjectTwo): A brief description of what this project is about.
+- [Project One](https://github.com/dbsectrainer/ai_cloud_dashboard): A comprehensive real-time analytics platform for monitoring and analyzing the global AI and cloud computing landscape. This enterprise-grade dashboard provides strategic intelligence for decision-makers, offering deep insights into market trends, performance metrics, and competitive analysis.
+- [Project Two](https://github.com/dbsectrainer/AI-Model-Dashboard): A comprehensive dashboard for evaluating and comparing AI models across different domains and tasks.
 
 <!-- Connect Section -->
 ### 🤝 Let's Connect

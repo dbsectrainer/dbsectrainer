@@ -3,33 +3,41 @@
   <img src="https://via.placeholder.com/150" alt="Profile Picture" width="150" height="150">
 </p>
 
+<!-- Short Personal Introduction -->
+<p align="center">
+  Hi, I'm <strong>dbsectrainer</strong>! I'm passionate about building secure, scalable systems and sharing knowledge with the tech community.
+</p>
+
 <!-- Header with wave animation -->
 <h1 align="center">
-  👋 Welcome to My AI/ML Security Engineering Universe! 
+  👋 Welcome to My Digital Universe! 
 </h1>
 
 <!-- Subtitle -->
 <p align="center">
-  <strong>🤖 AI/ML Security Expert | 🔐 Security Architect | 🎯 MLOps Specialist</strong>
+  <strong>🚀 Full-Stack Developer & Technical Architect | 🔐 Security Expert | 🎯 Solution Designer</strong>
 </p>
 
-<!-- Technology Badges -->
+<!-- GitHub Stats & Badges -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes">
+  <img src="https://github-readme-stats.vercel.app/api?username=dbsectrainer&show_icons=true&theme=radical" alt="GitHub Stats"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dbsectrainer&theme=radical" alt="GitHub Streak"/>
 </p>
 
 <!-- Table of Contents -->
 ## 📑 Table of Contents
 - [About Me](#-about-me)
+- [Technical Journey](#-technical-journey)
+- [Security Expertise](#-security-expertise)
 - [Technical Expertise](#-technical-expertise)
-- [Featured Projects](#-featured-projects)
-- [Current Focus](#-current-focus)
-- [Technical Arsenal](#%EF%B8%8F-technical-arsenal)
+- [Technical Strengths](#-technical-strengths)
+- [Technical Arsenal](#technical-arsenal)
+- [What I'm Up To](#-what-im-up-to)
+- [Key Projects](#-key-projects)
+- [Open Source Contributions](#-open-source-contributions)
 - [Let's Connect](#-lets-connect)
+- [Fun Facts](#-fun-facts)
+- [Support Me](#-support-me)
 
 <!-- Divider -->
 <p align="center">
@@ -100,32 +108,13 @@ class AISecurityEngineer:
   - Incident Response
 </details>
 
-<!-- Featured Projects Section -->
-### 🌟 Featured Projects
+<!-- Technical Strengths Section -->
+### 💪 Technical Strengths
 
-#### 1. Secure MLOps Pipeline
-![Status](https://img.shields.io/badge/Status-Production-green)
-![Security](https://img.shields.io/badge/Security-SOC_2-blue)
+- **Cloud-Native & DevOps:** Contributed to Microsoft’s Data Formulator, adding Docker support to enhance deployment flexibility.
+- **AI & ML Integration:** Participated in Microsoft’s Generative AI for Beginners project, merging pull requests to fix function issues and demonstrating proficiency in integrating AI into applications.
+- **Open Source Collaboration:** Actively contributed to the MetaGPT project, including enhancements like adding support for Ollama with third-party URL wrappers.
 
-Production-ready sentiment analysis service with comprehensive security features. Implements zero-trust architecture and continuous security monitoring.
-
-[View Project](https://github.com/yourusername/portfolio/tree/main/projects/01-mlops-pipeline)
-
-#### 2. Vision Transformer Security
-![Status](https://img.shields.io/badge/Status-Research-blue)
-![Framework](https://img.shields.io/badge/Framework-PyTorch-red)
-
-Research implementation of vision transformer with advanced security features including adversarial defense and privacy-preserving training.
-
-[View Project](https://github.com/yourusername/portfolio/tree/main/projects/02-deep-learning-research)
-
-#### 3. Healthcare AI Security System
-![Status](https://img.shields.io/badge/Status-Active-green)
-![Compliance](https://img.shields.io/badge/Compliance-HIPAA-blue)
-
-HIPAA-compliant early warning system using federated learning and privacy-preserving techniques.
-
-[View Project](https://github.com/yourusername/portfolio/tree/main/projects/12-health-early-warning)
 
 <!-- Current Focus Section -->
 ### 🚀 Current Focus
@@ -164,20 +153,105 @@ const currentProjects = {
 - **Compliance Implementation**
 </details>
 
+<!-- Key Projects Section -->
+### 🌟 Key Projects
+
+- [Global AI & Cloud Intelligence Dashboard](https://github.com/dbsectrainer/ai-cloud-dashboard) 🌐  
+  **A real-time analytics platform for monitoring and analyzing the global AI and cloud computing landscape.**  
+  **Features:**  
+  - Market intelligence, growth trends, and competitive analysis  
+  - Security & compliance tracking, certification management  
+  - Cost analysis, TCO calculator, and resource optimization  
+  - Real-time performance monitoring and SLA tracking  
+  - AI-powered decision support and future trends forecasting  
+  **Tech Stack:**  
+  - **Frontend:** Streamlit  
+  - **Data Processing:** Python, Pandas, NumPy  
+  - **Visualization:** Plotly  
+  - **Architecture:** Modular, component-based design  
+  **Why it matters:**  
+  - Empowers enterprise decision-makers with actionable insights  
+  - Supports compliance, cost optimization, and strategic planning  
+  - Recognized in Cloud Computing Monthly and Streamlit Gallery  
+
+- [Mandarin Pathways](https://github.com/dbsectrainer/Mandarin-Pathways):  
+  **A focused Mandarin Chinese learning platform** designed to take learners from foundational phrases to advanced professional fluency.  
+  **Features:**  
+  - Modular 40-day curriculum with interactive audio-visual lessons  
+  - YouTube API integration for embedded video demonstrations  
+  - Canvas-based character writing practice  
+  - Reading comprehension and vocabulary tools  
+  - Trilingual support (Simplified Chinese, Pinyin, English)  
+  - Progressive Web App (PWA) with offline access and notifications  
+  - Progress tracking, badges, and persistent user preferences  
+  **Technical Stack:**  
+  - **Frontend:** HTML5, CSS3, JavaScript (responsive, interactive UI)  
+  - **Backend/Automation:** Python scripts for content and audio generation  
+  - **APIs:** YouTube Data API  
+  - **PWA:** Service Worker, manifest.json, offline support  
+  - **Audio:** Dual-language audio management, native speaker integration  
+  - **UX:** Mobile-first design, intuitive navigation, and learning flow  
+  **Why Mandarin?**  
+  - Spoken by over 1 billion people  
+  - Key to global business, culture, and technology  
+  - Opens doors in international careers and cross-cultural understanding  
+
+- [Enterprise Checklist Dashboard](https://github.com/dbsectrainer/enterprise-grade-checklists) ([Live Demo](https://dbsectrainer.github.io/enterprise-grade-checklists/)):  
+  **A unified dashboard for tracking progress across eight enterprise-grade checklists**—including Frontend, Backend, Cloud, Data, DevOps, Mobile, Security, and AI/ML.  
+  **Features:**  
+  - Centralized progress tracking and automated validation for each checklist  
+  - Compliance mapping for standards (HIPAA, SOC2, etc.)  
+  - Real-time performance monitoring and optimization guides  
+  - Responsive, mobile-friendly design with persistent progress (localStorage)  
+  - Practical examples, implementation guides, and comprehensive documentation  
+  - Visual architecture diagrams and independent state management for each checklist  
+  **Tech Stack:**  
+  - HTML5, CSS3 (with CSS Variables), Vanilla JavaScript (ES6+)  
+  - LocalStorage for state management  
+  - Event-driven architecture, Mermaid.js for diagrams  
+  **Why it matters:**  
+  - Streamlines enterprise software development and operations  
+  - Supports compliance, best practices, and team productivity  
+  - Designed for scalability, maintainability, and ease of use  
+
+<!-- Open Source Contributions Section -->
+### 🤲 Open Source Contributions
+
+- [Microsoft/Data-Formulator](https://github.com/microsoft/data-formulator) – Added Docker support to enhance deployment flexibility for data workflows.
+- [microsoft/GenerativeAI-For-Beginners](https://github.com/microsoft/generativeai-for-beginners) – Merged pull requests to fix function issues, improving AI integration and reliability.
+- [MetaGPT/MetaGPT](https://github.com/geekan/MetaGPT) – Enhanced the project by adding support for Ollama with third-party URL wrappers, expanding its AI capabilities.
+
 <!-- Connect Section -->
 ### 🤝 Let's Connect
 
 <p align="left">
-  <a href="https://linkedin.com/in/yourusername">
+  <a href="https://linkedin.com/in/dbsectrainer" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
-  <a href="mailto:your.email@example.com">
+  <a href="mailto:your.email@example.com" target="_blank">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
-  <a href="https://yourblog.com">
-    <img src="https://img.shields.io/badge/Blog-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Blog"/>
+  <a href="https://yourwebsite.com" target="_blank">
+    <img src="https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website"/>
   </a>
 </p>
+
+<!-- Support Me Section -->
+### ☕ Support Me
+
+If you like my work, consider supporting me:
+
+<p align="left">
+  <a href="https://www.buymeacoffee.com/yourusername" target="_blank">
+    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"/>
+  </a>
+  <a href="https://github.com/sponsors/dbsectrainer" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub%20Sponsors-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="GitHub Sponsors"/>
+  </a>
+</p>
+
+<!-- Fun Facts -->
+### 🎮 Fun Facts
 
 <!-- Footer -->
 <p align="center">

@@ -156,7 +156,7 @@ const currentProjects = {
 <!-- Key Projects Section -->
 ### 🌟 Key Projects
 
-- [Global AI & Cloud Intelligence Dashboard](https://github.com/dbsectrainer/ai-cloud-dashboard) 🌐  
+- [Global AI & Cloud Intelligence Dashboard](https://github.com/dbsectrainer/ai_cloud_dashboard) 🌐  
   **A real-time analytics platform for monitoring and analyzing the global AI and cloud computing landscape.**  
   **Features:**  
   - Market intelligence, growth trends, and competitive analysis  
@@ -174,7 +174,7 @@ const currentProjects = {
   - Supports compliance, cost optimization, and strategic planning  
   - Recognized in Cloud Computing Monthly and Streamlit Gallery  
 
-- [Mandarin Pathways](https://github.com/dbsectrainer/Mandarin-Pathways):  
+- [Mandarin Pathways](https://github.com/dbsectrainer/Mandarin-Pathways) ([Live Demo](https://dbsectrainer.github.io/Mandarin-Pathways/)):  
   **A focused Mandarin Chinese learning platform** designed to take learners from foundational phrases to advanced professional fluency.  
   **Features:**  
   - Modular 40-day curriculum with interactive audio-visual lessons  

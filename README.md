@@ -18,11 +18,6 @@
   <strong>🚀 Full-Stack Developer & Technical Architect | 🔐 Security Expert | 🎯 Solution Designer</strong>
 </p>
 
-<!-- GitHub Stats & Badges -->
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=dbsectrainer&show_icons=true&theme=radical" alt="GitHub Stats"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dbsectrainer&theme=radical" alt="GitHub Streak"/>
-</p>
 
 <!-- Table of Contents -->
 ## 📑 Table of Contents
@@ -31,7 +26,7 @@
 - [Security Expertise](#-security-expertise)
 - [Technical Expertise](#-technical-expertise)
 - [Technical Strengths](#-technical-strengths)
-- [Technical Arsenal](#technical-arsenal)
+- [Technical Arsenal](#-technical-arsenal)
 - [What I'm Up To](#-what-im-up-to)
 - [Key Projects](#-key-projects)
 - [Open Source Contributions](#-open-source-contributions)
@@ -106,6 +101,22 @@ class AISecurityEngineer:
   - Security Analytics
   - Threat Detection
   - Incident Response
+</details>
+
+<details open>
+<summary>🧠 AI/ML Security Tools & Practices</summary>
+<br>
+
+- **Threat Modeling & SSDLC:** Experience with secure software development lifecycle, threat modeling, and secure code reviews for ML systems.
+- **Application & API Security:** Familiar with OWASP Top 10, API security, and ML-specific threats (model theft, adversarial input).
+- **Penetration Testing:** Conducted penetration testing and red teaming for AI/ML endpoints.
+- **Advanced Cryptography:** Knowledge of differential privacy, homomorphic encryption, and secure multiparty computation for ML privacy.
+- **Adversarial Robustness Toolkits:** Hands-on with IBM ART, Foolbox, CleverHans.
+- **Model Explainability & Fairness:** Use of LIME, SHAP, Fairlearn for model transparency and fairness.
+- **Monitoring Tools:** Experience with Arize AI, Fiddler, WhyLabs for model drift and anomaly detection.
+- **CI/CD & IaC Security:** Implemented security gates in CI/CD pipelines (GitHub Actions, Jenkins) and IaC security (Terraform).
+- **Risk Assessment & Incident Response:** Developed risk assessments and incident response playbooks for AI/ML systems.
+- **Cross-functional Collaboration:** Work closely with data scientists, ML engineers, and compliance teams.
 </details>
 
 <!-- Technical Strengths Section -->

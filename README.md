@@ -22,12 +22,8 @@
 <!-- Table of Contents -->
 ## 📑 Table of Contents
 - [About Me](#-about-me)
-- [Technical Journey](#-technical-journey)
-- [Security Expertise](#-security-expertise)
-- [Technical Expertise](#-technical-expertise)
-- [Technical Strengths](#-technical-strengths)
-- [Technical Arsenal](#-technical-arsenal)
-- [What I'm Up To](#-what-im-up-to)
+- [Technical Skills](#-technical-skills)
+- [Current Focus](#-current-focus)
 - [Key Projects](#-key-projects)
 - [Open Source Contributions](#-open-source-contributions)
 - [Let's Connect](#-lets-connect)
@@ -60,72 +56,60 @@ class AISecurityEngineer:
         self.mission = "Building secure and ethical AI systems"
 ```
 
-<!-- Technical Expertise Section -->
-### 💻 Technical Expertise
+<!-- Technical Skills Section -->
+### 💻 Technical Skills
 
 <details open>
 <summary>🤖 AI/ML Security</summary>
 <br>
 
-- **Model Security**
-  - Adversarial Defense
-  - Model Privacy
-  - Secure Training
-  
-- **Privacy-Preserving ML**
-  - Federated Learning
-  - Differential Privacy
-  - Secure Aggregation
-  
-- **MLOps Security**
-  - Secure Model Deployment
-  - Pipeline Protection
-  - Runtime Security
+**Core Technologies:**
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+
+- **Model Security:** Adversarial Defense, Model Privacy, Secure Training
+- **Privacy-Preserving ML:** Federated Learning, Differential Privacy, Secure Aggregation
+- **Adversarial Robustness:** IBM ART, Foolbox, CleverHans
+- **Model Explainability:** LIME, SHAP, Fairlearn for transparency and fairness
+- **Monitoring & Drift Detection:** Arize AI, Fiddler, WhyLabs
 </details>
 
 <details open>
-<summary>🔒 Security Architecture</summary>
+<summary>🔒 Security & DevOps</summary>
 <br>
 
-- **Infrastructure**
-  - Zero-Trust Architecture
-  - Secure Containerization
-  - Kubernetes Security
-  
-- **Compliance**
-  - SOC 2
-  - HIPAA
-  - GDPR
-  
-- **Monitoring**
-  - Security Analytics
-  - Threat Detection
-  - Incident Response
+**Infrastructure & Cloud:**
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
+
+- **Security Architecture:** Zero-Trust, Secure Containerization, Kubernetes Security
+- **Compliance:** SOC 2, HIPAA, GDPR implementation and monitoring
+- **Threat Detection:** Security Analytics, Incident Response, Penetration Testing
+- **SSDLC:** Secure development lifecycle, threat modeling, secure code reviews
+- **CI/CD Security:** GitHub Actions, Jenkins, Terraform IaC security
 </details>
 
 <details open>
-<summary>🧠 AI/ML Security Tools & Practices</summary>
+<summary>🛠️ Development & Operations</summary>
 <br>
 
-- **Threat Modeling & SSDLC:** Experience with secure software development lifecycle, threat modeling, and secure code reviews for ML systems.
-- **Application & API Security:** Familiar with OWASP Top 10, API security, and ML-specific threats (model theft, adversarial input).
-- **Penetration Testing:** Conducted penetration testing and red teaming for AI/ML endpoints.
-- **Advanced Cryptography:** Knowledge of differential privacy, homomorphic encryption, and secure multiparty computation for ML privacy.
-- **Adversarial Robustness Toolkits:** Hands-on with IBM ART, Foolbox, CleverHans.
-- **Model Explainability & Fairness:** Use of LIME, SHAP, Fairlearn for model transparency and fairness.
-- **Monitoring Tools:** Experience with Arize AI, Fiddler, WhyLabs for model drift and anomaly detection.
-- **CI/CD & IaC Security:** Implemented security gates in CI/CD pipelines (GitHub Actions, Jenkins) and IaC security (Terraform).
-- **Risk Assessment & Incident Response:** Developed risk assessments and incident response playbooks for AI/ML systems.
-- **Cross-functional Collaboration:** Work closely with data scientists, ML engineers, and compliance teams.
+**Monitoring & Observability:**
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+
+**MLOps & Deployment:**
+![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+- **Secure MLOps:** Model deployment, pipeline protection, runtime security
+- **Advanced Cryptography:** Homomorphic encryption, secure multiparty computation
+- **Cross-functional Leadership:** Data scientists, ML engineers, compliance teams
 </details>
-
-<!-- Technical Strengths Section -->
-### 💪 Technical Strengths
-
-- **Cloud-Native & DevOps:** Contributed to Microsoft’s Data Formulator, adding Docker support to enhance deployment flexibility.
-- **AI & ML Integration:** Participated in Microsoft’s Generative AI for Beginners project, merging pull requests to fix function issues and demonstrating proficiency in integrating AI into applications.
-- **Open Source Collaboration:** Actively contributed to the MetaGPT project, including enhancements like adding support for Ollama with third-party URL wrappers.
-
 
 <!-- Current Focus Section -->
 ### 🚀 Current Focus
@@ -139,30 +123,10 @@ const currentProjects = {
 };
 ```
 
-<!-- Technical Arsenal Section -->
-### 🛠️ Technical Arsenal
-
-<details>
-<summary>🔥 Core Technologies</summary>
-<br>
-
-- **AI/ML**: PyTorch, TensorFlow, Scikit-learn
-- **Security**: Model Protection, Adversarial Defense
-- **MLOps**: Docker, Kubernetes, MLflow
-- **Cloud**: AWS, GCP, Azure
-- **Monitoring**: Prometheus, Grafana
-</details>
-
-<details>
-<summary>🎯 Specialized Focus</summary>
-<br>
-
-- **Model Security**
-- **Privacy-Preserving ML**
-- **Secure MLOps**
-- **Security Architecture**
-- **Compliance Implementation**
-</details>
+**Key Achievements:**
+- **Cloud-Native & DevOps:** Contributed to Microsoft's Data Formulator, adding Docker support
+- **AI & ML Integration:** Merged PRs in Microsoft's Generative AI for Beginners project
+- **Open Source Leadership:** Enhanced MetaGPT with Ollama support and third-party integrations
 
 <!-- Key Projects Section -->
 ### 🌟 Key Projects
@@ -263,6 +227,12 @@ If you like my work, consider supporting me:
 
 <!-- Fun Facts -->
 ### 🎮 Fun Facts
+
+🔐 Passionate about building AI systems that respect privacy and security by design  
+🎯 Believer in "security-first" development - if it's not secure, it's not done  
+🌍 Contributed to open-source projects used by thousands of developers worldwide  
+📚 Continuous learner - always exploring the latest in AI safety and adversarial ML  
+🤝 Enjoy mentoring developers on secure coding practices and AI ethics
 
 <!-- Footer -->
 <p align="center">

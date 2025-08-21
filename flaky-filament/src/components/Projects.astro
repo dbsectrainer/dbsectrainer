@@ -1,0 +1,170 @@
+---
+const projects = [
+  {
+    title: "Global AI & Cloud Intelligence Dashboard",
+    url: "https://github.com/dbsectrainer/ai_cloud_dashboard",
+    emoji: "🌐",
+    description: "A real-time analytics platform for monitoring and analyzing the global AI and cloud computing landscape.",
+    features: [
+      "Market intelligence, growth trends, and competitive analysis",
+      "Security & compliance tracking, certification management",
+      "Cost analysis, TCO calculator, and resource optimization",
+      "Real-time performance monitoring and SLA tracking",
+      "AI-powered decision support and future trends forecasting"
+    ],
+    techStack: {
+      Frontend: "Streamlit",
+      "Data Processing": "Python, Pandas, NumPy",
+      Visualization: "Plotly",
+      Architecture: "Modular, component-based design"
+    },
+    impact: [
+      "Empowers enterprise decision-makers with actionable insights",
+      "Supports compliance, cost optimization, and strategic planning",
+      "Recognized in Cloud Computing Monthly and Streamlit Gallery"
+    ]
+  },
+  {
+    title: "Mandarin Pathways",
+    url: "https://github.com/dbsectrainer/Mandarin-Pathways",
+    demo: "https://dbsectrainer.github.io/Mandarin-Pathways/",
+    emoji: "🈺",
+    description: "A focused Mandarin Chinese learning platform designed to take learners from foundational phrases to advanced professional fluency.",
+    features: [
+      "Modular 40-day curriculum with interactive audio-visual lessons",
+      "YouTube API integration for embedded video demonstrations",
+      "Canvas-based character writing practice",
+      "Reading comprehension and vocabulary tools",
+      "Progressive Web App (PWA) with offline access"
+    ],
+    techStack: {
+      Frontend: "HTML5, CSS3, JavaScript",
+      "Backend/Automation": "Python scripts",
+      APIs: "YouTube Data API",
+      PWA: "Service Worker, manifest.json",
+      Audio: "Dual-language audio management"
+    }
+  },
+  {
+    title: "Enterprise Checklist Dashboard",
+    url: "https://github.com/dbsectrainer/enterprise-grade-checklists",
+    demo: "https://dbsectrainer.github.io/enterprise-grade-checklists/",
+    emoji: "✅",
+    description: "A unified dashboard for tracking progress across eight enterprise-grade checklists.",
+    features: [
+      "Centralized progress tracking and automated validation",
+      "Compliance mapping for standards (HIPAA, SOC2, etc.)",
+      "Real-time performance monitoring and optimization guides",
+      "Visual architecture diagrams and state management"
+    ],
+    techStack: {
+      Frontend: "HTML5, CSS3, JavaScript (ES6+)",
+      State: "LocalStorage",
+      Architecture: "Event-driven, Mermaid.js for diagrams"
+    }
+  }
+];
+---
+
+<section id="projects" class="mb-16">
+  <h2 class="text-3xl font-bold mb-8">🌟 Key Projects</h2>
+
+  <div class="space-y-6">
+    {projects.map(project => (
+      <details class="group bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300" open>
+        <summary class="cursor-pointer p-6 text-xl font-semibold flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">{project.emoji}</span>
+            <span class="group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              {project.title}
+            </span>
+          </div>
+          <svg 
+            class="w-6 h-6 transform transition-transform duration-300 group-open:rotate-180" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <div class="px-6 pb-6 border-t border-gray-200 dark:border-gray-700">
+          
+          <p class="text-gray-600 dark:text-gray-300 mb-4">
+            {project.description}
+          </p>
+
+          <div class="mb-4">
+            <h4 class="font-semibold mb-2">Features:</h4>
+            <ul class="list-disc list-inside space-y-1 text-sm text-gray-600 dark:text-gray-300">
+              {project.features.map(feature => (
+                <li>{feature}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <h4 class="font-semibold mb-2">Tech Stack:</h4>
+            <dl class="grid grid-cols-2 gap-2 text-sm">
+              {Object.entries(project.techStack).map(([key, value]) => (
+                <>
+                  <dt class="font-medium text-gray-700 dark:text-gray-200">{key}:</dt>
+                  <dd class="text-gray-600 dark:text-gray-300">{value}</dd>
+                </>
+              ))}
+            </dl>
+          </div>
+
+          {project.impact && (
+            <div class="mb-4">
+              <h4 class="font-semibold mb-2">Impact:</h4>
+              <ul class="list-disc list-inside space-y-1 text-sm text-gray-600 dark:text-gray-300">
+                {project.impact.map(item => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <div class="flex gap-4 mt-6 pt-4">
+            <a 
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              View on GitHub
+              <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+              </svg>
+            </a>
+            {project.demo && (
+              <a 
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center text-sm font-medium text-green-600 dark:text-green-400 hover:underline"
+              >
+                Live Demo
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+              </a>
+            )}
+          </div>
+        </div>
+      </details>
+    ))}
+  </div>
+</section>
+
+<style>
+  details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+</style>

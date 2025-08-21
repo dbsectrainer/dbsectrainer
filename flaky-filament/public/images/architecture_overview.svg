@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#2c3e50">
+        Cloud-Native Architecture
+    </text>
+
+    <!-- Main Container -->
+    <rect x="50" y="70" width="700" height="480" rx="15" fill="#f1f8ff" stroke="#3498db" stroke-width="2"/>
+    <text x="380" y="95" font-family="Arial" font-size="16" fill="#3498db">Modern System Design Pattern</text>
+
+    <!-- Client Layer -->
+    <rect x="70" y="110" width="660" height="80" rx="10" fill="#fff" stroke="#e67e22" stroke-width="2"/>
+    <text x="170" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#e67e22">
+        Client Layer
+    </text>
+    
+    <rect x="90" y="150" width="150" height="30" rx="5" fill="#fff3e0"/>
+    <text x="165" y="170" text-anchor="middle" font-family="Arial" font-size="12">Web Applications</text>
+    
+    <rect x="260" y="150" width="150" height="30" rx="5" fill="#fff3e0"/>
+    <text x="335" y="170" text-anchor="middle" font-family="Arial" font-size="12">Mobile Apps</text>
+    
+    <rect x="430" y="150" width="150" height="30" rx="5" fill="#fff3e0"/>
+    <text x="505" y="170" text-anchor="middle" font-family="Arial" font-size="12">API Clients</text>
+
+    <!-- API Gateway -->
+    <rect x="70" y="210" width="660" height="80" rx="10" fill="#fff" stroke="#2ecc71" stroke-width="2"/>
+    <text x="170" y="235" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#2ecc71">
+        API Gateway
+    </text>
+    
+    <rect x="90" y="250" width="150" height="30" rx="5" fill="#e8f5e9"/>
+    <text x="165" y="270" text-anchor="middle" font-family="Arial" font-size="12">Authentication</text>
+    
+    <rect x="260" y="250" width="150" height="30" rx="5" fill="#e8f5e9"/>
+    <text x="335" y="270" text-anchor="middle" font-family="Arial" font-size="12">Load Balancing</text>
+    
+    <rect x="430" y="250" width="150" height="30" rx="5" fill="#e8f5e9"/>
+    <text x="505" y="270" text-anchor="middle" font-family="Arial" font-size="12">Request Routing</text>
+
+    <!-- Microservices -->
+    <rect x="70" y="310" width="660" height="120" rx="10" fill="#fff" stroke="#9b59b6" stroke-width="2"/>
+    <text x="170" y="335" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#9b59b6">
+        Microservices
+    </text>
+    
+    <rect x="90" y="350" width="150" height="30" rx="5" fill="#f3e5f5"/>
+    <text x="165" y="370" text-anchor="middle" font-family="Arial" font-size="12">Auth Service</text>
+    
+    <rect x="260" y="350" width="150" height="30" rx="5" fill="#f3e5f5"/>
+    <text x="335" y="370" text-anchor="middle" font-family="Arial" font-size="12">User Service</text>
+    
+    <rect x="430" y="350" width="150" height="30" rx="5" fill="#f3e5f5"/>
+    <text x="505" y="370" text-anchor="middle" font-family="Arial" font-size="12">Data Service</text>
+
+    <rect x="90" y="390" width="150" height="30" rx="5" fill="#f3e5f5"/>
+    <text x="165" y="410" text-anchor="middle" font-family="Arial" font-size="12">Payment Service</text>
+    
+    <rect x="260" y="390" width="150" height="30" rx="5" fill="#f3e5f5"/>
+    <text x="335" y="410" text-anchor="middle" font-family="Arial" font-size="12">Notification Service</text>
+    
+    <rect x="430" y="390" width="150" height="30" rx="5" fill="#f3e5f5"/>
+    <text x="505" y="410" text-anchor="middle" font-family="Arial" font-size="12">Analytics Service</text>
+
+    <!-- Data Layer -->
+    <rect x="70" y="450" width="660" height="80" rx="10" fill="#fff" stroke="#34495e" stroke-width="2"/>
+    <text x="170" y="475" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#34495e">
+        Data Layer
+    </text>
+    
+    <rect x="90" y="490" width="150" height="30" rx="5" fill="#ecf0f1"/>
+    <text x="165" y="510" text-anchor="middle" font-family="Arial" font-size="12">PostgreSQL</text>
+    
+    <rect x="260" y="490" width="150" height="30" rx="5" fill="#ecf0f1"/>
+    <text x="335" y="510" text-anchor="middle" font-family="Arial" font-size="12">MongoDB</text>
+    
+    <rect x="430" y="490" width="150" height="30" rx="5" fill="#ecf0f1"/>
+    <text x="505" y="510" text-anchor="middle" font-family="Arial" font-size="12">Redis Cache</text>
+</svg>

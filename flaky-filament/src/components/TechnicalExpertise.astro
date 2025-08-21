@@ -1,0 +1,111 @@
+---
+const expertise = [
+  {
+    title: "🤖 AI/ML Security",
+    sections: [
+      {
+        title: "Model Security",
+        items: ["Adversarial Defense", "Model Privacy", "Secure Training"]
+      },
+      {
+        title: "Privacy-Preserving ML",
+        items: ["Federated Learning", "Differential Privacy", "Secure Aggregation"]
+      },
+      {
+        title: "MLOps Security",
+        items: ["Secure Model Deployment", "Pipeline Protection", "Runtime Security"]
+      }
+    ]
+  },
+  {
+    title: "🔒 Security Architecture",
+    sections: [
+      {
+        title: "Infrastructure",
+        items: ["Zero-Trust Architecture", "Secure Containerization", "Kubernetes Security"]
+      },
+      {
+        title: "Compliance",
+        items: ["SOC 2", "HIPAA", "GDPR"]
+      },
+      {
+        title: "Monitoring",
+        items: ["Security Analytics", "Threat Detection", "Incident Response"]
+      }
+    ]
+  },
+  {
+    title: "🧠 AI/ML Security Tools & Practices",
+    items: [
+      "Threat Modeling & SSDLC: Experience with secure software development lifecycle, threat modeling, and secure code reviews for ML systems",
+      "Application & API Security: Familiar with OWASP Top 10, API security, and ML-specific threats",
+      "Penetration Testing: Conducted penetration testing and red teaming for AI/ML endpoints",
+      "Advanced Cryptography: Knowledge of differential privacy, homomorphic encryption, and secure multiparty computation",
+      "Adversarial Robustness Toolkits: Hands-on with IBM ART, Foolbox, CleverHans",
+      "Model Explainability & Fairness: Use of LIME, SHAP, Fairlearn for model transparency"
+    ]
+  }
+];
+---
+
+<section id="expertise" class="mb-16">
+  <h2 class="text-3xl font-bold mb-8">💻 Technical Expertise</h2>
+
+  <div class="space-y-6">
+    {expertise.map(category => (
+      <details class="group bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300" open>
+        <summary class="cursor-pointer p-6 text-xl font-semibold flex items-center justify-between">
+          <span>{category.title}</span>
+          <svg 
+            class="w-6 h-6 transform transition-transform duration-300 group-open:rotate-180" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <div class="px-6 pb-6 border-t border-gray-200 dark:border-gray-700">
+          {category.sections ? (
+            <div class="space-y-6">
+              {category.sections.map(section => (
+                <div>
+                  <h4 class="font-semibold mb-2">{section.title}</h4>
+                  <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
+                    {section.items.map(item => (
+                      <li>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <ul class="list-disc list-inside space-y-3 text-gray-700 dark:text-gray-300">
+              {category.items.map(item => (
+                <li class="leading-relaxed">{item}</li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </details>
+    ))}
+  </div>
+</section>
+
+<style>
+  details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  details > summary::after {
+    content: '▼';
+    float: right;
+    font-size: 0.8em;
+    transition: transform 0.2s;
+  }
+  details[open] > summary::after {
+    transform: rotate(180deg);
+  }
+</style>

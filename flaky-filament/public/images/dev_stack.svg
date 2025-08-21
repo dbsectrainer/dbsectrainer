@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#2c3e50">
+        Modern Development Stack
+    </text>
+
+    <!-- Main Container -->
+    <rect x="50" y="70" width="700" height="480" rx="15" fill="#f1f8ff" stroke="#3498db" stroke-width="2"/>
+    <text x="380" y="95" font-family="Arial" font-size="16" fill="#3498db">Full-Stack Technology Stack</text>
+
+    <!-- Frontend Layer -->
+    <rect x="70" y="110" width="660" height="100" rx="10" fill="#fff" stroke="#e67e22" stroke-width="2"/>
+    <text x="170" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#e67e22">
+        Frontend Technologies
+    </text>
+    
+    <rect x="90" y="150" width="150" height="30" rx="5" fill="#fff3e0"/>
+    <text x="165" y="170" text-anchor="middle" font-family="Arial" font-size="12">React/Redux</text>
+    
+    <rect x="260" y="150" width="150" height="30" rx="5" fill="#fff3e0"/>
+    <text x="335" y="170" text-anchor="middle" font-family="Arial" font-size="12">Angular</text>
+    
+    <rect x="430" y="150" width="150" height="30" rx="5" fill="#fff3e0"/>
+    <text x="505" y="170" text-anchor="middle" font-family="Arial" font-size="12">Vue.js</text>
+
+    <!-- Backend Layer -->
+    <rect x="70" y="230" width="660" height="100" rx="10" fill="#fff" stroke="#2ecc71" stroke-width="2"/>
+    <text x="170" y="255" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#2ecc71">
+        Backend Technologies
+    </text>
+    
+    <rect x="90" y="270" width="150" height="30" rx="5" fill="#e8f5e9"/>
+    <text x="165" y="290" text-anchor="middle" font-family="Arial" font-size="12">Node.js/Express</text>
+    
+    <rect x="260" y="270" width="150" height="30" rx="5" fill="#e8f5e9"/>
+    <text x="335" y="290" text-anchor="middle" font-family="Arial" font-size="12">Python/Django</text>
+    
+    <rect x="430" y="270" width="150" height="30" rx="5" fill="#e8f5e9"/>
+    <text x="505" y="290" text-anchor="middle" font-family="Arial" font-size="12">Java Spring</text>
+
+    <!-- Database Layer -->
+    <rect x="70" y="350" width="660" height="80" rx="10" fill="#fff" stroke="#9b59b6" stroke-width="2"/>
+    <text x="170" y="375" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#9b59b6">
+        Data Storage
+    </text>
+    
+    <rect x="90" y="390" width="150" height="30" rx="5" fill="#f3e5f5"/>
+    <text x="165" y="410" text-anchor="middle" font-family="Arial" font-size="12">PostgreSQL</text>
+    
+    <rect x="260" y="390" width="150" height="30" rx="5" fill="#f3e5f5"/>
+    <text x="335" y="410" text-anchor="middle" font-family="Arial" font-size="12">MongoDB</text>
+    
+    <rect x="430" y="390" width="150" height="30" rx="5" fill="#f3e5f5"/>
+    <text x="505" y="410" text-anchor="middle" font-family="Arial" font-size="12">Redis</text>
+
+    <!-- Infrastructure Layer -->
+    <rect x="70" y="450" width="660" height="80" rx="10" fill="#fff" stroke="#34495e" stroke-width="2"/>
+    <text x="170" y="475" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#34495e">
+        Infrastructure
+    </text>
+    
+    <rect x="90" y="490" width="150" height="30" rx="5" fill="#ecf0f1"/>
+    <text x="165" y="510" text-anchor="middle" font-family="Arial" font-size="12">Docker</text>
+    
+    <rect x="260" y="490" width="150" height="30" rx="5" fill="#ecf0f1"/>
+    <text x="335" y="510" text-anchor="middle" font-family="Arial" font-size="12">Kubernetes</text>
+    
+    <rect x="430" y="490" width="150" height="30" rx="5" fill="#ecf0f1"/>
+    <text x="505" y="510" text-anchor="middle" font-family="Arial" font-size="12">AWS/Azure/GCP</text>
+</svg>

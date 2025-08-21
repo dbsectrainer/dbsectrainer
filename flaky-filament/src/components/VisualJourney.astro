@@ -1,0 +1,81 @@
+---
+const visualizations = [
+  {
+    image: "/images/architecture_overview.svg",
+    title: "Architecture Overview",
+    description: "Comprehensive view of system architecture and design principles"
+  },
+  {
+    image: "/images/security_focus.svg",
+    title: "Security Focus",
+    description: "Core security practices and implementation strategies"
+  },
+  {
+    image: "/images/dev_stack.svg",
+    title: "Development Stack",
+    description: "Technology stack and development tools ecosystem"
+  },
+  {
+    image: "/images/tech_skills_universe.svg",
+    title: "Technical Skills Universe",
+    description: "Complete overview of technical capabilities and expertise"
+  },
+  {
+    image: "/images/emerging_tech.svg",
+    title: "Emerging Technologies",
+    description: "Focus on cutting-edge and emerging technology trends"
+  },
+  {
+    image: "/images/learning_journey.svg",
+    title: "Learning Journey",
+    description: "Continuous learning and professional development path"
+  }
+];
+---
+
+<section id="visual-journey" class="mb-16">
+  <h2 class="section-heading">🎨 Visual Journey</h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {visualizations.map((viz, index) => (
+      <div 
+        class="card group hover:scale-[1.02] transition-all duration-300 animate-fade-in"
+        style={`animation-delay: ${index * 100}ms`}
+      >
+        <div class="relative aspect-square overflow-hidden rounded-t-xl bg-gray-50 dark:bg-gray-900">
+          <img
+            src={viz.image}
+            alt={viz.title}
+            class="w-full h-full object-contain p-4 transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </div>
+        
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+            {viz.title}
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 text-sm">
+            {viz.description}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .card {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+
+  .card:hover {
+    transform: translateZ(10px);
+  }
+
+  img {
+    will-change: transform;
+  }
+</style>

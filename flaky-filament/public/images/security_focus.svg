@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#2c3e50">
+        Security Focus Areas
+    </text>
+
+    <!-- Main Container -->
+    <rect x="50" y="70" width="700" height="480" rx="15" fill="#f1f8ff" stroke="#3498db" stroke-width="2"/>
+    <text x="380" y="95" font-family="Arial" font-size="16" fill="#3498db">Comprehensive Security Framework</text>
+
+    <!-- Application Security -->
+    <rect x="70" y="110" width="200" height="160" rx="10" fill="#fff" stroke="#e67e22" stroke-width="2"/>
+    <text x="170" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#e67e22">
+        Application Security
+    </text>
+    
+    <rect x="80" y="150" width="180" height="30" rx="5" fill="#fff3e0"/>
+    <text x="170" y="170" text-anchor="middle" font-family="Arial" font-size="12">OWASP Top 10</text>
+    
+    <rect x="80" y="190" width="180" height="30" rx="5" fill="#fff3e0"/>
+    <text x="170" y="210" text-anchor="middle" font-family="Arial" font-size="12">SAST/DAST Testing</text>
+    
+    <rect x="80" y="230" width="180" height="30" rx="5" fill="#fff3e0"/>
+    <text x="170" y="250" text-anchor="middle" font-family="Arial" font-size="12">Secure Development</text>
+
+    <!-- Cloud Security -->
+    <rect x="300" y="110" width="200" height="160" rx="10" fill="#fff" stroke="#2ecc71" stroke-width="2"/>
+    <text x="400" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#2ecc71">
+        Cloud Security
+    </text>
+    
+    <rect x="310" y="150" width="180" height="30" rx="5" fill="#e8f5e9"/>
+    <text x="400" y="170" text-anchor="middle" font-family="Arial" font-size="12">AWS Security</text>
+    
+    <rect x="310" y="190" width="180" height="30" rx="5" fill="#e8f5e9"/>
+    <text x="400" y="210" text-anchor="middle" font-family="Arial" font-size="12">Azure Security</text>
+    
+    <rect x="310" y="230" width="180" height="30" rx="5" fill="#e8f5e9"/>
+    <text x="400" y="250" text-anchor="middle" font-family="Arial" font-size="12">GCP Security</text>
+
+    <!-- Infrastructure Security -->
+    <rect x="530" y="110" width="200" height="160" rx="10" fill="#fff" stroke="#9b59b6" stroke-width="2"/>
+    <text x="630" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#9b59b6">
+        Infrastructure Security
+    </text>
+    
+    <rect x="540" y="150" width="180" height="30" rx="5" fill="#f3e5f5"/>
+    <text x="630" y="170" text-anchor="middle" font-family="Arial" font-size="12">Network Security</text>
+    
+    <rect x="540" y="190" width="180" height="30" rx="5" fill="#f3e5f5"/>
+    <text x="630" y="210" text-anchor="middle" font-family="Arial" font-size="12">Container Security</text>
+    
+    <rect x="540" y="230" width="180" height="30" rx="5" fill="#f3e5f5"/>
+    <text x="630" y="250" text-anchor="middle" font-family="Arial" font-size="12">Kubernetes Security</text>
+
+    <!-- Security Operations -->
+    <rect x="70" y="300" width="660" height="120" rx="10" fill="#fff" stroke="#34495e" stroke-width="2"/>
+    <text x="400" y="325" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#34495e">
+        Security Operations
+    </text>
+
+    <rect x="90" y="340" width="150" height="30" rx="5" fill="#ecf0f1"/>
+    <text x="165" y="360" text-anchor="middle" font-family="Arial" font-size="12">Incident Response</text>
+
+    <rect x="260" y="340" width="150" height="30" rx="5" fill="#ecf0f1"/>
+    <text x="335" y="360" text-anchor="middle" font-family="Arial" font-size="12">Threat Detection</text>
+
+    <rect x="430" y="340" width="150" height="30" rx="5" fill="#ecf0f1"/>
+    <text x="505" y="360" text-anchor="middle" font-family="Arial" font-size="12">Security Monitoring</text>
+
+    <!-- Compliance & Governance -->
+    <rect x="70" y="450" width="660" height="80" rx="10" fill="#fff" stroke="#e74c3c" stroke-width="2"/>
+    <text x="400" y="475" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#e74c3c">
+        Compliance &amp; Governance
+    </text>
+
+    <rect x="90" y="490" width="150" height="30" rx="5" fill="#fadbd8"/>
+    <text x="165" y="510" text-anchor="middle" font-family="Arial" font-size="12">Audit &amp; Compliance</text>
+
+    <rect x="260" y="490" width="150" height="30" rx="5" fill="#fadbd8"/>
+    <text x="335" y="510" text-anchor="middle" font-family="Arial" font-size="12">Risk Management</text>
+
+    <rect x="430" y="490" width="150" height="30" rx="5" fill="#fadbd8"/>
+    <text x="505" y="510" text-anchor="middle" font-family="Arial" font-size="12">Policy Management</text>
+</svg>

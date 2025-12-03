@@ -1,0 +1,15 @@
+- name: LinkedIn
+  url: https://linkedin.com/in/dbsectrainer
+  icon: linkedin
+
+- name: GitHub
+  url: https://github.com/dbsectrainer
+  icon: github
+
+- name: Email
+  url: mailto:your.email@example.com
+  icon: email
+
+- name: Website
+  url: https://yourwebsite.com
+  icon: website

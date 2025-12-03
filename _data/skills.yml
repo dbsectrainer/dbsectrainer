@@ -1,0 +1,59 @@
+ai_ml_security:
+  title: "AI/ML Security"
+  icon: "🤖"
+  skills:
+    - name: "Model Security & Privacy"
+      level: 95
+      description: "Adversarial Defense, Model Privacy, Secure Training"
+    - name: "Privacy-Preserving ML"
+      level: 90
+      description: "Federated Learning, Differential Privacy, Secure Aggregation"
+    - name: "Adversarial Robustness"
+      level: 92
+      description: "IBM ART, Foolbox, CleverHans"
+    - name: "Model Explainability"
+      level: 88
+      description: "LIME, SHAP, Fairlearn"
+    - name: "Drift Detection"
+      level: 85
+      description: "Arize AI, Fiddler, WhyLabs"
+
+security_devops:
+  title: "Security & DevOps"
+  icon: "🔒"
+  skills:
+    - name: "Zero-Trust Architecture"
+      level: 93
+      description: "Security Architecture, Secure Containerization, K8s Security"
+    - name: "Compliance"
+      level: 90
+      description: "SOC 2, HIPAA, GDPR"
+    - name: "Threat Detection"
+      level: 88
+      description: "Security Analytics, Incident Response, Penetration Testing"
+    - name: "SSDLC"
+      level: 92
+      description: "Secure development lifecycle, threat modeling"
+    - name: "CI/CD Security"
+      level: 89
+      description: "GitHub Actions, Jenkins, Terraform IaC security"
+
+development:
+  title: "Development & Operations"
+  icon: "🛠️"
+  skills:
+    - name: "Python"
+      level: 95
+      description: "PyTorch, TensorFlow, Scikit-learn"
+    - name: "Cloud Platforms"
+      level: 92
+      description: "AWS, Azure, GCP"
+    - name: "Container Orchestration"
+      level: 90
+      description: "Docker, Kubernetes"
+    - name: "Secure MLOps"
+      level: 93
+      description: "Model deployment, pipeline protection, runtime security"
+    - name: "Monitoring"
+      level: 87
+      description: "Prometheus, Grafana, MLflow"

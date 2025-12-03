@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dbsectrainer.github.io/sitemap.xml

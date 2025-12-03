@@ -1,0 +1,13 @@
+<!-- Skill Bar Component -->
+<div class="skill-item" data-aos="fade-right">
+  <div class="skill-header">
+    <span class="skill-name">{{ include.name }}</span>
+    <span class="skill-level">{{ include.level }}%</span>
+  </div>
+  <div class="skill-bar">
+    <div class="skill-progress" style="--skill-level: {{ include.level }}%"></div>
+  </div>
+  {% if include.description %}
+  <p class="skill-description">{{ include.description }}</p>
+  {% endif %}
+</div>

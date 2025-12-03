@@ -1,0 +1,49 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// ====================================
+// Main Stylesheet
+// Award-Winning Jekyll Site
+// ====================================
+
+// Import order is important!
+@import "variables";
+@import "base";
+@import "animations";
+@import "components";
+@import "layout";
+
+// ====================================
+// Additional Styles
+// ====================================
+
+// Syntax highlighting (for code blocks)
+@import "syntax";
+
+// Print styles
+@media print {
+  .site-header,
+  .site-footer,
+  .hero-social,
+  .scroll-indicator,
+  .back-to-top {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,246 @@
+---
+layout: page
+title: Blog
+subtitle: Technical articles on AI/ML Security, Best Practices, and Industry Insights
+permalink: /blog/
+---
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<div class="blog-page">
+  <!-- Search and filter -->
+  <div class="blog-search" data-aos="fade-up">
+    <div class="search-container glass-card">
+      <input type="text"
+             id="search-input"
+             class="search-input"
+             placeholder="Search articles..."
+             aria-label="Search blog posts">
+      <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/>
+        <path d="m21 21-4.35-4.35"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Tags filter -->
+  {% assign all_tags = site.posts | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
+  {% if all_tags.size > 0 %}
+  <div class="blog-tags-filter" data-aos="fade-up">
+    <div class="tags-container">
+      <button class="tag-btn active" data-tag="all">All Posts</button>
+      {% for tag in all_tags %}
+        {% if tag != "" %}
+        <button class="tag-btn" data-tag="{{ tag | slugify }}">{{ tag }}</button>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Blog posts grid -->
+  <div class="blog-grid">
+    {% for post in site.posts %}
+      <div class="blog-post-item" data-tags="{% for tag in post.tags %}{{ tag | slugify }} {% endfor %}">
+        {% include blog-card.html post=post %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- Empty state -->
+  {% if site.posts.size == 0 %}
+  <div class="empty-state" data-aos="fade-up">
+    <div class="glass-card" style="text-align: center; padding: var(--spacing-12);">
+      <h3>No blog posts yet</h3>
+      <p>Check back soon for technical articles on AI/ML Security!</p>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Pagination -->
+  {% if paginator.total_pages > 1 %}
+  <nav class="pagination" data-aos="fade-up">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="btn btn-outline">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Previous
+      </a>
+    {% endif %}
+
+    <span class="pagination-info">
+      Page {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}" class="btn btn-outline">
+        Next
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    {% endif %}
+  </nav>
+  {% endif %}
+</div>
+
+<style>
+.blog-search {
+  margin-bottom: var(--spacing-8);
+}
+
+.search-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--spacing-4);
+}
+
+.search-input {
+  width: 100%;
+  padding: var(--spacing-4) var(--spacing-12) var(--spacing-4) var(--spacing-4);
+  font-size: var(--text-base);
+  background: var(--bg-tertiary);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+
+  &:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  }
+}
+
+.search-icon {
+  position: absolute;
+  right: var(--spacing-6);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-tertiary);
+  pointer-events: none;
+}
+
+.blog-tags-filter {
+  margin-bottom: var(--spacing-12);
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-3);
+  justify-content: center;
+}
+
+.tag-btn {
+  padding: var(--spacing-2) var(--spacing-4);
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+
+  &:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+
+  &.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-6);
+  margin-top: var(--spacing-16);
+}
+
+.pagination-info {
+  color: var(--text-secondary);
+  font-weight: var(--font-medium);
+}
+
+.empty-state {
+  margin: var(--spacing-16) 0;
+}
+
+.blog-post-item {
+  transition: opacity var(--transition-fast);
+
+  &.hidden {
+    display: none;
+  }
+}
+</style>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-out-cubic',
+    once: true,
+    offset: 100
+  });
+
+  // Search functionality
+  const searchInput = document.getElementById('search-input');
+  const blogPosts = document.querySelectorAll('.blog-post-item');
+
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const searchTerm = e.target.value.toLowerCase();
+
+      blogPosts.forEach(post => {
+        const title = post.querySelector('.blog-title')?.textContent.toLowerCase() || '';
+        const excerpt = post.querySelector('.blog-excerpt')?.textContent.toLowerCase() || '';
+        const tags = post.querySelector('.blog-tags')?.textContent.toLowerCase() || '';
+
+        if (title.includes(searchTerm) || excerpt.includes(searchTerm) || tags.includes(searchTerm)) {
+          post.classList.remove('hidden');
+        } else {
+          post.classList.add('hidden');
+        }
+      });
+    });
+  }
+
+  // Tag filter functionality
+  const tagBtns = document.querySelectorAll('.tag-btn');
+
+  tagBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Update active state
+      tagBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const selectedTag = btn.getAttribute('data-tag');
+
+      // Filter posts by tag
+      blogPosts.forEach(post => {
+        const postTags = post.getAttribute('data-tags');
+
+        if (selectedTag === 'all' || postTags.includes(selectedTag)) {
+          post.classList.remove('hidden');
+        } else {
+          post.classList.add('hidden');
+        }
+      });
+
+      // Clear search
+      if (searchInput) {
+        searchInput.value = '';
+      }
+    });
+  });
+</script>

@@ -1,0 +1,130 @@
+# Site Settings
+title: dbsectrainer | AI/ML Security Engineer
+email: your.email@example.com
+description: >-
+  Specialized AI/ML Security Engineer focused on building secure, scalable machine learning systems.
+  Expert in model security, privacy-preserving ML, and secure MLOps architecture.
+baseurl: ""
+url: "https://dbsectrainer.github.io"
+
+# Author Information
+author:
+  name: dbsectrainer
+  title: AI/ML Security Engineer
+  bio: >-
+    Specialized in building secure and ethical AI systems with expertise in model security,
+    privacy-preserving ML, and secure MLOps architecture.
+  location: Global
+  linkedin: dbsectrainer
+  github: dbsectrainer
+  email: your.email@example.com
+
+# Build Settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Permalink Structure
+permalink: /blog/:year/:month/:day/:title/
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  case_studies:
+    output: true
+    permalink: /case-studies/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "dbsectrainer"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "case_studies"
+    values:
+      layout: "case-study"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# Pagination
+paginate: 9
+paginate_path: "/blog/page:num/"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - .git
+  - .gitignore
+
+# Include
+include:
+  - _pages
+
+# Social Links
+social:
+  linkedin: https://linkedin.com/in/dbsectrainer
+  github: https://github.com/dbsectrainer
+  email: mailto:your.email@example.com
+  website: https://yourwebsite.com
+
+# SEO Settings
+twitter:
+  username: dbsectrainer
+  card: summary_large_image
+
+logo: /assets/images/logo.png
+
+social:
+  name: dbsectrainer
+  links:
+    - https://linkedin.com/in/dbsectrainer
+    - https://github.com/dbsectrainer
+
+# Analytics (optional - add your Google Analytics ID)
+# google_analytics: UA-XXXXXXXXX-X
+
+# Performance
+sass:
+  style: compressed
+
+# Security Headers
+webrick:
+  headers:
+    X-Frame-Options: SAMEORIGIN
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: 1; mode=block

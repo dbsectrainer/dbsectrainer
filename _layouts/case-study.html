@@ -1,0 +1,96 @@
+---
+layout: default
+---
+
+<article class="case-study">
+  <header class="case-study-header">
+    <div class="container">
+      <div class="breadcrumb" data-aos="fade-up">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <span>/</span>
+        <a href="{{ '/projects' | relative_url }}">Projects</a>
+        <span>/</span>
+        <span>{{ page.title }}</span>
+      </div>
+
+      <h1 class="case-study-title" data-aos="fade-up" data-aos-delay="100">{{ page.title }}</h1>
+
+      <p class="case-study-intro" data-aos="fade-up" data-aos-delay="200">{{ page.intro }}</p>
+
+      <div class="case-study-meta" data-aos="fade-up" data-aos-delay="300">
+        <div class="meta-item">
+          <span class="meta-label">Client</span>
+          <span class="meta-value">{{ page.client | default: "Personal Project" }}</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Timeline</span>
+          <span class="meta-value">{{ page.timeline }}</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Role</span>
+          <span class="meta-value">{{ page.role }}</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {% if page.hero_image %}
+  <div class="case-study-hero">
+    <div class="container">
+      <div class="hero-image-wrapper" data-aos="zoom-in">
+        <img src="{{ page.hero_image | relative_url }}" alt="{{ page.title }}" loading="lazy">
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="case-study-content">
+    <div class="container">
+      {{ content }}
+    </div>
+  </div>
+
+  <!-- Case study navigation -->
+  <nav class="case-study-nav">
+    <div class="container">
+      <div class="nav-wrapper">
+        {% assign case_studies = site.case_studies | sort: "order" %}
+        {% for cs in case_studies %}
+          {% if cs.url == page.url %}
+            {% assign current_index = forloop.index0 %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+
+        {% if current_index > 0 %}
+          {% assign prev_study = case_studies[current_index | minus: 1] %}
+          <a href="{{ prev_study.url | relative_url }}" class="nav-link prev">
+            <span class="nav-label">Previous</span>
+            <span class="nav-title">{{ prev_study.title }}</span>
+          </a>
+        {% endif %}
+
+        {% assign next_index = current_index | plus: 1 %}
+        {% if next_index < case_studies.size %}
+          {% assign next_study = case_studies[next_index] %}
+          <a href="{{ next_study.url | relative_url }}" class="nav-link next">
+            <span class="nav-label">Next</span>
+            <span class="nav-title">{{ next_study.title }}</span>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </nav>
+</article>
+
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-out-cubic',
+    once: true,
+    offset: 100
+  });
+</script>

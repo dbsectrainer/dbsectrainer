@@ -1,0 +1,113 @@
+---
+layout: page
+title: Projects
+subtitle: Showcase of my work in AI/ML Security and Secure Systems
+permalink: /projects/
+---
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<div class="projects-page">
+  <!-- Filter/Sort (future enhancement) -->
+  <div class="projects-filter" data-aos="fade-up">
+    <div class="filter-tags">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="ai-ml">AI/ML Security</button>
+      <button class="filter-btn" data-filter="cloud">Cloud Security</button>
+      <button class="filter-btn" data-filter="webapp">Web Applications</button>
+      <button class="filter-btn" data-filter="devops">DevOps</button>
+    </div>
+  </div>
+
+  <!-- Projects Grid -->
+  <div class="projects-grid">
+    {% assign sorted_projects = site.projects | sort: "order" %}
+    {% for project in sorted_projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+
+  <!-- Empty state if no projects -->
+  {% if site.projects.size == 0 %}
+  <div class="empty-state" data-aos="fade-up">
+    <div class="glass-card" style="text-align: center; padding: var(--spacing-12);">
+      <h3>No projects yet</h3>
+      <p>Check back soon for updates!</p>
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+<style>
+.projects-filter {
+  margin-bottom: var(--spacing-12);
+}
+
+.filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-3);
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: var(--spacing-2) var(--spacing-4);
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+
+  &:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+
+  &.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+}
+
+.empty-state {
+  margin: var(--spacing-16) 0;
+}
+</style>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-out-cubic',
+    once: true,
+    offset: 100
+  });
+
+  // Simple filter functionality
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Update active state
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+
+      // Filter projects
+      projectCards.forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

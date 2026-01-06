@@ -1,8 +1,3 @@
-<!-- Profile Picture -->
-<p align="center">
-  <img src="https://via.placeholder.com/150" alt="Profile Picture" width="150" height="150">
-</p>
-
 <!-- Short Personal Introduction -->
 <p align="center">
   Hi, I'm <strong>dbsectrainer</strong>! I'm passionate about building secure, scalable systems and sharing knowledge with the tech community.

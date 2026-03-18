@@ -200,19 +200,19 @@ const currentProjects = {
   - Real-time compliance monitoring aligned with NIST CSF 2.0
   - Quantum-ready security with post-quantum cryptography transition planning
   - Comprehensive incident response framework reducing response time by 80%
-    **Tech Stack:**
-  - **Cloud Platforms:** AWS, Microsoft Azure, Google Cloud Platform
-  - **Infrastructure as Code:** Terraform, CloudFormation
-  - **Container Security:** Kubernetes Security, Cloud-Native Application Protection Platform (CNAPP)
-  - **Compliance Frameworks:** GDPR, HIPAA, PCI-DSS v4.0, SOC 2, EU AI Act
-  - **Documentation:** Mermaid diagrams, comprehensive implementation guides
-  - **Security Tools:** Advanced SIEM Integration, Zero Trust implementation, SBOM, automated testing
-    **Why it matters:**
-  - Provides enterprise-grade security framework achieving 99.9% compliance score and 99.99% infrastructure availability
-  - Addresses critical 2024-2025 security updates including NIST CSF 2.0 and AI/ML security frameworks
-  - Enables quantum-resistant security preparedness for future threat landscapes
-  - Delivers 80% reduction in incident response time through automation and continuous monitoring
-  - Supports regulatory compliance across multiple industries and jurisdictions
+  - **Tech Stack:**
+    - **Cloud Platforms:** AWS, Microsoft Azure, Google Cloud Platform
+    - **Infrastructure as Code:** Terraform, CloudFormation
+    - **Container Security:** Kubernetes Security, Cloud-Native Application Protection Platform (CNAPP)
+    - **Compliance Frameworks:** GDPR, HIPAA, PCI-DSS v4.0, SOC 2, EU AI Act
+    - **Documentation:** Mermaid diagrams, comprehensive implementation guides
+    - **Security Tools:** Advanced SIEM Integration, Zero Trust implementation, SBOM, automated testing
+  - **Why it matters:**
+    - Provides enterprise-grade security framework achieving 99.9% compliance score and 99.99% infrastructure availability
+    - Addresses critical 2024-2025 security updates including NIST CSF 2.0 and AI/ML security frameworks
+    - Enables quantum-resistant security preparedness for future threat landscapes
+    - Delivers 80% reduction in incident response time through automation and continuous monitoring
+    - Supports regulatory compliance across multiple industries and jurisdictions
 
 - [ControlPlane](https://github.com/dbsectrainer/controlplane) ([Live Demo](https://dbsectrainer.github.io/controlplane/)):
   **End-to-end security architecture demonstrating Zero Trust, compliance automation, supply chain security, and real-time threat detection — runnable in 5 minutes with `docker-compose up`.**
@@ -222,16 +222,16 @@ const currentProjects = {
   - **Cloud-Native Security:** Multi-cloud IaC scanning (Checkov/tfsec) for AWS, Azure, and GCP with CIS Benchmark compliance
   - **Compliance Automation:** Continuous SOC2, HIPAA, PCI-DSS, and GDPR monitoring with live evidence dashboard
   - **Mobile Security:** iOS/Android SAST/DAST via MobSF, certificate pinning, RASP, and secret detection
-    **Tech Stack:**
-  - **Identity & Policy:** Keycloak, OPA (Rego), HashiCorp Vault
-  - **Runtime Security:** Falco, Istio, Prometheus, Grafana, Alertmanager
-  - **Scanning:** SonarQube, OWASP ZAP, Trivy, Semgrep, MobSF, detect-secrets
-  - **Cloud IaC:** Terraform (AWS/Azure/GCP), Checkov, tfsec, Kyverno
-  - **Compliance:** SOC2 Type II, HIPAA, PCI-DSS v4, GDPR automated controls
-    **Why it matters:**
-  - Full security stack deployable locally in minutes for demos, learning, and hiring evaluations
-  - Covers MITRE ATT&CK mitigations across supply chain, credential, and runtime attack vectors
-  - Live attack simulation scenarios with real-time Grafana visualization
+  - **Tech Stack:**
+    - **Identity & Policy:** Keycloak, OPA (Rego), HashiCorp Vault
+    - **Runtime Security:** Falco, Istio, Prometheus, Grafana, Alertmanager
+    - **Scanning:** SonarQube, OWASP ZAP, Trivy, Semgrep, MobSF, detect-secrets
+    - **Cloud IaC:** Terraform (AWS/Azure/GCP), Checkov, tfsec, Kyverno
+    - **Compliance:** SOC2 Type II, HIPAA, PCI-DSS v4, GDPR automated controls
+  - **Why it matters:**
+    - Full security stack deployable locally in minutes for demos, learning, and hiring evaluations
+    - Covers MITRE ATT&CK mitigations across supply chain, credential, and runtime attack vectors
+    - Live attack simulation scenarios with real-time Grafana visualization
 
 <!-- Open Source Contributions Section -->
 

@@ -13,9 +13,10 @@
   <strong>🚀 Full-Stack Developer & Technical Architect | 🔐 Security Expert | 🎯 Solution Designer</strong>
 </p>
 
-
 <!-- Table of Contents -->
+
 ## 📑 Table of Contents
+
 - [About Me](#-about-me)
 - [Technical Skills](#-technical-skills)
 - [Current Focus](#-current-focus)
@@ -31,6 +32,7 @@
 </p>
 
 <!-- About Me Section -->
+
 ### 🌟 About Me
 
 I'm a specialized AI/ML Security Engineer focused on building secure, scalable machine learning systems. With expertise in model security, privacy-preserving ML, and secure MLOps, I bridge the gap between cutting-edge AI and robust security implementations.
@@ -52,6 +54,7 @@ class AISecurityEngineer:
 ```
 
 <!-- Technical Skills Section -->
+
 ### 💻 Technical Skills
 
 <details open>
@@ -107,6 +110,7 @@ class AISecurityEngineer:
 </details>
 
 <!-- Current Focus Section -->
+
 ### 🚀 Current Focus
 
 ```javascript
@@ -114,57 +118,59 @@ const currentProjects = {
   research: "Advanced AI Model Security",
   building: "Privacy-Preserving ML Systems",
   exploring: "Federated Learning Solutions",
-  sharing: "AI Security Best Practices"
+  sharing: "AI Security Best Practices",
 };
 ```
 
 **Key Achievements:**
+
 - **Cloud-Native & DevOps:** Contributed to Microsoft's Data Formulator, adding Docker support
 - **AI & ML Integration:** Merged PRs in Microsoft's Generative AI for Beginners project
 - **Open Source Leadership:** Enhanced MetaGPT with Ollama support and third-party integrations
 
 <!-- Key Projects Section -->
+
 ### 🌟 Key Projects
 
 - [Global AI & Cloud Intelligence Dashboard](https://github.com/dbsectrainer/ai_cloud_dashboard) 🌐  
   **A real-time analytics platform for monitoring and analyzing the global AI and cloud computing landscape.**  
-  **Features:**  
-  - Market intelligence, growth trends, and competitive analysis  
-  - Security & compliance tracking, certification management  
-  - Cost analysis, TCO calculator, and resource optimization  
-  - Real-time performance monitoring and SLA tracking  
+  **Features:**
+  - Market intelligence, growth trends, and competitive analysis
+  - Security & compliance tracking, certification management
+  - Cost analysis, TCO calculator, and resource optimization
+  - Real-time performance monitoring and SLA tracking
   - AI-powered decision support and future trends forecasting  
-  **Tech Stack:**  
-  - **Frontend:** Streamlit  
-  - **Data Processing:** Python, Pandas, NumPy  
-  - **Visualization:** Plotly  
+    **Tech Stack:**
+  - **Frontend:** Streamlit
+  - **Data Processing:** Python, Pandas, NumPy
+  - **Visualization:** Plotly
   - **Architecture:** Modular, component-based design  
-  **Why it matters:**  
-  - Empowers enterprise decision-makers with actionable insights  
-  - Supports compliance, cost optimization, and strategic planning  
-  - Recognized in Cloud Computing Monthly and Streamlit Gallery  
+    **Why it matters:**
+  - Empowers enterprise decision-makers with actionable insights
+  - Supports compliance, cost optimization, and strategic planning
+  - Recognized in Cloud Computing Monthly and Streamlit Gallery
 
 - [Mandarin Pathways](https://github.com/dbsectrainer/Mandarin-Pathways) ([Live Demo](https://dbsectrainer.github.io/Mandarin-Pathways/)):  
   **A focused Mandarin Chinese learning platform** designed to take learners from foundational phrases to advanced professional fluency.  
-  **Features:**  
-  - Modular 40-day curriculum with interactive audio-visual lessons  
-  - YouTube API integration for embedded video demonstrations  
-  - Canvas-based character writing practice  
-  - Reading comprehension and vocabulary tools  
-  - Trilingual support (Simplified Chinese, Pinyin, English)  
-  - Progressive Web App (PWA) with offline access and notifications  
+  **Features:**
+  - Modular 40-day curriculum with interactive audio-visual lessons
+  - YouTube API integration for embedded video demonstrations
+  - Canvas-based character writing practice
+  - Reading comprehension and vocabulary tools
+  - Trilingual support (Simplified Chinese, Pinyin, English)
+  - Progressive Web App (PWA) with offline access and notifications
   - Progress tracking, badges, and persistent user preferences  
-  **Technical Stack:**  
-  - **Frontend:** HTML5, CSS3, JavaScript (responsive, interactive UI)  
-  - **Backend/Automation:** Python scripts for content and audio generation  
-  - **APIs:** YouTube Data API  
-  - **PWA:** Service Worker, manifest.json, offline support  
-  - **Audio:** Dual-language audio management, native speaker integration  
+    **Technical Stack:**
+  - **Frontend:** HTML5, CSS3, JavaScript (responsive, interactive UI)
+  - **Backend/Automation:** Python scripts for content and audio generation
+  - **APIs:** YouTube Data API
+  - **PWA:** Service Worker, manifest.json, offline support
+  - **Audio:** Dual-language audio management, native speaker integration
   - **UX:** Mobile-first design, intuitive navigation, and learning flow  
-  **Why Mandarin?**  
-  - Spoken by over 1 billion people  
-  - Key to global business, culture, and technology  
-  - Opens doors in international careers and cross-cultural understanding  
+    **Why Mandarin?**
+  - Spoken by over 1 billion people
+  - Key to global business, culture, and technology
+  - Opens doors in international careers and cross-cultural understanding
 
 - [Enterprise Checklist Dashboard](https://github.com/dbsectrainer/enterprise-grade-checklists) ([Live Demo](https://dbsectrainer.github.io/enterprise-grade-checklists/)):
   **A unified dashboard for tracking progress across eight enterprise-grade checklists**—including Frontend, Backend, Cloud, Data, DevOps, Mobile, Security, and AI/ML.
@@ -175,11 +181,11 @@ const currentProjects = {
   - Responsive, mobile-friendly design with persistent progress (localStorage)
   - Practical examples, implementation guides, and comprehensive documentation
   - Visual architecture diagrams and independent state management for each checklist
-  **Tech Stack:**
+    **Tech Stack:**
   - HTML5, CSS3 (with CSS Variables), Vanilla JavaScript (ES6+)
   - LocalStorage for state management
   - Event-driven architecture, Mermaid.js for diagrams
-  **Why it matters:**
+    **Why it matters:**
   - Streamlines enterprise software development and operations
   - Supports compliance, best practices, and team productivity
   - Designed for scalability, maintainability, and ease of use
@@ -194,21 +200,41 @@ const currentProjects = {
   - Real-time compliance monitoring aligned with NIST CSF 2.0
   - Quantum-ready security with post-quantum cryptography transition planning
   - Comprehensive incident response framework reducing response time by 80%
-  **Tech Stack:**
+    **Tech Stack:**
   - **Cloud Platforms:** AWS, Microsoft Azure, Google Cloud Platform
   - **Infrastructure as Code:** Terraform, CloudFormation
   - **Container Security:** Kubernetes Security, Cloud-Native Application Protection Platform (CNAPP)
   - **Compliance Frameworks:** GDPR, HIPAA, PCI-DSS v4.0, SOC 2, EU AI Act
   - **Documentation:** Mermaid diagrams, comprehensive implementation guides
   - **Security Tools:** Advanced SIEM Integration, Zero Trust implementation, SBOM, automated testing
-  **Why it matters:**
+    **Why it matters:**
   - Provides enterprise-grade security framework achieving 99.9% compliance score and 99.99% infrastructure availability
   - Addresses critical 2024-2025 security updates including NIST CSF 2.0 and AI/ML security frameworks
   - Enables quantum-resistant security preparedness for future threat landscapes
   - Delivers 80% reduction in incident response time through automation and continuous monitoring
   - Supports regulatory compliance across multiple industries and jurisdictions
 
+- [ControlPlane](https://github.com/dbsectrainer/controlplane) ([Live Demo](https://dbsectrainer.github.io/controlplane/)):
+  **End-to-end security architecture demonstrating Zero Trust, compliance automation, supply chain security, and real-time threat detection — runnable in 5 minutes with `docker-compose up`.**
+  **Five Security Domains:**
+  - **Application DevSecOps:** Node.js app with SAST (SonarQube), DAST (OWASP ZAP), Vault secrets, Falco runtime monitoring, and Istio mTLS
+  - **Zero Trust Pipeline:** Keycloak OIDC/MFA → OPA ABAC policy enforcement → Vault PKI, implementing NIST SP 800-207
+  - **Cloud-Native Security:** Multi-cloud IaC scanning (Checkov/tfsec) for AWS, Azure, and GCP with CIS Benchmark compliance
+  - **Compliance Automation:** Continuous SOC2, HIPAA, PCI-DSS, and GDPR monitoring with live evidence dashboard
+  - **Mobile Security:** iOS/Android SAST/DAST via MobSF, certificate pinning, RASP, and secret detection
+    **Tech Stack:**
+  - **Identity & Policy:** Keycloak, OPA (Rego), HashiCorp Vault
+  - **Runtime Security:** Falco, Istio, Prometheus, Grafana, Alertmanager
+  - **Scanning:** SonarQube, OWASP ZAP, Trivy, Semgrep, MobSF, detect-secrets
+  - **Cloud IaC:** Terraform (AWS/Azure/GCP), Checkov, tfsec, Kyverno
+  - **Compliance:** SOC2 Type II, HIPAA, PCI-DSS v4, GDPR automated controls
+    **Why it matters:**
+  - Full security stack deployable locally in minutes for demos, learning, and hiring evaluations
+  - Covers MITRE ATT&CK mitigations across supply chain, credential, and runtime attack vectors
+  - Live attack simulation scenarios with real-time Grafana visualization
+
 <!-- Open Source Contributions Section -->
+
 ### 🤲 Open Source Contributions
 
 - [Microsoft/Data-Formulator](https://github.com/microsoft/data-formulator) – Added Docker support to enhance deployment flexibility for data workflows.
@@ -216,6 +242,7 @@ const currentProjects = {
 - [MetaGPT/MetaGPT](https://github.com/geekan/MetaGPT) – Enhanced the project by adding support for Ollama with third-party URL wrappers, expanding its AI capabilities.
 
 <!-- Connect Section -->
+
 ### 🤝 Let's Connect
 
 <p align="left">
@@ -231,6 +258,7 @@ const currentProjects = {
 </p>
 
 <!-- Support Me Section -->
+
 ### ☕ Support Me
 
 If you like my work, consider supporting me:
@@ -245,6 +273,7 @@ If you like my work, consider supporting me:
 </p>
 
 <!-- Fun Facts -->
+
 ### 🎮 Fun Facts
 
 🔐 Passionate about building AI systems that respect privacy and security by design  

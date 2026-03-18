@@ -140,12 +140,12 @@ const currentProjects = {
   - Cost analysis, TCO calculator, and resource optimization
   - Real-time performance monitoring and SLA tracking
   - AI-powered decision support and future trends forecasting  
-    **Tech Stack:**
+  **Tech Stack:**
   - **Frontend:** Streamlit
   - **Data Processing:** Python, Pandas, NumPy
   - **Visualization:** Plotly
   - **Architecture:** Modular, component-based design  
-    **Why it matters:**
+  **Why it matters:**
   - Empowers enterprise decision-makers with actionable insights
   - Supports compliance, cost optimization, and strategic planning
   - Recognized in Cloud Computing Monthly and Streamlit Gallery
@@ -160,14 +160,14 @@ const currentProjects = {
   - Trilingual support (Simplified Chinese, Pinyin, English)
   - Progressive Web App (PWA) with offline access and notifications
   - Progress tracking, badges, and persistent user preferences  
-    **Technical Stack:**
+  **Technical Stack:**
   - **Frontend:** HTML5, CSS3, JavaScript (responsive, interactive UI)
   - **Backend/Automation:** Python scripts for content and audio generation
   - **APIs:** YouTube Data API
   - **PWA:** Service Worker, manifest.json, offline support
   - **Audio:** Dual-language audio management, native speaker integration
   - **UX:** Mobile-first design, intuitive navigation, and learning flow  
-    **Why Mandarin?**
+  **Why Mandarin?**
   - Spoken by over 1 billion people
   - Key to global business, culture, and technology
   - Opens doors in international careers and cross-cultural understanding

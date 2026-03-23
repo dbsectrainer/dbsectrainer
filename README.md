@@ -21,6 +21,7 @@
 - [Technical Skills](#-technical-skills)
 - [Current Focus](#-current-focus)
 - [Key Projects](#-key-projects)
+- [MCP Servers](#-mcp-servers)
 - [Open Source Contributions](#-open-source-contributions)
 - [Let's Connect](#-lets-connect)
 - [Fun Facts](#-fun-facts)
@@ -232,6 +233,23 @@ const currentProjects = {
     - Full security stack deployable locally in minutes for demos, learning, and hiring evaluations
     - Covers MITRE ATT&CK mitigations across supply chain, credential, and runtime attack vectors
     - Live attack simulation scenarios with real-time Grafana visualization
+
+<!-- MCP Servers Section -->
+
+### 🔌 MCP Servers
+
+Published [Model Context Protocol](https://modelcontextprotocol.io) servers — available on npm and the official MCP registry.
+
+| Server | Description | Install |
+|--------|-------------|---------|
+| [mcp-agent-trace-inspector](https://github.com/dbsectrainer/mcp-agent-trace-inspector) | Step-by-step observability for MCP agent workflows | `npx mcp-agent-trace-inspector` |
+| [mcp-cost-tracker-router](https://github.com/dbsectrainer/mcp-cost-tracker-router) | Real-time cost tracking, budgets, and model routing | `npx mcp-cost-tracker-router` |
+| [mcp-data-pipeline-connector](https://github.com/dbsectrainer/mcp-data-pipeline-connector) | Universal data connector for CSV, Postgres, REST via DuckDB | `npx mcp-data-pipeline-connector` |
+| [mcp-eval-runner](https://github.com/dbsectrainer/mcp-eval-runner) | Standardized testing harness for MCP servers and agents | `npx mcp-eval-runner` |
+| [mcp-legal-doc-analyzer](https://github.com/dbsectrainer/mcp-legal-doc-analyzer) | Legal document analysis — clause extraction, compliance, risk | `npx mcp-legal-doc-analyzer` |
+| [mcp-server-health-monitor](https://github.com/dbsectrainer/mcp-server-health-monitor) | Health monitoring, SLA tracking, and auto-restart for MCP servers | `npx mcp-server-health-monitor` |
+
+[![npm](https://img.shields.io/badge/Registry-Official%20MCP%20Registry-blue?style=flat-square)](https://registry.modelcontextprotocol.io) [![npm](https://img.shields.io/badge/Packages-npm-red?style=flat-square&logo=npm)](https://www.npmjs.com/~dbsectrainer)
 
 <!-- Open Source Contributions Section -->
 

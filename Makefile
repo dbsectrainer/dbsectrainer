@@ -1,6 +1,6 @@
 PYTHON ?= python3
 
-.PHONY: check test validate links preview screenshots mcp-metadata mcp-runtime mcp-workaround clean
+.PHONY: check test validate links preview screenshots live-check mcp-metadata mcp-runtime mcp-workaround clean
 
 check: test validate
 
@@ -18,6 +18,9 @@ preview:
 
 screenshots:
 	$(PYTHON) tools/capture_screenshots.py
+
+live-check:
+	$(PYTHON) tools/verify_live_profile.py
 
 mcp-metadata:
 	$(PYTHON) tools/audit_mcp_packages.py --metadata

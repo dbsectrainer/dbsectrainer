@@ -19,7 +19,7 @@ test_images_have_alt_text (test_verify_profile.RealReadmeTests.test_images_have_
 test_no_placeholders (test_verify_profile.RealReadmeTests.test_no_placeholders) ... ok
 
 ----------------------------------------------------------------------
-Ran 18 tests in 0.009s
+Ran 18 tests in 0.011s
 
 OK
 python3 tools/verify_profile.py --check-links --check-mcp
@@ -29,7 +29,7 @@ python3 tools/verify_profile.py --check-links --check-mcp
 [PASS] heading hierarchy and section anchors: 10 headings, one H1, every H2 anchored and in the TOC
 [PASS] images have alt text: 10 images have alt attributes
 [PASS] local assets and links exist: 0 local references checked
-[PASS] no committed secrets: 46 text files scanned; no secret patterns
+[PASS] no committed secrets: 48 text files scanned; no secret patterns
 [PASS] archived SVG assets are well formed: 6 SVG files parse and contain no active content
 [PASS] external links resolve: 44 external URLs checked; 9 allowed bot-blocked
 [PASS] MCP package metadata: 6 packages found on npm and in the official MCP registry

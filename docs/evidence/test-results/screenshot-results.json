@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-04T01:37:54.742794+00:00",
-  "preview_url": "http://127.0.0.1:60941/docs/evidence/build-results/preview.html",
-  "preview_sha256": "f16c2ca716aa127a9613686bb697b30bd1bf7dfb96c2768bca9ff22e845386b1",
+  "generated_at": "2026-11-04T02:37:00.824538+00:00",
+  "preview_url": "http://127.0.0.1:52960/docs/evidence/build-results/preview.html",
+  "preview_sha256": "e94c3adae495b04f221472f8eb6dcc23195bd45aa4264b424d98e92e909efc4c",
   "axe_core_url": "https://cdn.jsdelivr.net/npm/axe-core@4.10.3/axe.min.js",
   "desktop": {
     "title": "",
@@ -173,7 +173,7 @@
         "target": "user-content-open-source",
         "exists": true,
         "hash": "#user-content-open-source",
-        "scrollY": 2682,
+        "scrollY": 2722,
         "top": 0.046875,
         "visible": true
       },
@@ -182,7 +182,7 @@
         "target": "user-content-tech-stack",
         "exists": true,
         "hash": "#user-content-tech-stack",
-        "scrollY": 2776,
+        "scrollY": 2816,
         "top": 60.234375,
         "visible": true
       },
@@ -191,7 +191,7 @@
         "target": "user-content-lets-connect",
         "exists": true,
         "hash": "#user-content-lets-connect",
-        "scrollY": 2776,
+        "scrollY": 2816,
         "top": 398.421875,
         "visible": true
       },
@@ -200,7 +200,7 @@
         "target": "user-content-repository-verification",
         "exists": true,
         "hash": "#user-content-repository-verification",
-        "scrollY": 2776,
+        "scrollY": 2816,
         "top": 624.609375,
         "visible": true
       }
@@ -227,8 +227,8 @@
         "bottom": 2159.859375
       },
       "openSource": {
-        "top": 2682.046875,
-        "bottom": 2682.046875
+        "top": 2722.046875,
+        "bottom": 2722.046875
       }
     }
   },

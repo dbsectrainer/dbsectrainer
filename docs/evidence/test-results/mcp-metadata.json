@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T01:25:07.816325+00:00",
+  "generated_at": "2026-11-04T02:36:18.184589+00:00",
   "mode": "metadata",
   "package_count": 6,
   "metadata": [
@@ -7,18 +7,23 @@
       "name": "mcp-agent-trace-inspector",
       "repo": "https://github.com/dbsectrainer/mcp-agent-trace-inspector",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ],
-        "versions": 1
+        "versions": 2
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-agent-trace-inspector",
           "io.github.dbsectrainer/mcp-agent-trace-inspector"
         ],
         "match": true,
-        "version": "1.0.0",
+        "versions": [
+          "1.0.0",
+          "1.0.1"
+        ],
+        "version": "1.0.1",
         "packages": [
           "mcp-agent-trace-inspector"
         ]
@@ -28,18 +33,23 @@
       "name": "mcp-cost-tracker-router",
       "repo": "https://github.com/dbsectrainer/mcp-cost-tracker-router",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ],
-        "versions": 1
+        "versions": 2
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-cost-tracker-router",
           "io.github.dbsectrainer/mcp-cost-tracker-router"
         ],
         "match": true,
-        "version": "1.0.0",
+        "versions": [
+          "1.0.0",
+          "1.0.1"
+        ],
+        "version": "1.0.1",
         "packages": [
           "mcp-cost-tracker-router"
         ]
@@ -49,18 +59,23 @@
       "name": "mcp-data-pipeline-connector",
       "repo": "https://github.com/dbsectrainer/mcp-data-pipeline-connector",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ],
-        "versions": 1
+        "versions": 2
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-data-pipeline-connector",
           "io.github.dbsectrainer/mcp-data-pipeline-connector"
         ],
         "match": true,
-        "version": "1.0.0",
+        "versions": [
+          "1.0.0",
+          "1.0.1"
+        ],
+        "version": "1.0.1",
         "packages": [
           "mcp-data-pipeline-connector"
         ]
@@ -70,18 +85,23 @@
       "name": "mcp-eval-runner",
       "repo": "https://github.com/dbsectrainer/mcp-eval-runner",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ],
-        "versions": 1
+        "versions": 2
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-eval-runner",
           "io.github.dbsectrainer/mcp-eval-runner"
         ],
         "match": true,
-        "version": "1.0.0",
+        "versions": [
+          "1.0.0",
+          "1.0.1"
+        ],
+        "version": "1.0.1",
         "packages": [
           "mcp-eval-runner"
         ]
@@ -91,18 +111,23 @@
       "name": "mcp-legal-doc-analyzer",
       "repo": "https://github.com/dbsectrainer/mcp-legal-doc-analyzer",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ],
-        "versions": 1
+        "versions": 2
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-legal-doc-analyzer",
           "io.github.dbsectrainer/mcp-legal-doc-analyzer"
         ],
         "match": true,
-        "version": "1.0.0",
+        "versions": [
+          "1.0.0",
+          "1.0.1"
+        ],
+        "version": "1.0.1",
         "packages": [
           "mcp-legal-doc-analyzer"
         ]
@@ -112,18 +137,23 @@
       "name": "mcp-server-health-monitor",
       "repo": "https://github.com/dbsectrainer/mcp-server-health-monitor",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ],
-        "versions": 1
+        "versions": 2
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-server-health-monitor",
           "io.github.dbsectrainer/mcp-server-health-monitor"
         ],
         "match": true,
-        "version": "1.0.0",
+        "versions": [
+          "1.0.0",
+          "1.0.1"
+        ],
+        "version": "1.0.1",
         "packages": [
           "mcp-server-health-monitor"
         ]

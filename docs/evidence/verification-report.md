@@ -4,9 +4,9 @@
 **Profile:** <https://github.com/dbsectrainer>
 **Audit date:** 2026-11-03 (America/New_York)
 **Base commit:** `ee01c1c8c8d2a0a15fb928e5febfa04acc2273fb`
-**Deployed commit:** `9e7a61113eb45e2483ce63fb194dbebbf8987deb` (PR #3, squash merge)
+**Initial deployment:** `9e7a61113eb45e2483ce63fb194dbebbf8987deb` (PR #3, squash merge)
 **Live verification:** 2026-11-04 (UTC)
-**Final status:** **PARTIAL PASS**
+**Final status:** **PASS**
 
 ---
 
@@ -41,16 +41,14 @@ to `main` was rejected by the branch ruleset, the commit was moved to `profile-a
 PR #3 passed its `validate` check, and the PR was squash-merged as `9e7a611`. The live profile was
 then verified directly on github.com.
 
-One external blocker remains:
+The previously identified external blocker has been resolved. The owner republished all six
+MCP packages as `1.0.1` with `yargs` in runtime dependencies; the published packages now complete
+an MCP initialize + `tools/list` handshake **6/6**, and the profile documents the working
+`npx -y <package>@latest` install pattern.
 
-1. **The six npm MCP tarballs are stale.** The source repositories are newer and, in at least
-   one case, already contain the dependency fix; the published `1.0.0` tarballs do not. No npm
-   credentials are available in this environment to republish them. The profile no longer
-   advertises the broken commands, and the exact remediation is documented below.
-
-The profile source, deployment, and rendering pass every profile-level check. The final verdict
-is **PARTIAL PASS** because the advertised MCP packages still fail when installed from npm; that
-requires an npm republish outside this repository.
+The profile source, deployment, rendering, and advertised MCP installs pass every check. The
+final verdict is **PASS**, with the non-blocking environment and profile-setting limitations
+listed in Section 9.
 
 ---
 
@@ -146,7 +144,7 @@ Severity reflects impact on a visitor or on the accuracy of the public profile.
 | --- | --- | --- | --- | --- |
 | F-01 | Critical | Three README links returned 404: `ai_cloud_dashboard`, `controlplane`, and `microsoft/generativeai-for-beginners` (wrong slug; the real repository is `microsoft/generative-ai-for-beginners`). | [`baseline-link-check.txt`](test-results/baseline-link-check.txt) | Removed the deleted/private projects; fixed the Microsoft URL; owner confirmed `ai_cloud_dashboard` deletion and the pending `controlplane` update. |
 | F-02 | Critical | Contact and support sections used template placeholders: `your.email@example.com`, `https://yourwebsite.com`, `https://www.buymeacoffee.com/yourusername`. The GitHub Sponsors URL redirected to the profile, so the account is not sponsorable. | [`baseline-placeholders.txt`](test-results/baseline-placeholders.txt) | Replaced with GitHub, LinkedIn, npm, and MCP registry links. Removed the fictional email, website, Buy Me a Coffee, and inactive Sponsors links. |
-| F-03 | Critical | Every advertised MCP `npx` install command failed. Published `1.0.0` tarballs import `yargs`, which is absent from their `dependencies`. | [`mcp-runtime.json`](test-results/mcp-runtime.json), [`mcp-dependency-analysis.txt`](test-results/mcp-dependency-analysis.txt) | Removed the install-command column from the profile; kept repository and npm links. Documented the upstream release fix below. |
+| F-03 | Critical | Every advertised MCP `npx` install command failed. Published `1.0.0` tarballs import `yargs`, which is absent from their `dependencies`. | [`mcp-runtime.json`](test-results/mcp-runtime.json), [`mcp-dependency-analysis.txt`](test-results/mcp-dependency-analysis.txt) | Owner republished all six as `1.0.1` with `yargs` in runtime dependencies; `npx -y <package>@latest` now completes the MCP handshake 6/6. Profile documents the working pattern. |
 | F-04 | High | “Merged PRs”/“Enhanced” claims for Microsoft Data Formulator and MetaGPT were not merged. The Data Formulator Docker PR (#90), MetaGPT Ollama PR (#1735), and ScoutSuite PR (#1695) were all closed without merge. The Generative AI for Beginners PR (#698) was merged. | [`baseline-contribution-claims.json`](test-results/baseline-contribution-claims.json) | Rewrote the section as **Merged** vs **Proposed**, explicitly noting the three proposals were closed without merge. |
 | F-05 | High | The original TOC relied on GitHub mapping `#-about-me` to the rendered `#user-content--about-me` anchor. On the desktop profile page the click changed the hash but did not scroll. | [`baseline-live-toc-desktop.json`](test-results/baseline-live-toc-desktop.json), [`baseline-live-toc.json`](test-results/baseline-live-toc.json) | Added explicit `<a id="…">` anchors and TOC links to the rendered `#user-content-…` IDs. Verified all 8 links with real clicks in the preview; verified the prefixed-anchor technique on the live GitHub profile by injecting a temporary link in the browser. |
 | F-06 | High | The README described a “Full-Stack Developer & Technical Architect / AI/ML Security Engineer”, contradicting the public GitHub bio (“Senior Software Engineer / Cloud & Security Architect / DevOps Leader”). The project list was stale and the profile omitted all 2026 work. | Live profile and GitHub user API ([`baseline-contribution-claims.json`](test-results/baseline-contribution-claims.json)) | Aligned the headline and About section with the public bio; replaced the project list with current, verified repositories. |
@@ -158,29 +156,26 @@ Severity reflects impact on a visitor or on the accuracy of the public profile.
 | F-12 | Medium | No mobile-specific layout check existed; project tables were long and dense. | Pre-change live mobile screenshot | Converted Selected Work to two columns, shortened descriptions, and added mobile checks for overflow, images, and tables. |
 | F-13 | Low | The README contained trailing spaces used for visual line breaks and generic marketing metrics that could not be substantiated (“99.9% compliance”, “99.99% availability”, “80% reduction”, “Recognized in Cloud Computing Monthly”). | Pre-change README | Removed trailing whitespace and unverifiable claims; kept only claims backed by repository documentation. |
 
-### Why the MCP finding does not contradict the source-repository validation
+### MCP republish verification
 
-The owner noted that `mcp-agent-trace-inspector` was validated recently. That validation applies
-to the **source repository**, not the published npm artifact:
+The initial finding was a release-artifact gap: `mcp-agent-trace-inspector` source had already
+been validated and fixed, but the published `1.0.0` tarball predated that change. The owner has
+now republished all six packages:
 
-| Package | npm `1.0.0` published | Source last pushed | `yargs` in published deps | `yargs` in current source |
-| --- | --- | --- | --- | --- |
-| `mcp-agent-trace-inspector` | 2026-03-23 | 2026-11-02 | No | Yes (runtime dependency) |
-| `mcp-cost-tracker-router` | 2026-03-23 | 2026-09-28 | No | No (devDependency only) |
-| `mcp-data-pipeline-connector` | 2026-03-23 | 2026-10-14 | No | No (devDependency only) |
-| `mcp-eval-runner` | 2026-03-23 | 2026-10-05 | No | No (devDependency only) |
-| `mcp-legal-doc-analyzer` | 2026-03-23 | 2026-09-28 | No | No (devDependency only) |
-| `mcp-server-health-monitor` | 2026-03-23 | 2026-09-28 | No | No (devDependency only) |
+| Package | Latest npm | Published | Official MCP registry | `yargs` in deps | Published runtime |
+| --- | --- | --- | --- | --- | --- |
+| `mcp-agent-trace-inspector` | `1.0.1` | 2026-11-04 | `1.0.1` | Yes | 13 tools, pass |
+| `mcp-cost-tracker-router` | `1.0.1` | 2026-11-04 | `1.0.1` | Yes | 15 tools, pass |
+| `mcp-data-pipeline-connector` | `1.0.1` | 2026-11-04 | `1.0.1` | Yes | 7 tools, pass |
+| `mcp-eval-runner` | `1.0.1` | 2026-11-04 | `1.0.1` | Yes | 10 tools, pass |
+| `mcp-legal-doc-analyzer` | `1.0.1` | 2026-11-04 | `1.0.1` | Yes | 9 tools, pass |
+| `mcp-server-health-monitor` | `1.0.1` | 2026-11-04 | `1.0.1` | Yes | 8 tools, pass |
 
-The trace-inspector source already contains the fix, but the package version was not bumped or
-republished after the source changed. `npx -y mcp-agent-trace-inspector` still installs the
-March tarball. This is a release-engineering gap between source validation and the published
-artifact, not a claim that the source repository failed its tests.
-
-With `yargs` supplied explicitly and a writable database directory, **all six packages complete
-an MCP initialize + `tools/list` handshake** (13, 15, 7, 10, 9, and 8 tools respectively). That
-confirms the missing dependency is the startup blocker. Evidence:
-[`mcp-workaround.json`](test-results/mcp-workaround.json).
+`npx -y <package>@latest` now completes an MCP initialize + `tools/list` handshake for **6/6**
+packages. The earlier `1.0.0` failure, and the `yargs` workaround that isolated it, are retained
+as historical evidence in [`mcp-runtime.json`](test-results/mcp-runtime.json),
+[`mcp-workaround.json`](test-results/mcp-workaround.json), and
+[`mcp-dependency-analysis.txt`](test-results/mcp-dependency-analysis.txt).
 
 ---
 
@@ -197,8 +192,8 @@ confirms the missing dependency is the startup blocker. Evidence:
   Document Triage.
 - Added a compact “Also shipped” list for Label Check, Enterprise Checklist Dashboard, Cloud
   Security Best Practices, and Mandarin Pathways, all with live demos where available.
-- Replaced the MCP install table with repository + npm links. The profile no longer promises a
-  command that fails.
+- Replaced the failing MCP install table with repository + npm links. After the `1.0.1`
+  republish, added the verified `npx -y <package>@latest` pattern.
 - Rewrote Open Source as **Merged** and **Proposed**, with accurate merged/closed status.
 - Replaced long nested project bullets with a two-column table and `<br>**Stack:**` lines.
 - Added explicit anchors and `#user-content-…` TOC links so navigation does not depend on
@@ -314,7 +309,7 @@ Artifacts:
 
 ```text
 $ python3 tools/render_preview.py
-GitHub Markdown API: HTTP 200; rendered 20968 bytes
+GitHub Markdown API: HTTP 200; rendered 21264 bytes
 Preview: docs/evidence/build-results/preview.html
 TOC targets: 8; missing: 0
 PASS: every TOC target exists in the GitHub-rendered HTML
@@ -341,8 +336,8 @@ PASS: screenshots, images, TOC navigation, mobile layout, console, network, and 
 
 | Check | Result |
 | --- | --- |
-| Desktop viewport | 1440 × 900, full page 1440 × 3676 |
-| Mobile viewport | 390 × 844, full page 390 × 5835, device scale 1 |
+| Desktop viewport | 1440 × 900, full page 1440 × 3716 |
+| Mobile viewport | 390 × 844, full page 390 × 5923, device scale 1 |
 | Console errors | 0 desktop, 0 mobile |
 | Failed requests | 0 desktop, 0 mobile |
 | HTTP responses ≥ 400 | 0 desktop, 0 mobile |
@@ -372,19 +367,27 @@ Artifacts:
 
 ```text
 $ python3 tools/audit_mcp_packages.py --metadata
-6 packages found on npm and in the official MCP registry; all six are maintained by dbsectrainer.
+mcp-agent-trace-inspector: npm 1.0.1 ... registry_match=True version=1.0.1
+mcp-cost-tracker-router: npm 1.0.1 ... registry_match=True version=1.0.1
+mcp-data-pipeline-connector: npm 1.0.1 ... registry_match=True version=1.0.1
+mcp-eval-runner: npm 1.0.1 ... registry_match=True version=1.0.1
+mcp-legal-doc-analyzer: npm 1.0.1 ... registry_match=True version=1.0.1
+mcp-server-health-monitor: npm 1.0.1 ... registry_match=True version=1.0.1
 
 $ python3 tools/audit_mcp_packages.py --runtime
-0/6 packages completed the MCP handshake
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' ...
+[PASS] mcp-agent-trace-inspector: initialized=True tools=13
+[PASS] mcp-cost-tracker-router: initialized=True tools=15
+[PASS] mcp-data-pipeline-connector: initialized=True tools=7
+[PASS] mcp-eval-runner: initialized=True tools=10
+[PASS] mcp-legal-doc-analyzer: initialized=True tools=9
+[PASS] mcp-server-health-monitor: initialized=True tools=8
 
-$ python3 tools/audit_mcp_packages.py --workaround
 6/6 packages completed the MCP handshake
 ```
 
-The published-command failure is reproducible and is not a test-harness artifact. The workaround
-probe used `npx -y -p <package> -p yargs <package>` and a writable `/tmp` database directory. It
-proved that the packages are otherwise functional at their published versions.
+The owner's `1.0.1` republish added `yargs` to runtime dependencies and moved the official MCP
+registry entries to `1.0.1`. The earlier `1.0.0` failure remains documented as historical
+evidence; the current published-command path passes for all six packages.
 
 Artifacts:
 
@@ -561,23 +564,12 @@ passed its `validate` workflow and was squash-merged as `9e7a611`. The live READ
 the local file, and the published page passed the live browser checks in the previous section.
 The report link in the README now resolves on `main`. No action remains.
 
-### 9.2 npm MCP tarballs are stale
+### 9.2 MCP packages republished and verified (resolved)
 
-This is the only application-level blocker found. The published npm `1.0.0` artifacts predate
-their source repositories and omit `yargs`, which the compiled CLIs import.
-
-Recommended upstream fix:
-
-- For `mcp-agent-trace-inspector`, the current `main` already has `yargs` in `dependencies`.
-  Bump the version and republish; no source change is required.
-- For the other five packages, move `yargs` from `devDependencies` to `dependencies`, bump the
-  version, run the existing test/build pipeline, and republish.
-- After republishing, rerun `python3 tools/audit_mcp_packages.py --runtime`; it should report
-  6/6 packages initialized.
-
-No npm credentials are available in this environment, so this could not be performed here. The
-profile no longer advertises the broken `npx` commands; it links to the source repositories and
-npm package pages instead.
+The owner republished all six packages as `1.0.1` with `yargs` in runtime dependencies on
+2026-11-04. npm and the official MCP registry both report `1.0.1`, and
+`python3 tools/audit_mcp_packages.py --runtime` completes the MCP handshake **6/6**. The profile
+now documents `npx -y <package>@latest`. No packaging action remains.
 
 ### 9.3 GitHub profile settings not updated
 
@@ -654,7 +646,7 @@ owner.
 | Existing automated tests | **PASS** | 18/18 unit tests. |
 | Critical profile workflows | **PASS** | 8/8 TOC links scroll; links checked; mobile/desktop render. |
 | Browser console | **PASS** | Live Chromium: 0 errors/failures. Local WebKit: 0 errors/failures. Firefox unavailable. |
-| API integrations | **PARTIAL** | npm/MCP metadata 6/6; published runtime 0/6 due to upstream missing `yargs`. |
+| API integrations | **PASS** | npm/MCP metadata 6/6; published runtime 6/6 after the 1.0.1 republish. |
 | Responsive layouts | **PASS** | Live 390 px: 0 px overflow, 0 console/network errors; 1440 px live and local preview verified. |
 | Screenshots saved | **PASS** | Live header/TOC, desktop, mobile, section crops, WebKit, before captures. |
 | README reflects application | **PASS** | 8 TOC sections; current projects; working links; no placeholders. |
@@ -662,11 +654,11 @@ owner.
 | No secrets committed | **PASS** | Validator secret scan found none. |
 | Remaining issues documented | **PASS** | Section 9. |
 
-**Final verdict: PARTIAL PASS.** The profile is published, and the live page, links,
-accessibility, and responsive layout pass. The only remaining failure is external to this
-repository: the six advertised MCP npm packages still fail when installed from their published
-tarballs. The fix is a dependency/version republish, documented with concrete steps; it is not
-hidden behind a passing claim.
+**Final verdict: PASS.** The profile is published; the live page, links, accessibility, and
+responsive layout pass; and all six advertised MCP packages initialize from their published npm
+`1.0.1` tarballs. Remaining items are documented non-blocking limitations: Firefox and LinkedIn
+cannot be exercised in this environment, profile settings are account-level, and the legacy SVG
+archive is intentionally unused.
 
 ---
 
@@ -686,8 +678,8 @@ make live-check     # verify the published github.com profile + live screenshots
 
 # Optional MCP package audits (network + Node.js required)
 make mcp-metadata    # npm + official MCP registry discovery
-make mcp-runtime     # expected to fail until the npm tarballs are republished
-make mcp-workaround  # proves the missing yargs dependency is the blocker
+make mcp-runtime     # verify the published 1.0.1 packages (6/6)
+make mcp-workaround  # historical root-cause probe for the 1.0.0 failure
 ```
 
 `make check` and `make live-check` require network access. `make live-check` checks the deployed

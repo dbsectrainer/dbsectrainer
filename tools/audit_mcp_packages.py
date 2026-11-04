@@ -49,6 +49,11 @@ def fetch_json(url: str) -> dict:
         return json.load(response)
 
 
+def version_key(value: str) -> tuple[int, ...]:
+    """Return a comparable key for simple numeric versions (1.0.1 -> (1, 0, 1))."""
+    return tuple(int(part) for part in re.findall(r"\d+", value or "0"))
+
+
 def metadata_audit(packages: list[dict]) -> tuple[list[dict], list[str]]:
     observations = []
     problems = []
@@ -80,10 +85,12 @@ def metadata_audit(packages: list[dict]) -> tuple[list[dict], list[str]]:
             servers = [entry.get("server", {}) for entry in registry.get("servers", [])]
             names = [server.get("name") for server in servers]
             registry_id = package["registry_id"]
-            match = next((server for server in servers if server.get("name") == registry_id), None)
+            matches = [server for server in servers if server.get("name") == registry_id]
+            match = max(matches, key=lambda server: version_key(server.get("version", "")), default=None)
             observation["mcp_registry"] = {
                 "names": names,
                 "match": match is not None,
+                "versions": [server.get("version") for server in matches],
                 "version": (match or {}).get("version"),
                 "packages": [
                     p.get("identifier") for p in (match or {}).get("packages", [])
@@ -91,6 +98,10 @@ def metadata_audit(packages: list[dict]) -> tuple[list[dict], list[str]]:
             }
             if match is None:
                 problems.append(f"{name}: {registry_id} not found in the official MCP registry")
+            elif latest and version_key(match.get("version", "")) < version_key(latest):
+                problems.append(
+                    f"{name}: official registry version {match.get('version')} is older than npm {latest}"
+                )
         except Exception as exc:  # noqa: BLE001
             observation["mcp_registry"] = {"error": str(exc)}
             problems.append(f"{name}: MCP registry lookup failed: {exc}")

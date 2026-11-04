@@ -1,10 +1,10 @@
 Package metadata
 ========================================================================
-mcp-agent-trace-inspector: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
-mcp-cost-tracker-router: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
-mcp-data-pipeline-connector: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
-mcp-eval-runner: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
-mcp-legal-doc-analyzer: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
-mcp-server-health-monitor: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
+mcp-agent-trace-inspector: npm 1.0.1 maintainers=dbsectrainer; registry_match=True version=1.0.0
+mcp-cost-tracker-router: npm 1.0.1 maintainers=dbsectrainer; registry_match=True version=1.0.0
+mcp-data-pipeline-connector: npm 1.0.1 maintainers=dbsectrainer; registry_match=True version=1.0.0
+mcp-eval-runner: npm 1.0.1 maintainers=dbsectrainer; registry_match=True version=1.0.0
+mcp-legal-doc-analyzer: npm 1.0.1 maintainers=dbsectrainer; registry_match=True version=1.0.0
+mcp-server-health-monitor: npm 1.0.1 maintainers=dbsectrainer; registry_match=True version=1.0.0
 
 JSON result: docs/evidence/test-results/mcp-metadata.json

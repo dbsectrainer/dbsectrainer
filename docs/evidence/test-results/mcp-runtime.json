@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T01:29:21.764552+00:00",
+  "generated_at": "2026-11-04T02:38:52.053112+00:00",
   "mode": "runtime",
   "package_count": 6,
   "metadata": [
@@ -7,18 +7,23 @@
       "name": "mcp-agent-trace-inspector",
       "repo": "https://github.com/dbsectrainer/mcp-agent-trace-inspector",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ],
-        "versions": 1
+        "versions": 2
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-agent-trace-inspector",
           "io.github.dbsectrainer/mcp-agent-trace-inspector"
         ],
         "match": true,
-        "version": "1.0.0",
+        "versions": [
+          "1.0.0",
+          "1.0.1"
+        ],
+        "version": "1.0.1",
         "packages": [
           "mcp-agent-trace-inspector"
         ]
@@ -28,18 +33,23 @@
       "name": "mcp-cost-tracker-router",
       "repo": "https://github.com/dbsectrainer/mcp-cost-tracker-router",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ],
-        "versions": 1
+        "versions": 2
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-cost-tracker-router",
           "io.github.dbsectrainer/mcp-cost-tracker-router"
         ],
         "match": true,
-        "version": "1.0.0",
+        "versions": [
+          "1.0.0",
+          "1.0.1"
+        ],
+        "version": "1.0.1",
         "packages": [
           "mcp-cost-tracker-router"
         ]
@@ -49,18 +59,23 @@
       "name": "mcp-data-pipeline-connector",
       "repo": "https://github.com/dbsectrainer/mcp-data-pipeline-connector",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ],
-        "versions": 1
+        "versions": 2
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-data-pipeline-connector",
           "io.github.dbsectrainer/mcp-data-pipeline-connector"
         ],
         "match": true,
-        "version": "1.0.0",
+        "versions": [
+          "1.0.0",
+          "1.0.1"
+        ],
+        "version": "1.0.1",
         "packages": [
           "mcp-data-pipeline-connector"
         ]
@@ -70,18 +85,23 @@
       "name": "mcp-eval-runner",
       "repo": "https://github.com/dbsectrainer/mcp-eval-runner",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ],
-        "versions": 1
+        "versions": 2
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-eval-runner",
           "io.github.dbsectrainer/mcp-eval-runner"
         ],
         "match": true,
-        "version": "1.0.0",
+        "versions": [
+          "1.0.0",
+          "1.0.1"
+        ],
+        "version": "1.0.1",
         "packages": [
           "mcp-eval-runner"
         ]
@@ -91,18 +111,23 @@
       "name": "mcp-legal-doc-analyzer",
       "repo": "https://github.com/dbsectrainer/mcp-legal-doc-analyzer",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ],
-        "versions": 1
+        "versions": 2
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-legal-doc-analyzer",
           "io.github.dbsectrainer/mcp-legal-doc-analyzer"
         ],
         "match": true,
-        "version": "1.0.0",
+        "versions": [
+          "1.0.0",
+          "1.0.1"
+        ],
+        "version": "1.0.1",
         "packages": [
           "mcp-legal-doc-analyzer"
         ]
@@ -112,18 +137,23 @@
       "name": "mcp-server-health-monitor",
       "repo": "https://github.com/dbsectrainer/mcp-server-health-monitor",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ],
-        "versions": 1
+        "versions": 2
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-server-health-monitor",
           "io.github.dbsectrainer/mcp-server-health-monitor"
         ],
         "match": true,
-        "version": "1.0.0",
+        "versions": [
+          "1.0.0",
+          "1.0.1"
+        ],
+        "version": "1.0.1",
         "packages": [
           "mcp-server-health-monitor"
         ]
@@ -136,88 +166,174 @@
       "name": "mcp-agent-trace-inspector",
       "mode": "published-command",
       "command": "npx -y --no-fund --no-audit mcp-agent-trace-inspector --db /tmp/dbsectrainer-mcp-audit/traces.db",
-      "exit_code": 1,
-      "initialized": false,
-      "server": null,
-      "tool_count": null,
-      "tools": null,
-      "ok": false,
-      "error_line": "Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/f77b767ded4ce59c/node_modules/mcp-agent-trace-inspector/dist/index.js",
-      "stderr_head": "npm warn \"/tmp/dbsectrainer-mcp-audit/traces.db\" is being parsed as a normal command line argument.\nnpm warn Unknown cli config \"--db\". This will stop working in the next major version of npm.\nnode:internal/modules/package_json_reader:343\n  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);\n        ^\n\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/f77b767ded4ce59c/node_modules/mcp-agent-trace-inspector/dist/index.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:343:9)",
-      "stderr_tail": "    at moduleResolve (node:internal/modules/esm/resolve:840:18)\n    at defaultResolve (node:internal/modules/esm/resolve:973:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)\n    at #resolve (node:internal/modules/esm/loader:690:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v26.13.0"
+      "exit_code": -15,
+      "initialized": true,
+      "server": {
+        "name": "mcp-agent-trace-inspector",
+        "version": "1.0.1"
+      },
+      "tool_count": 13,
+      "tools": [
+        "trace_start",
+        "trace_step",
+        "trace_end",
+        "get_trace_summary",
+        "list_traces",
+        "export_dashboard",
+        "compare_traces",
+        "extract_reasoning_chain",
+        "export_otel",
+        "configure_alerts",
+        "set_retention_policy",
+        "apply_retention",
+        "export_compliance_log"
+      ],
+      "ok": true,
+      "error_line": "",
+      "stderr_head": "npm warn \"/tmp/dbsectrainer-mcp-audit/traces.db\" is being parsed as a normal command line argument.\nnpm warn Unknown cli config \"--db\". This will stop working in the next major version of npm.\n[init] Audit log: /tmp/dbsectrainer-mcp-home/.mcp/trace-inspector-audit.jsonl\n[init] Database opened: ~/.mcp/traces.db (MCP Agent Trace Inspector v1.0.1)\n[init] MCP Agent Trace Inspector v1.0.1 running on stdio",
+      "stderr_tail": "npm warn \"/tmp/dbsectrainer-mcp-audit/traces.db\" is being parsed as a normal command line argument.\nnpm warn Unknown cli config \"--db\". This will stop working in the next major version of npm.\n[init] Audit log: /tmp/dbsectrainer-mcp-home/.mcp/trace-inspector-audit.jsonl\n[init] Database opened: ~/.mcp/traces.db (MCP Agent Trace Inspector v1.0.1)\n[init] MCP Agent Trace Inspector v1.0.1 running on stdio"
     },
     {
       "name": "mcp-cost-tracker-router",
       "mode": "published-command",
       "command": "npx -y --no-fund --no-audit mcp-cost-tracker-router --db /tmp/dbsectrainer-mcp-audit/costs.db",
-      "exit_code": 1,
-      "initialized": false,
-      "server": null,
-      "tool_count": null,
-      "tools": null,
-      "ok": false,
-      "error_line": "Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/6a0fdb5ad6b0b12c/node_modules/mcp-cost-tracker-router/dist/index.js",
-      "stderr_head": "npm warn \"/tmp/dbsectrainer-mcp-audit/costs.db\" is being parsed as a normal command line argument.\nnpm warn Unknown cli config \"--db\". This will stop working in the next major version of npm.\nnpm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.\nnode:internal/modules/package_json_reader:343\n  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);\n        ^\n\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/6a0fdb5ad6b0b12c/node_modules/mcp-cost-tracker-router/dist/index.js",
-      "stderr_tail": "    at moduleResolve (node:internal/modules/esm/resolve:840:18)\n    at defaultResolve (node:internal/modules/esm/resolve:973:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)\n    at #resolve (node:internal/modules/esm/loader:690:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v26.13.0"
+      "exit_code": -15,
+      "initialized": true,
+      "server": {
+        "name": "mcp-cost-tracker-router",
+        "version": "0.2.0"
+      },
+      "tool_count": 15,
+      "tools": [
+        "get_session_cost",
+        "get_tool_costs",
+        "set_budget_alert",
+        "reset_session",
+        "get_spend_history",
+        "record_usage",
+        "suggest_model_routing",
+        "estimate_workflow_cost",
+        "export_spend_report",
+        "export_budget_audit",
+        "set_project",
+        "get_project_costs",
+        "tag_session",
+        "export_chargeback",
+        "check_routing_policy"
+      ],
+      "ok": true,
+      "error_line": "",
+      "stderr_head": "npm warn \"/tmp/dbsectrainer-mcp-audit/costs.db\" is being parsed as a normal command line argument.\nnpm warn Unknown cli config \"--db\". This will stop working in the next major version of npm.\nnpm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.",
+      "stderr_tail": "npm warn \"/tmp/dbsectrainer-mcp-audit/costs.db\" is being parsed as a normal command line argument.\nnpm warn Unknown cli config \"--db\". This will stop working in the next major version of npm.\nnpm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available."
     },
     {
       "name": "mcp-data-pipeline-connector",
       "mode": "published-command",
       "command": "npx -y --no-fund --no-audit mcp-data-pipeline-connector",
-      "exit_code": 1,
-      "initialized": false,
-      "server": null,
-      "tool_count": null,
-      "tools": null,
-      "ok": false,
-      "error_line": "Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/e7b35ce6cf852d41/node_modules/mcp-data-pipeline-connector/dist/index.js",
-      "stderr_head": "npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead\nnode:internal/modules/package_json_reader:343\n  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);\n        ^\n\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/e7b35ce6cf852d41/node_modules/mcp-data-pipeline-connector/dist/index.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:343:9)\n    at packageResolve (node:internal/modules/esm/resolve:751:25)",
-      "stderr_tail": "    at moduleResolve (node:internal/modules/esm/resolve:840:18)\n    at defaultResolve (node:internal/modules/esm/resolve:973:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)\n    at #resolve (node:internal/modules/esm/loader:690:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v26.13.0"
+      "exit_code": 0,
+      "initialized": true,
+      "server": {
+        "name": "mcp-data-pipeline-connector",
+        "version": "0.2.0"
+      },
+      "tool_count": 7,
+      "tools": [
+        "connect_source",
+        "list_sources",
+        "list_tables",
+        "get_schema",
+        "query",
+        "transform",
+        "check_health"
+      ],
+      "ok": true,
+      "error_line": "",
+      "stderr_head": "npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead\n[mcp-data-pipeline-connector] Starting (read-only=true, max-rows=1000, rest-cache-ttl=60s)\n[server] No data-sources.yaml found, starting with no sources\n[mcp-data-pipeline-connector] Ready\n[mcp-data-pipeline-connector] Shutting down...",
+      "stderr_tail": "npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead\n[mcp-data-pipeline-connector] Starting (read-only=true, max-rows=1000, rest-cache-ttl=60s)\n[server] No data-sources.yaml found, starting with no sources\n[mcp-data-pipeline-connector] Ready\n[mcp-data-pipeline-connector] Shutting down..."
     },
     {
       "name": "mcp-eval-runner",
       "mode": "published-command",
       "command": "npx -y --no-fund --no-audit mcp-eval-runner",
-      "exit_code": 1,
-      "initialized": false,
-      "server": null,
-      "tool_count": null,
-      "tools": null,
-      "ok": false,
-      "error_line": "Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/c57c719aa4f6dc60/node_modules/mcp-eval-runner/dist/index.js",
-      "stderr_head": "node:internal/modules/package_json_reader:343\n  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);\n        ^\n\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/c57c719aa4f6dc60/node_modules/mcp-eval-runner/dist/index.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:343:9)\n    at packageResolve (node:internal/modules/esm/resolve:751:25)\n    at moduleResolve (node:internal/modules/esm/resolve:840:18)",
-      "stderr_tail": "    at moduleResolve (node:internal/modules/esm/resolve:840:18)\n    at defaultResolve (node:internal/modules/esm/resolve:973:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)\n    at #resolve (node:internal/modules/esm/loader:690:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v26.13.0"
+      "exit_code": -15,
+      "initialized": true,
+      "server": {
+        "name": "mcp-eval-runner",
+        "version": "0.2.0"
+      },
+      "tool_count": 10,
+      "tools": [
+        "run_suite",
+        "run_case",
+        "list_cases",
+        "create_test_case",
+        "regression_report",
+        "compare_results",
+        "generate_html_report",
+        "scaffold_fixture",
+        "evaluate_deployment_gate",
+        "discover_fixtures"
+      ],
+      "ok": true,
+      "error_line": "",
+      "stderr_head": "",
+      "stderr_tail": ""
     },
     {
       "name": "mcp-legal-doc-analyzer",
       "mode": "published-command",
       "command": "npx -y --no-fund --no-audit mcp-legal-doc-analyzer",
-      "exit_code": 1,
-      "initialized": false,
-      "server": null,
-      "tool_count": null,
-      "tools": null,
-      "ok": false,
-      "error_line": "Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/8ac81413399b8992/node_modules/mcp-legal-doc-analyzer/dist/index.js",
-      "stderr_head": "npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.\nnode:internal/modules/package_json_reader:343\n  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);\n        ^\n\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/8ac81413399b8992/node_modules/mcp-legal-doc-analyzer/dist/index.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:343:9)\n    at packageResolve (node:internal/modules/esm/resolve:751:25)",
-      "stderr_tail": "    at moduleResolve (node:internal/modules/esm/resolve:840:18)\n    at defaultResolve (node:internal/modules/esm/resolve:973:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)\n    at #resolve (node:internal/modules/esm/loader:690:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v26.13.0"
+      "exit_code": -15,
+      "initialized": true,
+      "server": {
+        "name": "mcp-legal-doc-analyzer",
+        "version": "0.2.0"
+      },
+      "tool_count": 9,
+      "tools": [
+        "extract_clauses",
+        "flag_risks",
+        "summarize_terms",
+        "list_templates",
+        "check_compliance",
+        "compare_versions",
+        "export_analysis_report",
+        "export_audit_log",
+        "bulk_analyze"
+      ],
+      "ok": true,
+      "error_line": "",
+      "stderr_head": "npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.",
+      "stderr_tail": "npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available."
     },
     {
       "name": "mcp-server-health-monitor",
       "mode": "published-command",
       "command": "npx -y --no-fund --no-audit mcp-server-health-monitor",
-      "exit_code": 1,
-      "initialized": false,
-      "server": null,
-      "tool_count": null,
-      "tools": null,
-      "ok": false,
-      "error_line": "Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/3f9c5a4b5d5f769f/node_modules/mcp-server-health-monitor/dist/index.js",
-      "stderr_head": "npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.\nnode:internal/modules/package_json_reader:343\n  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);\n        ^\n\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/3f9c5a4b5d5f769f/node_modules/mcp-server-health-monitor/dist/index.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:343:9)\n    at packageResolve (node:internal/modules/esm/resolve:751:25)",
-      "stderr_tail": "    at moduleResolve (node:internal/modules/esm/resolve:840:18)\n    at defaultResolve (node:internal/modules/esm/resolve:973:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:708:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:728:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:766:56)\n    at #resolve (node:internal/modules/esm/loader:690:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:610:35)\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:277:33) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v26.13.0"
+      "exit_code": -15,
+      "initialized": true,
+      "server": {
+        "name": "mcp-server-health-monitor",
+        "version": "0.2.0"
+      },
+      "tool_count": 8,
+      "tools": [
+        "health_check_all",
+        "get_server_status",
+        "list_degraded",
+        "check_updates",
+        "export_dashboard",
+        "get_history",
+        "configure_server",
+        "remove_server"
+      ],
+      "ok": true,
+      "error_line": "",
+      "stderr_head": "npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.\n[mcp-server-health-monitor] Using database: /tmp/dbsectrainer-mcp-home/.mcp/health.db\n[mcp-server-health-monitor] Server started on stdio transport",
+      "stderr_tail": "npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.\n[mcp-server-health-monitor] Using database: /tmp/dbsectrainer-mcp-home/.mcp/health.db\n[mcp-server-health-monitor] Server started on stdio transport"
     }
   ],
-  "runtime_passed": 0,
-  "runtime_failed": 6,
-  "ok": false
+  "runtime_passed": 6,
+  "runtime_failed": 0,
+  "ok": true
 }

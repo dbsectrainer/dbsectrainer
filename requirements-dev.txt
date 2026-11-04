@@ -1,0 +1,4 @@
+# Development-only dependencies for browser evidence.
+# The validator and preview renderer use only the Python standard library.
+playwright==1.55.0
+pillow==10.4.0

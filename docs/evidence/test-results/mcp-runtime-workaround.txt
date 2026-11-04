@@ -1,0 +1,21 @@
+Package metadata
+========================================================================
+mcp-agent-trace-inspector: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
+mcp-cost-tracker-router: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
+mcp-data-pipeline-connector: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
+mcp-eval-runner: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
+mcp-legal-doc-analyzer: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
+mcp-server-health-monitor: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
+
+Runtime probes
+========================================================================
+[PASS] mcp-agent-trace-inspector: exit=-15 initialized=True tools=13
+[PASS] mcp-cost-tracker-router: exit=-15 initialized=True tools=15
+[PASS] mcp-data-pipeline-connector: exit=0 initialized=True tools=7
+[PASS] mcp-eval-runner: exit=-15 initialized=True tools=10
+[PASS] mcp-legal-doc-analyzer: exit=-15 initialized=True tools=9
+[PASS] mcp-server-health-monitor: exit=-15 initialized=True tools=8
+
+6/6 packages completed the MCP handshake
+
+JSON result: docs/evidence/test-results/mcp-workaround.json

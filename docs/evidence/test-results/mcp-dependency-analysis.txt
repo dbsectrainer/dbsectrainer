@@ -1,0 +1,50 @@
+MCP npm tarball vs source manifest: yargs declaration
+=====================================================
+Published npm metadata: https://registry.npmjs.org/<package>/1.0.0
+Source main:            https://raw.githubusercontent.com/dbsectrainer/<package>/main/package.json
+
+mcp-agent-trace-inspector
+  published 1.0.0 dependencies: {"@modelcontextprotocol/sdk": "^1.12.0", "js-tiktoken": "^1.0.21"}
+  published has yargs: False
+  source dependencies: {"@modelcontextprotocol/sdk": "^1.32.2", "express": "^5.2.1", "gpt-tokenizer": "^4.1.0", "yargs": "^18.0.0"}
+  source devDependencies has yargs: False
+  source dependencies has yargs: True
+
+mcp-cost-tracker-router
+  published 1.0.0 dependencies: {"@modelcontextprotocol/sdk": "^1.12.0", "better-sqlite3": "^12.6.2", "express": "^5.2.1", "js-tiktoken": "^1.0.21", "js-yaml": "^4.1.1"}
+  published has yargs: False
+  source dependencies: {"@modelcontextprotocol/sdk": "^1.30.0", "better-sqlite3": "^12.11.1", "express": "^5.2.1", "js-tiktoken": "^1.0.21", "js-yaml": "^4.3.2"}
+  source devDependencies has yargs: True
+  source dependencies has yargs: False
+
+mcp-data-pipeline-connector
+  published 1.0.0 dependencies: {"@duckdb/node-api": "^1.5.0-r.1", "@modelcontextprotocol/sdk": "^1.12.0", "express": "^5.2.1", "js-yaml": "^4.1.0", "node-fetch": "^3.3.2"}
+  published has yargs: False
+  source dependencies: {"@duckdb/node-api": "^1.5.0-r.1", "@modelcontextprotocol/sdk": "^1.30.0", "express": "^5.2.1", "js-yaml": "^4.3.2", "node-fetch": "^3.3.2"}
+  source devDependencies has yargs: True
+  source dependencies has yargs: False
+
+mcp-eval-runner
+  published 1.0.0 dependencies: {"@modelcontextprotocol/sdk": "^1.12.0", "chokidar": "^5.0.0", "express": "^5.2.1", "js-yaml": "^4.1.0"}
+  published has yargs: False
+  source dependencies: {"@modelcontextprotocol/sdk": "^1.30.0", "chokidar": "^5.0.0", "express": "^5.2.1", "js-yaml": "^4.3.2"}
+  source devDependencies has yargs: True
+  source dependencies has yargs: False
+
+mcp-legal-doc-analyzer
+  published 1.0.0 dependencies: {"@modelcontextprotocol/sdk": "^1.12.0", "better-sqlite3": "^12.6.2", "express": "^5.2.1", "js-yaml": "^4.1.0", "mammoth": "^1.12.0", "pdf-parse": "^2.4.5"}
+  published has yargs: False
+  source dependencies: {"@modelcontextprotocol/sdk": "^1.30.0", "better-sqlite3": "^12.11.1", "express": "^5.2.1", "js-yaml": "^4.3.2", "mammoth": "^1.12.0", "pdf-parse": "^2.4.5"}
+  source devDependencies has yargs: True
+  source dependencies has yargs: False
+
+mcp-server-health-monitor
+  published 1.0.0 dependencies: {"@modelcontextprotocol/sdk": "^1.12.0", "better-sqlite3": "^12.0.0", "express": "^5.2.1", "js-yaml": "^4.1.0"}
+  published has yargs: False
+  source dependencies: {"@modelcontextprotocol/sdk": "^1.30.0", "better-sqlite3": "^12.11.1", "express": "^5.2.1", "js-yaml": "^4.3.2"}
+  source devDependencies has yargs: True
+  source dependencies has yargs: False
+
+Runtime evidence:
+  docs/evidence/test-results/mcp-runtime.json         (published npx -> 0/6 initialize)
+  docs/evidence/test-results/mcp-workaround.json      (npx -p <pkg> -p yargs -> 6/6 initialize)

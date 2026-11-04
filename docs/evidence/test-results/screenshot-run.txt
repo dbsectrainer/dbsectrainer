@@ -1,0 +1,6 @@
+Desktop screenshot: docs/evidence/screenshots/homepage-desktop.png
+Mobile screenshot:  docs/evidence/screenshots/homepage-mobile.png
+TOC links checked:  8
+Axe violations:     0 (0 serious/critical)
+
+PASS: screenshots, images, TOC navigation, mobile layout, console, network, and axe checks

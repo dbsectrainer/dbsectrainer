@@ -1,0 +1,74 @@
+{
+  "url": "https://github.com/dbsectrainer",
+  "title": "dbsectrainer (Donnivis Baker) \u00b7 GitHub",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "layout": {
+    "innerWidth": 390,
+    "visualWidth": 390,
+    "clientWidth": 390,
+    "scrollWidth": 390
+  },
+  "toc": {
+    "anchors": [
+      {
+        "id": "user-content----welcome-to-my-digital-universe-",
+        "href": "#---welcome-to-my-digital-universe-"
+      },
+      {
+        "id": "user-content--table-of-contents",
+        "href": "#-table-of-contents"
+      },
+      {
+        "id": "user-content--about-me",
+        "href": "#-about-me"
+      },
+      {
+        "id": "user-content--technical-skills",
+        "href": "#-technical-skills"
+      },
+      {
+        "id": "user-content--current-focus",
+        "href": "#-current-focus"
+      },
+      {
+        "id": "user-content--key-projects",
+        "href": "#-key-projects"
+      },
+      {
+        "id": "user-content--mcp-servers",
+        "href": "#-mcp-servers"
+      },
+      {
+        "id": "user-content--open-source-contributions",
+        "href": "#-open-source-contributions"
+      },
+      {
+        "id": "user-content--lets-connect",
+        "href": "#-lets-connect"
+      },
+      {
+        "id": "user-content--support-me",
+        "href": "#-support-me"
+      },
+      {
+        "id": "user-content--fun-facts",
+        "href": "#-fun-facts"
+      }
+    ],
+    "plain_click": {
+      "hash": "#-about-me",
+      "scrollY": 625,
+      "targetTop": 686.875,
+      "exactTargetExists": false,
+      "prefixedTargetExists": true
+    },
+    "prefixed_click": {
+      "hash": "#user-content--key-projects",
+      "scrollY": 3392,
+      "targetTop": 72.25
+    }
+  }
+}

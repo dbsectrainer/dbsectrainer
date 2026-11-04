@@ -1,0 +1,10 @@
+WARNING: The directory '/Users/newtechlab/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: playwright==1.55.0 in /opt/anaconda3/lib/python3.12/site-packages (from -r requirements-dev.txt (line 3)) (1.55.0)
+Requirement already satisfied: pillow==10.4.0 in /opt/anaconda3/lib/python3.12/site-packages (from -r requirements-dev.txt (line 4)) (10.4.0)
+Requirement already satisfied: pyee<14,>=13 in /opt/anaconda3/lib/python3.12/site-packages (from playwright==1.55.0->-r requirements-dev.txt (line 3)) (13.0.0)
+Requirement already satisfied: greenlet<4.0.0,>=3.1.1 in /opt/anaconda3/lib/python3.12/site-packages (from playwright==1.55.0->-r requirements-dev.txt (line 3)) (3.2.4)
+Requirement already satisfied: typing-extensions in /opt/anaconda3/lib/python3.12/site-packages (from pyee<14,>=13->playwright==1.55.0->-r requirements-dev.txt (line 3)) (4.15.0)
+
+[notice] A new release of pip is available: 26.2.1 -> 26.3
+[notice] To update, run: pip install --upgrade pip

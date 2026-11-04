@@ -1,0 +1,40 @@
+{
+  "packages": [
+    {
+      "name": "mcp-agent-trace-inspector",
+      "registry_id": "io.github.dbsectrainer/mcp-agent-trace-inspector",
+      "repo": "https://github.com/dbsectrainer/mcp-agent-trace-inspector",
+      "runtime_args": ["--db", "/tmp/dbsectrainer-mcp-audit/traces.db"]
+    },
+    {
+      "name": "mcp-cost-tracker-router",
+      "registry_id": "io.github.dbsectrainer/mcp-cost-tracker-router",
+      "repo": "https://github.com/dbsectrainer/mcp-cost-tracker-router",
+      "runtime_args": ["--db", "/tmp/dbsectrainer-mcp-audit/costs.db"]
+    },
+    {
+      "name": "mcp-data-pipeline-connector",
+      "registry_id": "io.github.dbsectrainer/mcp-data-pipeline-connector",
+      "repo": "https://github.com/dbsectrainer/mcp-data-pipeline-connector",
+      "runtime_args": []
+    },
+    {
+      "name": "mcp-eval-runner",
+      "registry_id": "io.github.dbsectrainer/mcp-eval-runner",
+      "repo": "https://github.com/dbsectrainer/mcp-eval-runner",
+      "runtime_args": []
+    },
+    {
+      "name": "mcp-legal-doc-analyzer",
+      "registry_id": "io.github.dbsectrainer/mcp-legal-doc-analyzer",
+      "repo": "https://github.com/dbsectrainer/mcp-legal-doc-analyzer",
+      "runtime_args": []
+    },
+    {
+      "name": "mcp-server-health-monitor",
+      "registry_id": "io.github.dbsectrainer/mcp-server-health-monitor",
+      "repo": "https://github.com/dbsectrainer/mcp-server-health-monitor",
+      "runtime_args": []
+    }
+  ]
+}

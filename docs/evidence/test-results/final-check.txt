@@ -1,0 +1,38 @@
+python3 -m unittest discover -s tests -v
+test_decorative_html_alt_is_allowed (test_verify_profile.ParserTests.test_decorative_html_alt_is_allowed) ... ok
+test_explicit_anchor_is_prefixed (test_verify_profile.ParserTests.test_explicit_anchor_is_prefixed) ... ok
+test_external_urls_are_deduplicated (test_verify_profile.ParserTests.test_external_urls_are_deduplicated) ... ok
+test_heading_structure_passes (test_verify_profile.ParserTests.test_heading_structure_passes) ... ok
+test_html_image_requires_alt_attribute (test_verify_profile.ParserTests.test_html_image_requires_alt_attribute) ... ok
+test_images_are_parsed (test_verify_profile.ParserTests.test_images_are_parsed) ... ok
+test_markdown_image_requires_alt (test_verify_profile.ParserTests.test_markdown_image_requires_alt) ... ok
+test_missing_anchor_is_reported (test_verify_profile.ParserTests.test_missing_anchor_is_reported) ... ok
+test_placeholder_detection (test_verify_profile.ParserTests.test_placeholder_detection) ... ok
+test_skipped_heading_level_is_reported (test_verify_profile.ParserTests.test_skipped_heading_level_is_reported) ... ok
+test_toc_anchors_resolve (test_verify_profile.ParserTests.test_toc_anchors_resolve) ... ok
+test_toc_is_parsed (test_verify_profile.ParserTests.test_toc_is_parsed) ... ok
+test_trailing_whitespace_detection (test_verify_profile.ParserTests.test_trailing_whitespace_detection) ... ok
+test_anchors_resolve (test_verify_profile.RealReadmeTests.test_anchors_resolve) ... ok
+test_archived_svgs_are_safe (test_verify_profile.RealReadmeTests.test_archived_svgs_are_safe) ... ok
+test_heading_structure (test_verify_profile.RealReadmeTests.test_heading_structure) ... ok
+test_images_have_alt_text (test_verify_profile.RealReadmeTests.test_images_have_alt_text) ... ok
+test_no_placeholders (test_verify_profile.RealReadmeTests.test_no_placeholders) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.009s
+
+OK
+python3 tools/verify_profile.py --check-links --check-mcp
+[PASS] no placeholder content: no placeholder markers
+[PASS] no trailing whitespace: clean
+[PASS] TOC anchors resolve: 8 TOC links resolve to 8 anchors
+[PASS] heading hierarchy and section anchors: 10 headings, one H1, every H2 anchored and in the TOC
+[PASS] images have alt text: 10 images have alt attributes
+[PASS] local assets and links exist: 0 local references checked
+[PASS] no committed secrets: 46 text files scanned; no secret patterns
+[PASS] archived SVG assets are well formed: 6 SVG files parse and contain no active content
+[PASS] external links resolve: 44 external URLs checked; 9 allowed bot-blocked
+[PASS] MCP package metadata: 6 packages found on npm and in the official MCP registry
+
+10/10 checks passed
+JSON result: docs/evidence/test-results/profile-validation.json

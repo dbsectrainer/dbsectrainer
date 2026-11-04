@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-11-04T01:37:54.545524+00:00",
+  "commit": "ee01c1c8c8d2a0a15fb928e5febfa04acc2273fb",
+  "readme_sha256": "bc70f14a0acae325cfc110d6fef9ae15cae50c4b45985663dde87a0ac4d959dc",
+  "rendered_html_sha256": "3bd1d92f360329fe91e42ff39c03a16418f56b9deb9ff2b4fc6ddbec46d63173",
+  "preview_html_sha256": "f16c2ca716aa127a9613686bb697b30bd1bf7dfb96c2768bca9ff22e845386b1",
+  "api": "https://api.github.com/markdown",
+  "api_status": 200,
+  "rendered_bytes": 21076,
+  "preview_bytes": 26610,
+  "anchors": [
+    "user-content-about-me",
+    "user-content-current-focus",
+    "user-content-lets-connect",
+    "user-content-mcp-servers",
+    "user-content-open-source",
+    "user-content-repository-verification",
+    "user-content-selected-work",
+    "user-content-tech-stack"
+  ],
+  "toc_targets": [
+    "user-content-about-me",
+    "user-content-current-focus",
+    "user-content-lets-connect",
+    "user-content-mcp-servers",
+    "user-content-open-source",
+    "user-content-repository-verification",
+    "user-content-selected-work",
+    "user-content-tech-stack"
+  ],
+  "missing_targets": [],
+  "profile_source": "github-api",
+  "avatar_downloaded": true
+}

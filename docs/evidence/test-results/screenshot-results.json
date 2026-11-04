@@ -1,0 +1,345 @@
+{
+  "generated_at": "2026-11-04T01:37:54.742794+00:00",
+  "preview_url": "http://127.0.0.1:60941/docs/evidence/build-results/preview.html",
+  "preview_sha256": "f16c2ca716aa127a9613686bb697b30bd1bf7dfb96c2768bca9ff22e845386b1",
+  "axe_core_url": "https://cdn.jsdelivr.net/npm/axe-core@4.10.3/axe.min.js",
+  "desktop": {
+    "title": "",
+    "console_errors": [],
+    "console_warnings": [],
+    "failed_requests": [],
+    "bad_responses": [],
+    "images": [
+      {
+        "src": "avatar.png",
+        "alt": "Portrait of Donnivis Baker",
+        "complete": true,
+        "naturalWidth": 460,
+        "naturalHeight": 460
+      },
+      {
+        "src": "https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png",
+        "alt": "Rainbow divider",
+        "complete": true,
+        "naturalWidth": 900,
+        "naturalHeight": 9
+      },
+      {
+        "src": "https://camo.githubusercontent.com/324b4cfa68deb1b9c0008c02e910370ae1e1b7141ce0fe77972b6ea034e7abb7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f507974686f6e2d3337373641423f7374796c653d666f722d7468652d6261646765266c6f676f3d707974686f6e266c6f676f436f6c6f723d7768697465",
+        "alt": "Python",
+        "complete": true,
+        "naturalWidth": 98,
+        "naturalHeight": 28
+      },
+      {
+        "src": "https://camo.githubusercontent.com/2ab4127dedd4ccf7d3dbb0d440cacca4f720cbb4f06c74350a37f6925b828523/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f547970655363726970742d3331373843363f7374796c653d666f722d7468652d6261646765266c6f676f3d74797065736372697074266c6f676f436f6c6f723d7768697465",
+        "alt": "TypeScript",
+        "complete": true,
+        "naturalWidth": 127,
+        "naturalHeight": 28
+      },
+      {
+        "src": "https://camo.githubusercontent.com/ce63c63937f3f199f362b79a21d615baf5a26f2fbe26855db350f5e235f1277b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4157532d3233324633453f7374796c653d666f722d7468652d6261646765266c6f676f3d616d617a6f6e7765627365727669636573266c6f676f436f6c6f723d7768697465",
+        "alt": "AWS",
+        "complete": true,
+        "naturalWidth": 54,
+        "naturalHeight": 28
+      },
+      {
+        "src": "https://camo.githubusercontent.com/aeeb5564c92ee2e1341fe3015f06a418dcf9e1b13799a128a659d236873ae2f3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f417a7572652d3030373844343f7374796c653d666f722d7468652d6261646765266c6f676f3d6d6963726f736f6674617a757265266c6f676f436f6c6f723d7768697465",
+        "alt": "Azure",
+        "complete": true,
+        "naturalWidth": 67,
+        "naturalHeight": 28
+      },
+      {
+        "src": "https://camo.githubusercontent.com/427072c40b9b71a49d4ac3a5fdfd6a30b4a9b609f37f8629ebde9b3c414fc8fd/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4743502d3432383546343f7374796c653d666f722d7468652d6261646765266c6f676f3d676f6f676c65636c6f7564266c6f676f436f6c6f723d7768697465",
+        "alt": "GCP",
+        "complete": true,
+        "naturalWidth": 70,
+        "naturalHeight": 28
+      },
+      {
+        "src": "https://camo.githubusercontent.com/606236d4e3ca24d32288ab00bbb7ca8f76e00e875896da3695adb704cb35d7bb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5465727261666f726d2d3834344642413f7374796c653d666f722d7468652d6261646765266c6f676f3d7465727261666f726d266c6f676f436f6c6f723d7768697465",
+        "alt": "Terraform",
+        "complete": true,
+        "naturalWidth": 124,
+        "naturalHeight": 28
+      },
+      {
+        "src": "https://camo.githubusercontent.com/85e3ff712bb08b8e5595b34ecddfd189a51b20f61988aa467a56c5da9a107dda/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f636b65722d3234393645443f7374796c653d666f722d7468652d6261646765266c6f676f3d646f636b6572266c6f676f436f6c6f723d7768697465",
+        "alt": "Docker",
+        "complete": true,
+        "naturalWidth": 98,
+        "naturalHeight": 28
+      },
+      {
+        "src": "https://camo.githubusercontent.com/d33828f07e6068f5c4eca426fc8a6b8cb7200c5939469eae5417a9ce468a8534/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4b756265726e657465732d3332364345353f7374796c653d666f722d7468652d6261646765266c6f676f3d6b756265726e65746573266c6f676f436f6c6f723d7768697465",
+        "alt": "Kubernetes",
+        "complete": true,
+        "naturalWidth": 131,
+        "naturalHeight": 28
+      },
+      {
+        "src": "https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png",
+        "alt": "Rainbow divider",
+        "complete": true,
+        "naturalWidth": 900,
+        "naturalHeight": 9
+      }
+    ],
+    "broken_images": [],
+    "toc": [
+      {
+        "text": "About Me",
+        "target": "user-content-about-me",
+        "exists": true
+      },
+      {
+        "text": "Current Focus",
+        "target": "user-content-current-focus",
+        "exists": true
+      },
+      {
+        "text": "Selected Work",
+        "target": "user-content-selected-work",
+        "exists": true
+      },
+      {
+        "text": "MCP Servers",
+        "target": "user-content-mcp-servers",
+        "exists": true
+      },
+      {
+        "text": "Open Source",
+        "target": "user-content-open-source",
+        "exists": true
+      },
+      {
+        "text": "Tech Stack",
+        "target": "user-content-tech-stack",
+        "exists": true
+      },
+      {
+        "text": "Let's Connect",
+        "target": "user-content-lets-connect",
+        "exists": true
+      },
+      {
+        "text": "Repository Verification",
+        "target": "user-content-repository-verification",
+        "exists": true
+      }
+    ],
+    "toc_clicks": [
+      {
+        "text": "About Me",
+        "target": "user-content-about-me",
+        "exists": true,
+        "hash": "#user-content-about-me",
+        "scrollY": 651,
+        "top": -0.21875,
+        "visible": true
+      },
+      {
+        "text": "Current Focus",
+        "target": "user-content-current-focus",
+        "exists": true,
+        "hash": "#user-content-current-focus",
+        "scrollY": 1099,
+        "top": 0.484375,
+        "visible": true
+      },
+      {
+        "text": "Selected Work",
+        "target": "user-content-selected-work",
+        "exists": true,
+        "hash": "#user-content-selected-work",
+        "scrollY": 1306,
+        "top": -0.328125,
+        "visible": true
+      },
+      {
+        "text": "MCP Servers",
+        "target": "user-content-mcp-servers",
+        "exists": true,
+        "hash": "#user-content-mcp-servers",
+        "scrollY": 2160,
+        "top": -0.140625,
+        "visible": true
+      },
+      {
+        "text": "Open Source",
+        "target": "user-content-open-source",
+        "exists": true,
+        "hash": "#user-content-open-source",
+        "scrollY": 2682,
+        "top": 0.046875,
+        "visible": true
+      },
+      {
+        "text": "Tech Stack",
+        "target": "user-content-tech-stack",
+        "exists": true,
+        "hash": "#user-content-tech-stack",
+        "scrollY": 2776,
+        "top": 60.234375,
+        "visible": true
+      },
+      {
+        "text": "Let's Connect",
+        "target": "user-content-lets-connect",
+        "exists": true,
+        "hash": "#user-content-lets-connect",
+        "scrollY": 2776,
+        "top": 398.421875,
+        "visible": true
+      },
+      {
+        "text": "Repository Verification",
+        "target": "user-content-repository-verification",
+        "exists": true,
+        "hash": "#user-content-repository-verification",
+        "scrollY": 2776,
+        "top": 624.609375,
+        "visible": true
+      }
+    ],
+    "axe": {
+      "ok": true,
+      "engine": "axe-core 4.10.3",
+      "violation_count": 0,
+      "violations": [],
+      "serious_or_critical": []
+    },
+    "screenshot": "docs/evidence/screenshots/homepage-desktop.png",
+    "sections": {
+      "article": {
+        "left": 433,
+        "width": 902
+      },
+      "selected": {
+        "top": 1305.671875,
+        "bottom": 1305.671875
+      },
+      "mcp": {
+        "top": 2159.859375,
+        "bottom": 2159.859375
+      },
+      "openSource": {
+        "top": 2682.046875,
+        "bottom": 2682.046875
+      }
+    }
+  },
+  "mobile": {
+    "title": "",
+    "console_errors": [],
+    "console_warnings": [],
+    "failed_requests": [],
+    "bad_responses": [],
+    "images": [
+      {
+        "src": "avatar.png",
+        "alt": "Portrait of Donnivis Baker",
+        "complete": true,
+        "naturalWidth": 460,
+        "naturalHeight": 460
+      },
+      {
+        "src": "https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png",
+        "alt": "Rainbow divider",
+        "complete": true,
+        "naturalWidth": 900,
+        "naturalHeight": 9
+      },
+      {
+        "src": "https://camo.githubusercontent.com/324b4cfa68deb1b9c0008c02e910370ae1e1b7141ce0fe77972b6ea034e7abb7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f507974686f6e2d3337373641423f7374796c653d666f722d7468652d6261646765266c6f676f3d707974686f6e266c6f676f436f6c6f723d7768697465",
+        "alt": "Python",
+        "complete": true,
+        "naturalWidth": 98,
+        "naturalHeight": 28
+      },
+      {
+        "src": "https://camo.githubusercontent.com/2ab4127dedd4ccf7d3dbb0d440cacca4f720cbb4f06c74350a37f6925b828523/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f547970655363726970742d3331373843363f7374796c653d666f722d7468652d6261646765266c6f676f3d74797065736372697074266c6f676f436f6c6f723d7768697465",
+        "alt": "TypeScript",
+        "complete": true,
+        "naturalWidth": 127,
+        "naturalHeight": 28
+      },
+      {
+        "src": "https://camo.githubusercontent.com/ce63c63937f3f199f362b79a21d615baf5a26f2fbe26855db350f5e235f1277b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4157532d3233324633453f7374796c653d666f722d7468652d6261646765266c6f676f3d616d617a6f6e7765627365727669636573266c6f676f436f6c6f723d7768697465",
+        "alt": "AWS",
+        "complete": true,
+        "naturalWidth": 54,
+        "naturalHeight": 28
+      },
+      {
+        "src": "https://camo.githubusercontent.com/aeeb5564c92ee2e1341fe3015f06a418dcf9e1b13799a128a659d236873ae2f3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f417a7572652d3030373844343f7374796c653d666f722d7468652d6261646765266c6f676f3d6d6963726f736f6674617a757265266c6f676f436f6c6f723d7768697465",
+        "alt": "Azure",
+        "complete": true,
+        "naturalWidth": 67,
+        "naturalHeight": 28
+      },
+      {
+        "src": "https://camo.githubusercontent.com/427072c40b9b71a49d4ac3a5fdfd6a30b4a9b609f37f8629ebde9b3c414fc8fd/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4743502d3432383546343f7374796c653d666f722d7468652d6261646765266c6f676f3d676f6f676c65636c6f7564266c6f676f436f6c6f723d7768697465",
+        "alt": "GCP",
+        "complete": true,
+        "naturalWidth": 70,
+        "naturalHeight": 28
+      },
+      {
+        "src": "https://camo.githubusercontent.com/606236d4e3ca24d32288ab00bbb7ca8f76e00e875896da3695adb704cb35d7bb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5465727261666f726d2d3834344642413f7374796c653d666f722d7468652d6261646765266c6f676f3d7465727261666f726d266c6f676f436f6c6f723d7768697465",
+        "alt": "Terraform",
+        "complete": true,
+        "naturalWidth": 124,
+        "naturalHeight": 28
+      },
+      {
+        "src": "https://camo.githubusercontent.com/85e3ff712bb08b8e5595b34ecddfd189a51b20f61988aa467a56c5da9a107dda/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f636b65722d3234393645443f7374796c653d666f722d7468652d6261646765266c6f676f3d646f636b6572266c6f676f436f6c6f723d7768697465",
+        "alt": "Docker",
+        "complete": true,
+        "naturalWidth": 98,
+        "naturalHeight": 28
+      },
+      {
+        "src": "https://camo.githubusercontent.com/d33828f07e6068f5c4eca426fc8a6b8cb7200c5939469eae5417a9ce468a8534/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4b756265726e657465732d3332364345353f7374796c653d666f722d7468652d6261646765266c6f676f3d6b756265726e65746573266c6f676f436f6c6f723d7768697465",
+        "alt": "Kubernetes",
+        "complete": true,
+        "naturalWidth": 131,
+        "naturalHeight": 28
+      },
+      {
+        "src": "https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png",
+        "alt": "Rainbow divider",
+        "complete": true,
+        "naturalWidth": 900,
+        "naturalHeight": 9
+      }
+    ],
+    "broken_images": [],
+    "layout": {
+      "innerWidth": 390,
+      "visualWidth": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "bodyScrollWidth": 390
+    },
+    "overflow_px": 0,
+    "viewport": {
+      "width": 390,
+      "height": 844,
+      "device_scale_factor": 2
+    },
+    "screenshot": "docs/evidence/screenshots/homepage-mobile.png"
+  },
+  "pass": true,
+  "failures": [],
+  "screenshots": {
+    "homepage-desktop": "docs/evidence/screenshots/homepage-desktop.png",
+    "homepage-mobile": "docs/evidence/screenshots/homepage-mobile.png",
+    "toc-navigation": "docs/evidence/screenshots/toc-navigation.png",
+    "selected-work": "docs/evidence/screenshots/selected-work.png",
+    "mcp-servers": "docs/evidence/screenshots/mcp-servers.png"
+  }
+}

@@ -1,0 +1,470 @@
+{
+  "generated_at": "2026-11-04T01:38:12.978689+00:00",
+  "commit": "ee01c1c8c8d2a0a15fb928e5febfa04acc2273fb",
+  "readme_sha256": "bc70f14a0acae325cfc110d6fef9ae15cae50c4b45985663dde87a0ac4d959dc",
+  "checks": [
+    {
+      "name": "no placeholder content",
+      "ok": true,
+      "detail": "no placeholder markers",
+      "warnings": []
+    },
+    {
+      "name": "no trailing whitespace",
+      "ok": true,
+      "detail": "clean",
+      "warnings": []
+    },
+    {
+      "name": "TOC anchors resolve",
+      "ok": true,
+      "detail": "8 TOC links resolve to 8 anchors",
+      "warnings": []
+    },
+    {
+      "name": "heading hierarchy and section anchors",
+      "ok": true,
+      "detail": "10 headings, one H1, every H2 anchored and in the TOC",
+      "warnings": []
+    },
+    {
+      "name": "images have alt text",
+      "ok": true,
+      "detail": "10 images have alt attributes",
+      "warnings": []
+    },
+    {
+      "name": "local assets and links exist",
+      "ok": true,
+      "detail": "0 local references checked",
+      "warnings": []
+    },
+    {
+      "name": "no committed secrets",
+      "ok": true,
+      "detail": "46 text files scanned; no secret patterns",
+      "warnings": []
+    },
+    {
+      "name": "archived SVG assets are well formed",
+      "ok": true,
+      "detail": "6 SVG files parse and contain no active content",
+      "warnings": []
+    },
+    {
+      "name": "external links resolve",
+      "ok": true,
+      "detail": "44 external URLs checked; 9 allowed bot-blocked",
+      "warnings": []
+    },
+    {
+      "name": "MCP package metadata",
+      "ok": true,
+      "detail": "6 packages found on npm and in the official MCP registry",
+      "warnings": []
+    }
+  ],
+  "links": [
+    {
+      "url": "https://dbsectrainer.github.io/Mandarin-Pathways/",
+      "status": 200,
+      "final_url": "https://dbsectrainer.github.io/Mandarin-Pathways/",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://dbsectrainer.github.io/cloud-security-best-practices/",
+      "status": 200,
+      "final_url": "https://dbsectrainer.github.io/cloud-security-best-practices/",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://dbsectrainer.github.io/enterprise-grade-checklists/",
+      "status": 200,
+      "final_url": "https://dbsectrainer.github.io/enterprise-grade-checklists/",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/FoundationAgents/MetaGPT/pull/1735",
+      "status": 200,
+      "final_url": "https://github.com/FoundationAgents/MetaGPT/pull/1735",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer/AEGIS",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer/AEGIS",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer/Mandarin-Pathways",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer/Mandarin-Pathways",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer/Secure-Generative-AI-Platform-on-AWS",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer/Secure-Generative-AI-Platform-on-AWS",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer/ai-safety-governance",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer/ai-safety-governance",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer/cloud-security-best-practices",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer/cloud-security-best-practices",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer/dbsectrainer/blob/main/docs/evidence/verification-report.md",
+      "status": null,
+      "final_url": "https://github.com/dbsectrainer/dbsectrainer/blob/main/docs/evidence/verification-report.md",
+      "ok": true,
+      "note": "repository file exists locally; remote publish is pending"
+    },
+    {
+      "url": "https://github.com/dbsectrainer/enterprise-grade-checklists",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer/enterprise-grade-checklists",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer/federal-doc-triage-agent",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer/federal-doc-triage-agent",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer/integrated-cyber-risk-compliance",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer/integrated-cyber-risk-compliance",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer/label-check",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer/label-check",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer/mcp-agent-trace-inspector",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer/mcp-agent-trace-inspector",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer/mcp-cost-tracker-router",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer/mcp-cost-tracker-router",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer/mcp-data-pipeline-connector",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer/mcp-data-pipeline-connector",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer/mcp-eval-runner",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer/mcp-eval-runner",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer/mcp-legal-doc-analyzer",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer/mcp-legal-doc-analyzer",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer/mcp-server-health-monitor",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer/mcp-server-health-monitor",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/dbsectrainer/nist_800_53_scanner",
+      "status": 200,
+      "final_url": "https://github.com/dbsectrainer/nist_800_53_scanner",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/microsoft/data-formulator/pull/90",
+      "status": 200,
+      "final_url": "https://github.com/microsoft/data-formulator/pull/90",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/microsoft/generative-ai-for-beginners/pull/698",
+      "status": 200,
+      "final_url": "https://github.com/microsoft/generative-ai-for-beginners/pull/698",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://github.com/nccgroup/ScoutSuite/pull/1695",
+      "status": 200,
+      "final_url": "https://github.com/nccgroup/ScoutSuite/pull/1695",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white",
+      "status": 200,
+      "final_url": "https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white",
+      "status": 200,
+      "final_url": "https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white",
+      "status": 200,
+      "final_url": "https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white",
+      "status": 200,
+      "final_url": "https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white",
+      "status": 200,
+      "final_url": "https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white",
+      "status": 200,
+      "final_url": "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white",
+      "status": 200,
+      "final_url": "https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white",
+      "status": 200,
+      "final_url": "https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://label-check-puce.vercel.app",
+      "status": 200,
+      "final_url": "https://label-check-puce.vercel.app",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://registry.modelcontextprotocol.io",
+      "status": 200,
+      "final_url": "https://registry.modelcontextprotocol.io",
+      "ok": true,
+      "note": ""
+    },
+    {
+      "url": "https://www.linkedin.com/in/dbsectrainer/",
+      "status": 999,
+      "final_url": "https://www.linkedin.com/in/dbsectrainer/",
+      "ok": true,
+      "note": "www.linkedin.com blocks automated clients (allowed)"
+    },
+    {
+      "url": "https://www.npmjs.com/package/mcp-agent-trace-inspector",
+      "status": 403,
+      "final_url": "https://www.npmjs.com/package/mcp-agent-trace-inspector",
+      "ok": true,
+      "note": "www.npmjs.com blocks automated clients (allowed)"
+    },
+    {
+      "url": "https://www.npmjs.com/package/mcp-cost-tracker-router",
+      "status": 403,
+      "final_url": "https://www.npmjs.com/package/mcp-cost-tracker-router",
+      "ok": true,
+      "note": "www.npmjs.com blocks automated clients (allowed)"
+    },
+    {
+      "url": "https://www.npmjs.com/package/mcp-data-pipeline-connector",
+      "status": 403,
+      "final_url": "https://www.npmjs.com/package/mcp-data-pipeline-connector",
+      "ok": true,
+      "note": "www.npmjs.com blocks automated clients (allowed)"
+    },
+    {
+      "url": "https://www.npmjs.com/package/mcp-eval-runner",
+      "status": 403,
+      "final_url": "https://www.npmjs.com/package/mcp-eval-runner",
+      "ok": true,
+      "note": "www.npmjs.com blocks automated clients (allowed)"
+    },
+    {
+      "url": "https://www.npmjs.com/package/mcp-legal-doc-analyzer",
+      "status": 403,
+      "final_url": "https://www.npmjs.com/package/mcp-legal-doc-analyzer",
+      "ok": true,
+      "note": "www.npmjs.com blocks automated clients (allowed)"
+    },
+    {
+      "url": "https://www.npmjs.com/package/mcp-server-health-monitor",
+      "status": 403,
+      "final_url": "https://www.npmjs.com/package/mcp-server-health-monitor",
+      "ok": true,
+      "note": "www.npmjs.com blocks automated clients (allowed)"
+    },
+    {
+      "url": "https://www.npmjs.com/~dbsectrainer",
+      "status": 403,
+      "final_url": "https://www.npmjs.com/~dbsectrainer",
+      "ok": true,
+      "note": "www.npmjs.com blocks automated clients (allowed)"
+    }
+  ],
+  "mcp_packages": [
+    {
+      "name": "mcp-agent-trace-inspector",
+      "repo": "https://github.com/dbsectrainer/mcp-agent-trace-inspector",
+      "npm": {
+        "latest": "1.0.0",
+        "maintainers": [
+          "dbsectrainer"
+        ]
+      },
+      "mcp_registry": {
+        "names": [
+          "io.github.dbsectrainer/mcp-agent-trace-inspector"
+        ]
+      }
+    },
+    {
+      "name": "mcp-cost-tracker-router",
+      "repo": "https://github.com/dbsectrainer/mcp-cost-tracker-router",
+      "npm": {
+        "latest": "1.0.0",
+        "maintainers": [
+          "dbsectrainer"
+        ]
+      },
+      "mcp_registry": {
+        "names": [
+          "io.github.dbsectrainer/mcp-cost-tracker-router"
+        ]
+      }
+    },
+    {
+      "name": "mcp-data-pipeline-connector",
+      "repo": "https://github.com/dbsectrainer/mcp-data-pipeline-connector",
+      "npm": {
+        "latest": "1.0.0",
+        "maintainers": [
+          "dbsectrainer"
+        ]
+      },
+      "mcp_registry": {
+        "names": [
+          "io.github.dbsectrainer/mcp-data-pipeline-connector"
+        ]
+      }
+    },
+    {
+      "name": "mcp-eval-runner",
+      "repo": "https://github.com/dbsectrainer/mcp-eval-runner",
+      "npm": {
+        "latest": "1.0.0",
+        "maintainers": [
+          "dbsectrainer"
+        ]
+      },
+      "mcp_registry": {
+        "names": [
+          "io.github.dbsectrainer/mcp-eval-runner"
+        ]
+      }
+    },
+    {
+      "name": "mcp-legal-doc-analyzer",
+      "repo": "https://github.com/dbsectrainer/mcp-legal-doc-analyzer",
+      "npm": {
+        "latest": "1.0.0",
+        "maintainers": [
+          "dbsectrainer"
+        ]
+      },
+      "mcp_registry": {
+        "names": [
+          "io.github.dbsectrainer/mcp-legal-doc-analyzer"
+        ]
+      }
+    },
+    {
+      "name": "mcp-server-health-monitor",
+      "repo": "https://github.com/dbsectrainer/mcp-server-health-monitor",
+      "npm": {
+        "latest": "1.0.0",
+        "maintainers": [
+          "dbsectrainer"
+        ]
+      },
+      "mcp_registry": {
+        "names": [
+          "io.github.dbsectrainer/mcp-server-health-monitor"
+        ]
+      }
+    }
+  ],
+  "ok": true
+}

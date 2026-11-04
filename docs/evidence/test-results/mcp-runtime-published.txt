@@ -1,0 +1,27 @@
+Package metadata
+========================================================================
+mcp-agent-trace-inspector: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
+mcp-cost-tracker-router: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
+mcp-data-pipeline-connector: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
+mcp-eval-runner: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
+mcp-legal-doc-analyzer: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
+mcp-server-health-monitor: npm 1.0.0 maintainers=dbsectrainer; registry_match=True version=1.0.0
+
+Runtime probes
+========================================================================
+[FAIL] mcp-agent-trace-inspector: exit=1 initialized=False tools=None
+        Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/f77b767ded4ce59c/node_modules/mcp-agent-trace-inspector/dist/index.js
+[FAIL] mcp-cost-tracker-router: exit=1 initialized=False tools=None
+        Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/6a0fdb5ad6b0b12c/node_modules/mcp-cost-tracker-router/dist/index.js
+[FAIL] mcp-data-pipeline-connector: exit=1 initialized=False tools=None
+        Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/e7b35ce6cf852d41/node_modules/mcp-data-pipeline-connector/dist/index.js
+[FAIL] mcp-eval-runner: exit=1 initialized=False tools=None
+        Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/c57c719aa4f6dc60/node_modules/mcp-eval-runner/dist/index.js
+[FAIL] mcp-legal-doc-analyzer: exit=1 initialized=False tools=None
+        Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/8ac81413399b8992/node_modules/mcp-legal-doc-analyzer/dist/index.js
+[FAIL] mcp-server-health-monitor: exit=1 initialized=False tools=None
+        Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'yargs' imported from /private/tmp/dbsectrainer-npm-cache/_npx/3f9c5a4b5d5f769f/node_modules/mcp-server-health-monitor/dist/index.js
+
+0/6 packages completed the MCP handshake
+
+JSON result: docs/evidence/test-results/mcp-runtime.json

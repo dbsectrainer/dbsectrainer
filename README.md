@@ -1,310 +1,161 @@
-<!-- Short Personal Introduction -->
+<!-- GitHub profile README for @dbsectrainer -->
+
+<h1 align="center">Hi, I'm Donnivis Baker 👋</h1>
+
 <p align="center">
-  Hi, I'm <strong>dbsectrainer</strong>! I'm passionate about building secure, scalable systems and sharing knowledge with the tech community.
+  <strong>Senior Software Engineer · Cloud &amp; Security Architect · DevOps Leader</strong><br>
+  I build secure cloud, compliance, and AI systems — and document the evidence that they work.
 </p>
 
-<!-- Header with wave animation -->
-<h1 align="center">
-  👋 Welcome to My Digital Universe! 
-</h1>
-
-<!-- Subtitle -->
 <p align="center">
-  <strong>🚀 Full-Stack Developer & Technical Architect | 🔐 Security Expert | 🎯 Solution Designer</strong>
+  <a href="https://github.com/dbsectrainer">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/dbsectrainer/">LinkedIn</a> ·
+  <a href="https://www.npmjs.com/~dbsectrainer">npm</a> ·
+  <a href="https://registry.modelcontextprotocol.io">MCP Registry</a>
 </p>
 
-<!-- Table of Contents -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="Rainbow divider" width="100%">
+</p>
+
+<!-- GitHub prefixes explicit anchor ids with "user-content-"; the TOC targets those rendered ids. -->
 
 ## 📑 Table of Contents
 
-- [About Me](#-about-me)
-- [Technical Skills](#-technical-skills)
-- [Current Focus](#-current-focus)
-- [Key Projects](#-key-projects)
-- [MCP Servers](#-mcp-servers)
-- [Open Source Contributions](#-open-source-contributions)
-- [Let's Connect](#-lets-connect)
-- [Fun Facts](#-fun-facts)
-- [Support Me](#-support-me)
+- [About Me](#user-content-about-me)
+- [Current Focus](#user-content-current-focus)
+- [Selected Work](#user-content-selected-work)
+- [MCP Servers](#user-content-mcp-servers)
+- [Open Source](#user-content-open-source)
+- [Tech Stack](#user-content-tech-stack)
+- [Let's Connect](#user-content-lets-connect)
+- [Repository Verification](#user-content-repository-verification)
 
-<!-- Divider -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="line" width="100%">
-</p>
+<a id="about-me"></a>
+## 🧭 About Me
 
-<!-- About Me Section -->
+I work at the intersection of cloud security, federal compliance, and applied AI. My public repositories are reference implementations built to be run, tested, and audited — not just read.
 
-### 🌟 About Me
+Recent work includes **AEGIS** (multi-cloud FedRAMP High, NIST 800-53 Rev. 5, DoD Cloud SRG, and Zero Trust controls), an **AI Safety & Governance Platform**, a **NIST 800-53 evidence-driven scanner**, a **Secure Generative AI platform on AWS**, and six **MCP servers** for agent observability, cost, data, evaluation, legal, and health workflows.
 
-I'm a specialized AI/ML Security Engineer focused on building secure, scalable machine learning systems. With expertise in model security, privacy-preserving ML, and secure MLOps, I bridge the gap between cutting-edge AI and robust security implementations.
+The larger reference implementations include a `docs/evidence/verification-report.md` with commands, test results, screenshots, and explicit non-goals. If a capability was not verified, it is labeled that way.
 
 ```python
-class AISecurityEngineer:
+class Engineer:
     def __init__(self):
-        self.focus_areas = [
-            "Model Security & Privacy",
-            "Secure MLOps Architecture",
-            "Privacy-Preserving ML"
-        ]
-        self.daily_tools = [
-            "🧠 PyTorch/TensorFlow",
-            "🛡️ Security Frameworks",
-            "🚀 MLOps Platforms"
-        ]
-        self.mission = "Building secure and ethical AI systems"
+        self.focus = ["cloud security", "federal compliance", "AI governance"]
+        self.method = ["threat model", "automate", "test", "show evidence"]
+        self.stack = ["Python", "TypeScript", "Terraform", "AWS · Azure · GCP"]
 ```
 
-<!-- Technical Skills Section -->
+<a id="current-focus"></a>
+## 🎯 Current Focus
 
-### 💻 Technical Skills
+- **Federal compliance automation** — NIST 800-53 Rev. 5, FedRAMP High, CMMC 2.0 / NIST 800-171, OSCAL, and policy-as-code.
+- **AI governance and safety** — model registry, RBAC, monitoring, privacy and regulatory checks, and secure RAG.
+- **MCP developer tooling** — local-first servers for tracing, cost, data, evaluation, legal, and health workflows.
 
-<details open>
-<summary>🤖 AI/ML Security</summary>
-<br>
+<a id="selected-work"></a>
+## 🚀 Selected Work
 
-**Core Technologies:**
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+| Project | What it does |
+| --- | --- |
+| **[AEGIS](https://github.com/dbsectrainer/AEGIS)** | Multi-cloud federal security framework aligned to FedRAMP High, NIST 800-53 Rev. 5, DoD Cloud SRG, and NIST 800-207; Terraform modules plus authorization artifacts.<br>**Stack:** Terraform · AWS/Azure/GCP · LocalStack |
+| **[AI Safety & Governance](https://github.com/dbsectrainer/ai-safety-governance)** | Full-stack model governance: JWT/RBAC, model registry, host monitoring, GDPR/HIPAA/CCPA checks, audit trail, and Docker deployment.<br>**Stack:** Python · FastAPI · React · TypeScript · SQLite/PostgreSQL |
+| **[NIST 800-53 Scanner](https://github.com/dbsectrainer/nist_800_53_scanner)** | Evidence-driven Rev. 5 assessment: read-only collectors, versioned policy-as-code rules, OSCAL output, and Prometheus/Grafana monitoring.<br>**Stack:** Python · Flask · OSCAL · Docker |
+| **[Secure GenAI on AWS](https://github.com/dbsectrainer/Secure-Generative-AI-Platform-on-AWS)** | Bedrock + RAG reference platform with Guardrails, PII redaction, WAF/GuardDuty, and SAM-local end-to-end tests.<br>**Stack:** Python · AWS SAM · Terraform · Bedrock |
+| **[ICRAF](https://github.com/dbsectrainer/integrated-cyber-risk-compliance)** | Browser-only CMMC 2.0 / NIST 800-171 dashboard: 110-practice tracker, risk register, and IaC/CI control verifier.<br>**Stack:** React 19 · TypeScript · Vite |
+| **[Federal Document Triage](https://github.com/dbsectrainer/federal-doc-triage-agent)** | LangGraph workflow for document intake, classification, routing, and approval, with optional Bedrock/Comprehend/Textract integrations.<br>**Stack:** Python · LangGraph · AWS |
 
-- **Model Security:** Adversarial Defense, Model Privacy, Secure Training
-- **Privacy-Preserving ML:** Federated Learning, Differential Privacy, Secure Aggregation
-- **Adversarial Robustness:** IBM ART, Foolbox, CleverHans
-- **Model Explainability:** LIME, SHAP, Fairlearn for transparency and fairness
-- **Monitoring & Drift Detection:** Arize AI, Fiddler, WhyLabs
-</details>
+Each repository states what is verified and what is not; see its `docs/evidence/verification-report.md` where present.
 
-<details open>
-<summary>🔒 Security & DevOps</summary>
-<br>
+**Also shipped:**
 
-**Infrastructure & Cloud:**
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
+- [Label Check](https://github.com/dbsectrainer/label-check) ([live](https://label-check-puce.vercel.app)) — human-in-the-loop alcohol label verification.
+- [Enterprise Checklist Dashboard](https://github.com/dbsectrainer/enterprise-grade-checklists) ([live](https://dbsectrainer.github.io/enterprise-grade-checklists/)) — eight-domain progress tracker.
+- [Cloud Security Best Practices](https://github.com/dbsectrainer/cloud-security-best-practices) ([live](https://dbsectrainer.github.io/cloud-security-best-practices/)) — FedRAMP/NIST documentation hub.
+- [Mandarin Pathways](https://github.com/dbsectrainer/Mandarin-Pathways) ([live](https://dbsectrainer.github.io/Mandarin-Pathways/)) — Mandarin learning PWA and Flutter app.
 
-- **Security Architecture:** Zero-Trust, Secure Containerization, Kubernetes Security
-- **Compliance:** SOC 2, HIPAA, GDPR implementation and monitoring
-- **Threat Detection:** Security Analytics, Incident Response, Penetration Testing
-- **SSDLC:** Secure development lifecycle, threat modeling, secure code reviews
-- **CI/CD Security:** GitHub Actions, Jenkins, Terraform IaC security
-</details>
+<a id="mcp-servers"></a>
+## 🔌 MCP Servers
 
-<details open>
-<summary>🛠️ Development & Operations</summary>
-<br>
+Six local-first servers, published on npm and listed in the [official MCP registry](https://registry.modelcontextprotocol.io). Each repository documents its tools and configuration. Node.js 20.19+ is required (trace-inspector and eval-runner require 22.5+).
 
-**Monitoring & Observability:**
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+| Server | What it does |
+| --- | --- |
+| **[mcp-agent-trace-inspector](https://github.com/dbsectrainer/mcp-agent-trace-inspector)** · [npm](https://www.npmjs.com/package/mcp-agent-trace-inspector) | Local-first tracing, cost estimates, diffs, and audit logs for MCP agent workflows. |
+| **[mcp-cost-tracker-router](https://github.com/dbsectrainer/mcp-cost-tracker-router)** · [npm](https://www.npmjs.com/package/mcp-cost-tracker-router) | Offline token/cost tracking, budget alerts, and model-routing suggestions. |
+| **[mcp-data-pipeline-connector](https://github.com/dbsectrainer/mcp-data-pipeline-connector)** · [npm](https://www.npmjs.com/package/mcp-data-pipeline-connector) | Cross-source SQL over CSV/JSON, PostgreSQL, and REST via embedded DuckDB. |
+| **[mcp-eval-runner](https://github.com/dbsectrainer/mcp-eval-runner)** · [npm](https://www.npmjs.com/package/mcp-eval-runner) | YAML-driven regression tests for MCP servers and agent workflows. |
+| **[mcp-legal-doc-analyzer](https://github.com/dbsectrainer/mcp-legal-doc-analyzer)** · [npm](https://www.npmjs.com/package/mcp-legal-doc-analyzer) | Local clause extraction, risk flagging, compliance checks, and version diffs. |
+| **[mcp-server-health-monitor](https://github.com/dbsectrainer/mcp-server-health-monitor)** · [npm](https://www.npmjs.com/package/mcp-server-health-monitor) | MCP-native health checks, schema-drift detection, and local history. |
 
-**MLOps & Deployment:**
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+<a id="open-source"></a>
+## 🤝 Open Source
 
-- **Secure MLOps:** Model deployment, pipeline protection, runtime security
-- **Advanced Cryptography:** Homomorphic encryption, secure multiparty computation
-- **Cross-functional Leadership:** Data scientists, ML engineers, compliance teams
-</details>
+- **Merged:** [microsoft/generative-ai-for-beginners #698](https://github.com/microsoft/generative-ai-for-beginners/pull/698) — grammar and function-calling documentation fixes.
+- **Proposed:** [microsoft/data-formulator #90](https://github.com/microsoft/data-formulator/pull/90) (Docker support), [MetaGPT #1735](https://github.com/FoundationAgents/MetaGPT/pull/1735) (Ollama URL wrappers), and [ScoutSuite #1695](https://github.com/nccgroup/ScoutSuite/pull/1695) (recursion fix); these PRs were closed without merge.
 
-<!-- Current Focus Section -->
+<a id="tech-stack"></a>
+## 🧰 Tech Stack
 
-### 🚀 Current Focus
-
-```javascript
-const currentProjects = {
-  research: "Advanced AI Model Security",
-  building: "Privacy-Preserving ML Systems",
-  exploring: "Federated Learning Solutions",
-  sharing: "AI Security Best Practices",
-};
-```
-
-**Key Achievements:**
-
-- **Cloud-Native & DevOps:** Contributed to Microsoft's Data Formulator, adding Docker support
-- **AI & ML Integration:** Merged PRs in Microsoft's Generative AI for Beginners project
-- **Open Source Leadership:** Enhanced MetaGPT with Ollama support and third-party integrations
-
-<!-- Key Projects Section -->
-
-### 🌟 Key Projects
-
-- [Global AI & Cloud Intelligence Dashboard](https://github.com/dbsectrainer/ai_cloud_dashboard) 🌐  
-  **A real-time analytics platform for monitoring and analyzing the global AI and cloud computing landscape.**  
-  **Features:**
-  - Market intelligence, growth trends, and competitive analysis
-  - Security & compliance tracking, certification management
-  - Cost analysis, TCO calculator, and resource optimization
-  - Real-time performance monitoring and SLA tracking
-  - AI-powered decision support and future trends forecasting  
-  **Tech Stack:**
-  - **Frontend:** Streamlit
-  - **Data Processing:** Python, Pandas, NumPy
-  - **Visualization:** Plotly
-  - **Architecture:** Modular, component-based design  
-  **Why it matters:**
-  - Empowers enterprise decision-makers with actionable insights
-  - Supports compliance, cost optimization, and strategic planning
-  - Recognized in Cloud Computing Monthly and Streamlit Gallery
-
-- [Mandarin Pathways](https://github.com/dbsectrainer/Mandarin-Pathways) ([Live Demo](https://dbsectrainer.github.io/Mandarin-Pathways/)):  
-  **A focused Mandarin Chinese learning platform** designed to take learners from foundational phrases to advanced professional fluency.  
-  **Features:**
-  - Modular 40-day curriculum with interactive audio-visual lessons
-  - YouTube API integration for embedded video demonstrations
-  - Canvas-based character writing practice
-  - Reading comprehension and vocabulary tools
-  - Trilingual support (Simplified Chinese, Pinyin, English)
-  - Progressive Web App (PWA) with offline access and notifications
-  - Progress tracking, badges, and persistent user preferences  
-  **Technical Stack:**
-  - **Frontend:** HTML5, CSS3, JavaScript (responsive, interactive UI)
-  - **Backend/Automation:** Python scripts for content and audio generation
-  - **APIs:** YouTube Data API
-  - **PWA:** Service Worker, manifest.json, offline support
-  - **Audio:** Dual-language audio management, native speaker integration
-  - **UX:** Mobile-first design, intuitive navigation, and learning flow  
-  **Why Mandarin?**
-  - Spoken by over 1 billion people
-  - Key to global business, culture, and technology
-  - Opens doors in international careers and cross-cultural understanding
-
-- [Enterprise Checklist Dashboard](https://github.com/dbsectrainer/enterprise-grade-checklists) ([Live Demo](https://dbsectrainer.github.io/enterprise-grade-checklists/)):
-  **A unified dashboard for tracking progress across eight enterprise-grade checklists**—including Frontend, Backend, Cloud, Data, DevOps, Mobile, Security, and AI/ML.
-  **Features:**
-  - Centralized progress tracking and automated validation for each checklist
-  - Compliance mapping for standards (HIPAA, SOC2, etc.)
-  - Real-time performance monitoring and optimization guides
-  - Responsive, mobile-friendly design with persistent progress (localStorage)
-  - Practical examples, implementation guides, and comprehensive documentation
-  - Visual architecture diagrams and independent state management for each checklist
-    **Tech Stack:**
-  - HTML5, CSS3 (with CSS Variables), Vanilla JavaScript (ES6+)
-  - LocalStorage for state management
-  - Event-driven architecture, Mermaid.js for diagrams
-    **Why it matters:**
-  - Streamlines enterprise software development and operations
-  - Supports compliance, best practices, and team productivity
-  - Designed for scalability, maintainability, and ease of use
-
-- [Cloud Security Best Practices Documentation](https://github.com/dbsectrainer/cloud-security-best-practices) ([Live Demo](https://dbsectrainer.github.io/cloud-security-best-practices/)):
-  **Comprehensive cloud security documentation project covering zero-trust architecture, multi-cloud security, and enterprise compliance frameworks.**
-  **Features:**
-  - Zero Trust Architecture with NIST 800-207 compliance and advanced security models
-  - Multi-cloud security unified across AWS, Azure, and GCP with CNAPP integration
-  - AI-enhanced security with GenAI framework and ML-powered threat detection
-  - 95% security automation coverage with policy-as-code implementation
-  - Real-time compliance monitoring aligned with NIST CSF 2.0
-  - Quantum-ready security with post-quantum cryptography transition planning
-  - Comprehensive incident response framework reducing response time by 80%
-  - **Tech Stack:**
-    - **Cloud Platforms:** AWS, Microsoft Azure, Google Cloud Platform
-    - **Infrastructure as Code:** Terraform, CloudFormation
-    - **Container Security:** Kubernetes Security, Cloud-Native Application Protection Platform (CNAPP)
-    - **Compliance Frameworks:** GDPR, HIPAA, PCI-DSS v4.0, SOC 2, EU AI Act
-    - **Documentation:** Mermaid diagrams, comprehensive implementation guides
-    - **Security Tools:** Advanced SIEM Integration, Zero Trust implementation, SBOM, automated testing
-  - **Why it matters:**
-    - Provides enterprise-grade security framework achieving 99.9% compliance score and 99.99% infrastructure availability
-    - Addresses critical 2024-2025 security updates including NIST CSF 2.0 and AI/ML security frameworks
-    - Enables quantum-resistant security preparedness for future threat landscapes
-    - Delivers 80% reduction in incident response time through automation and continuous monitoring
-    - Supports regulatory compliance across multiple industries and jurisdictions
-
-- [ControlPlane](https://github.com/dbsectrainer/controlplane) ([Live Demo](https://dbsectrainer.github.io/controlplane/)):
-  **End-to-end security architecture demonstrating Zero Trust, compliance automation, supply chain security, and real-time threat detection — runnable in 5 minutes with `docker-compose up`.**
-  **Five Security Domains:**
-  - **Application DevSecOps:** Node.js app with SAST (SonarQube), DAST (OWASP ZAP), Vault secrets, Falco runtime monitoring, and Istio mTLS
-  - **Zero Trust Pipeline:** Keycloak OIDC/MFA → OPA ABAC policy enforcement → Vault PKI, implementing NIST SP 800-207
-  - **Cloud-Native Security:** Multi-cloud IaC scanning (Checkov/tfsec) for AWS, Azure, and GCP with CIS Benchmark compliance
-  - **Compliance Automation:** Continuous SOC2, HIPAA, PCI-DSS, and GDPR monitoring with live evidence dashboard
-  - **Mobile Security:** iOS/Android SAST/DAST via MobSF, certificate pinning, RASP, and secret detection
-  - **Tech Stack:**
-    - **Identity & Policy:** Keycloak, OPA (Rego), HashiCorp Vault
-    - **Runtime Security:** Falco, Istio, Prometheus, Grafana, Alertmanager
-    - **Scanning:** SonarQube, OWASP ZAP, Trivy, Semgrep, MobSF, detect-secrets
-    - **Cloud IaC:** Terraform (AWS/Azure/GCP), Checkov, tfsec, Kyverno
-    - **Compliance:** SOC2 Type II, HIPAA, PCI-DSS v4, GDPR automated controls
-  - **Why it matters:**
-    - Full security stack deployable locally in minutes for demos, learning, and hiring evaluations
-    - Covers MITRE ATT&CK mitigations across supply chain, credential, and runtime attack vectors
-    - Live attack simulation scenarios with real-time Grafana visualization
-
-<!-- MCP Servers Section -->
-
-### 🔌 MCP Servers
-
-Published [Model Context Protocol](https://modelcontextprotocol.io) servers — available on npm and the official MCP registry.
-
-| Server | Description | Install |
-|--------|-------------|---------|
-| [mcp-agent-trace-inspector](https://github.com/dbsectrainer/mcp-agent-trace-inspector) | Step-by-step observability for MCP agent workflows | `npx mcp-agent-trace-inspector` |
-| [mcp-cost-tracker-router](https://github.com/dbsectrainer/mcp-cost-tracker-router) | Real-time cost tracking, budgets, and model routing | `npx mcp-cost-tracker-router` |
-| [mcp-data-pipeline-connector](https://github.com/dbsectrainer/mcp-data-pipeline-connector) | Universal data connector for CSV, Postgres, REST via DuckDB | `npx mcp-data-pipeline-connector` |
-| [mcp-eval-runner](https://github.com/dbsectrainer/mcp-eval-runner) | Standardized testing harness for MCP servers and agents | `npx mcp-eval-runner` |
-| [mcp-legal-doc-analyzer](https://github.com/dbsectrainer/mcp-legal-doc-analyzer) | Legal document analysis — clause extraction, compliance, risk | `npx mcp-legal-doc-analyzer` |
-| [mcp-server-health-monitor](https://github.com/dbsectrainer/mcp-server-health-monitor) | Health monitoring, SLA tracking, and auto-restart for MCP servers | `npx mcp-server-health-monitor` |
-
-[![npm](https://img.shields.io/badge/Registry-Official%20MCP%20Registry-blue?style=flat-square)](https://registry.modelcontextprotocol.io) [![npm](https://img.shields.io/badge/Packages-npm-red?style=flat-square&logo=npm)](https://www.npmjs.com/~dbsectrainer)
-
-<!-- Open Source Contributions Section -->
-
-### 🤲 Open Source Contributions
-
-- [Microsoft/Data-Formulator](https://github.com/microsoft/data-formulator) – Added Docker support to enhance deployment flexibility for data workflows.
-- [microsoft/GenerativeAI-For-Beginners](https://github.com/microsoft/generativeai-for-beginners) – Merged pull requests to fix function issues, improving AI integration and reliability.
-- [MetaGPT/MetaGPT](https://github.com/geekan/MetaGPT) – Enhanced the project by adding support for Ollama with third-party URL wrappers, expanding its AI capabilities.
-
-<!-- Connect Section -->
-
-### 🤝 Let's Connect
-
-<p align="left">
-  <a href="https://linkedin.com/in/dbsectrainer" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="mailto:your.email@example.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-  <a href="https://yourwebsite.com" target="_blank">
-    <img src="https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website"/>
-  </a>
-</p>
-
-<!-- Support Me Section -->
-
-### ☕ Support Me
-
-If you like my work, consider supporting me:
-
-<p align="left">
-  <a href="https://www.buymeacoffee.com/yourusername" target="_blank">
-    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"/>
-  </a>
-  <a href="https://github.com/sponsors/dbsectrainer" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub%20Sponsors-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="GitHub Sponsors"/>
-  </a>
-</p>
-
-<!-- Fun Facts -->
-
-### 🎮 Fun Facts
-
-🔐 Passionate about building AI systems that respect privacy and security by design  
-🎯 Believer in "security-first" development - if it's not secure, it's not done  
-🌍 Contributed to open-source projects used by thousands of developers worldwide  
-📚 Continuous learner - always exploring the latest in AI safety and adversarial ML  
-🤝 Enjoy mentoring developers on secure coding practices and AI ethics
-
-<!-- Footer -->
 <p align="center">
-  <i>Specializing in secure and ethical AI systems</i>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&amp;logo=typescript&amp;logoColor=white">
+  <img alt="AWS" src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&amp;logo=amazonwebservices&amp;logoColor=white">
+  <img alt="Azure" src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&amp;logo=microsoftazure&amp;logoColor=white">
+  <img alt="GCP" src="https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&amp;logo=googlecloud&amp;logoColor=white">
+  <img alt="Terraform" src="https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&amp;logo=terraform&amp;logoColor=white">
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&amp;logo=docker&amp;logoColor=white">
+  <img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&amp;logo=kubernetes&amp;logoColor=white">
+</p>
+
+| Area | Tools |
+| --- | --- |
+| Languages | Python · TypeScript · JavaScript · SQL · HCL · Bash |
+| Cloud & platforms | AWS · Azure · GCP · Docker · Kubernetes · Terraform · GitHub Actions |
+| Security & compliance | NIST 800-53 · FedRAMP · CMMC 2.0 · NIST 800-171 · Zero Trust · OSCAL · OPA · SBOM |
+| AI/ML | PyTorch · TensorFlow · scikit-learn · LangGraph · Amazon Bedrock · RAG |
+
+<a id="lets-connect"></a>
+## 📬 Let's Connect
+
+- **GitHub:** [@dbsectrainer](https://github.com/dbsectrainer)
+- **LinkedIn:** [dbsectrainer](https://www.linkedin.com/in/dbsectrainer/)
+- **npm:** [~dbsectrainer](https://www.npmjs.com/~dbsectrainer)
+- **MCP Registry:** [published servers](https://registry.modelcontextprotocol.io)
+
+The best way to reach me is through GitHub or LinkedIn.
+
+<a id="repository-verification"></a>
+## 🧪 Repository Verification
+
+<details>
+<summary><strong>Verification &amp; maintenance commands</strong></summary>
+
+This repository is the source for my GitHub profile README. There is no application server or build step: GitHub renders `README.md` directly.
+
+**Prerequisites:** Python 3.12+; Playwright 1.55+ for screenshots; Node.js 20.19+ only for the optional MCP package audit.
+
+```bash
+python3 -m pip install -r requirements-dev.txt
+python3 -m playwright install chromium
+
+make check          # unit tests + README structure, assets, secrets, and links
+make preview        # render README through GitHub's Markdown API
+make screenshots    # capture desktop/mobile evidence with Playwright
+```
+
+The link and registry checks require network access. No secrets or environment variables are required. `GITHUB_TOKEN` is optional and only raises GitHub API rate limits for `make preview`.
+
+Validation report, screenshots, and residual risks: [docs/evidence/verification-report.md](https://github.com/dbsectrainer/dbsectrainer/blob/main/docs/evidence/verification-report.md).
+
+</details>
+
+<p align="center">
+  <i>Secure by design. Verified by evidence.</i>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="line" width="100%">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="Rainbow divider" width="100%">
 </p>

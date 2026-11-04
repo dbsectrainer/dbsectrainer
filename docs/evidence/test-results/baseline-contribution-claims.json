@@ -1,0 +1,42 @@
+{
+  "merged_by_user": {
+    "total_count": 55
+  },
+  "generative_ai_pr": {
+    "state": "closed",
+    "merged": true,
+    "merged_at": "2025-03-06T11:52:25Z",
+    "title": "Fix grammatical errors and clarify function calling documentation (fixes #689)",
+    "html_url": "https://github.com/microsoft/generative-ai-for-beginners/pull/698"
+  },
+  "data_formulator_pr": {
+    "state": "closed",
+    "merged": false,
+    "merged_at": null,
+    "title": "Feature/docker support",
+    "html_url": "https://github.com/microsoft/data-formulator/pull/90"
+  },
+  "metagpt_pr": {
+    "state": "closed",
+    "merged": false,
+    "merged_at": null,
+    "title": "Fix #1721: Add support for Ollama with third-party URL wrappers",
+    "html_url": "https://github.com/FoundationAgents/MetaGPT/pull/1735"
+  },
+  "scoutsuite_pr": {
+    "state": "closed",
+    "merged": false,
+    "merged_at": null,
+    "title": "Fix #1694: Remove infinite recursion in manage_object function",
+    "html_url": "https://github.com/nccgroup/ScoutSuite/pull/1695"
+  },
+  "user": {
+    "login": "dbsectrainer",
+    "name": "Donnivis Baker",
+    "bio": "Senior Software Engineer | Cloud & Security Architect | DevOps Leader | Specializing in scalable microservices, secure cloud solutions, and AI/ML integration.",
+    "blog": "",
+    "email": null,
+    "public_repos": 18,
+    "followers": 3
+  }
+}

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-04T01:53:31.457678+00:00",
-  "commit": "9e7a61113eb45e2483ce63fb194dbebbf8987deb",
-  "readme_sha256": "bc70f14a0acae325cfc110d6fef9ae15cae50c4b45985663dde87a0ac4d959dc",
+  "generated_at": "2026-11-04T02:37:14.504490+00:00",
+  "commit": "cbaadcd8d5ebc45fc1a2207806da03f9da020a1f",
+  "readme_sha256": "1a5b397e908053998cd22209ffd8daab2b5695c21a056adcee69395527645153",
   "checks": [
     {
       "name": "no placeholder content",
@@ -42,7 +42,7 @@
     {
       "name": "no committed secrets",
       "ok": true,
-      "detail": "48 text files scanned; no secret patterns",
+      "detail": "49 text files scanned; no secret patterns",
       "warnings": []
     },
     {
@@ -379,14 +379,19 @@
       "name": "mcp-agent-trace-inspector",
       "repo": "https://github.com/dbsectrainer/mcp-agent-trace-inspector",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ]
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-agent-trace-inspector",
           "io.github.dbsectrainer/mcp-agent-trace-inspector"
+        ],
+        "versions": [
+          "1.0.0",
+          "1.0.1"
         ]
       }
     },
@@ -394,14 +399,19 @@
       "name": "mcp-cost-tracker-router",
       "repo": "https://github.com/dbsectrainer/mcp-cost-tracker-router",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ]
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-cost-tracker-router",
           "io.github.dbsectrainer/mcp-cost-tracker-router"
+        ],
+        "versions": [
+          "1.0.0",
+          "1.0.1"
         ]
       }
     },
@@ -409,14 +419,19 @@
       "name": "mcp-data-pipeline-connector",
       "repo": "https://github.com/dbsectrainer/mcp-data-pipeline-connector",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ]
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-data-pipeline-connector",
           "io.github.dbsectrainer/mcp-data-pipeline-connector"
+        ],
+        "versions": [
+          "1.0.0",
+          "1.0.1"
         ]
       }
     },
@@ -424,14 +439,19 @@
       "name": "mcp-eval-runner",
       "repo": "https://github.com/dbsectrainer/mcp-eval-runner",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ]
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-eval-runner",
           "io.github.dbsectrainer/mcp-eval-runner"
+        ],
+        "versions": [
+          "1.0.0",
+          "1.0.1"
         ]
       }
     },
@@ -439,14 +459,19 @@
       "name": "mcp-legal-doc-analyzer",
       "repo": "https://github.com/dbsectrainer/mcp-legal-doc-analyzer",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ]
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-legal-doc-analyzer",
           "io.github.dbsectrainer/mcp-legal-doc-analyzer"
+        ],
+        "versions": [
+          "1.0.0",
+          "1.0.1"
         ]
       }
     },
@@ -454,14 +479,19 @@
       "name": "mcp-server-health-monitor",
       "repo": "https://github.com/dbsectrainer/mcp-server-health-monitor",
       "npm": {
-        "latest": "1.0.0",
+        "latest": "1.0.1",
         "maintainers": [
           "dbsectrainer"
         ]
       },
       "mcp_registry": {
         "names": [
+          "io.github.dbsectrainer/mcp-server-health-monitor",
           "io.github.dbsectrainer/mcp-server-health-monitor"
+        ],
+        "versions": [
+          "1.0.0",
+          "1.0.1"
         ]
       }
     }

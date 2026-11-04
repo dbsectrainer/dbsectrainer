@@ -494,6 +494,11 @@ def check_links(parsed: dict, workers: int = 8) -> tuple[Check, list[LinkResult]
     return Check("external links resolve", not failures, detail), results
 
 
+def version_key(value: str) -> tuple[int, ...]:
+    """Return a comparable key for simple numeric versions (1.0.1 -> (1, 0, 1))."""
+    return tuple(int(part) for part in re.findall(r"\d+", value or "0"))
+
+
 def check_mcp(parsed: dict) -> tuple[Check, list[dict]]:
     if not MCP_CONFIG.exists():
         return Check("MCP package metadata", False, f"missing {MCP_CONFIG.relative_to(ROOT)}"), []
@@ -538,10 +543,21 @@ def check_mcp(parsed: dict) -> tuple[Check, list[dict]]:
                 timeout=25,
             ) as response:
                 registry_data = json.load(response)
-            names = [entry.get("server", {}).get("name") for entry in registry_data.get("servers", [])]
-            if package["registry_id"] not in names:
+            servers = [entry.get("server", {}) for entry in registry_data.get("servers", [])]
+            names = [server.get("name") for server in servers]
+            matches = [server for server in servers if server.get("name") == package["registry_id"]]
+            registry_version = max(
+                (server.get("version", "") for server in matches),
+                key=version_key,
+                default=None,
+            )
+            if not matches:
                 problems.append(f"{name}: {package['registry_id']} not found in the official MCP registry")
-            registry_observation = {"names": names}
+            elif npm_observation.get("latest") and version_key(registry_version or "") < version_key(npm_observation["latest"]):
+                problems.append(
+                    f"{name}: official registry version {registry_version} is older than npm {npm_observation['latest']}"
+                )
+            registry_observation = {"names": names, "versions": [s.get("version") for s in matches]}
         except Exception as exc:  # noqa: BLE001
             problems.append(f"{name}: MCP registry lookup failed ({exc})")
             registry_observation = {"error": str(exc)}

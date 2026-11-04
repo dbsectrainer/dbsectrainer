@@ -79,7 +79,9 @@ Each repository states what is verified and what is not; see its `docs/evidence/
 <a id="mcp-servers"></a>
 ## 🔌 MCP Servers
 
-Six local-first servers, published on npm and listed in the [official MCP registry](https://registry.modelcontextprotocol.io). Each repository documents its tools and configuration. Node.js 20.19+ is required (trace-inspector and eval-runner require 22.5+).
+Six local-first servers, published on npm and listed in the [official MCP registry](https://registry.modelcontextprotocol.io). Each repository documents its tools and configuration. Node.js 20.19+ is required (trace-inspector requires 22.13+, eval-runner 22.5+).
+
+Run any package with `npx -y <package>@latest` (replace `<package>` with the server name).
 
 | Server | What it does |
 | --- | --- |

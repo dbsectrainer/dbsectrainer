@@ -4,6 +4,8 @@
 **Profile:** <https://github.com/dbsectrainer>
 **Audit date:** 2026-11-03 (America/New_York)
 **Base commit:** `ee01c1c8c8d2a0a15fb928e5febfa04acc2273fb`
+**Deployed commit:** `9e7a61113eb45e2483ce63fb194dbebbf8987deb` (PR #3, squash merge)
+**Live verification:** 2026-11-04 (UTC)
 **Final status:** **PARTIAL PASS**
 
 ---
@@ -32,21 +34,23 @@ The profile was in poor repair:
 The README was rewritten with current projects, accurate contribution status, working contact
 links, explicit anchors, and a two-column project table. A reproducible validation harness,
 unit tests, GitHub Actions workflow, local GitHub-Markdown preview, and Playwright screenshot
-pipeline were added. The profile render was then verified through GitHub's Markdown API and in
-Chromium and WebKit.
+pipeline were added.
 
-Two blockers remain outside this repository's control:
+The update was published through the repository's required pull-request workflow: a direct push
+to `main` was rejected by the branch ruleset, the commit was moved to `profile-audit-2026-11`,
+PR #3 passed its `validate` check, and the PR was squash-merged as `9e7a611`. The live profile was
+then verified directly on github.com.
 
-1. **The updated profile was not published.** Pushing to `main` is a live public change and was
-   not performed without explicit authorization. All changes are local and ready to review.
-2. **The six npm MCP tarballs are stale.** The source repositories are newer and, in at least
+One external blocker remains:
+
+1. **The six npm MCP tarballs are stale.** The source repositories are newer and, in at least
    one case, already contain the dependency fix; the published `1.0.0` tarballs do not. No npm
    credentials are available in this environment to republish them. The profile no longer
    advertises the broken commands, and the exact remediation is documented below.
 
-The profile source and its rendering pass every check that can be run locally. The final verdict
-is **PARTIAL PASS** because the live profile was not deployed and the advertised MCP packages
-still fail when installed from npm.
+The profile source, deployment, and rendering pass every profile-level check. The final verdict
+is **PARTIAL PASS** because the advertised MCP packages still fail when installed from npm; that
+requires an npm republish outside this repository.
 
 ---
 
@@ -69,7 +73,6 @@ still fail when installed from npm.
 
 - Modifying or publishing the six external MCP repositories.
 - Publishing new npm versions.
-- Pushing the updated profile to GitHub.
 - Changing GitHub profile settings (bio, pinned repositories, social links), which require the
   `user` scope and are not stored in this repository.
 - Live cloud environments or production data. None of the linked projects was deployed or
@@ -94,6 +97,10 @@ still fail when installed from npm.
    table-of-contents link, image loading, console/network capture, axe-core, and a 390 px mobile
    layout.
 9. Added regression tests and a CI workflow, then reran all checks.
+10. Because the repository blocks direct pushes to `main`, moved the commit to a feature branch,
+    opened PR #3, waited for the `validate` check to pass, and merged through the PR workflow.
+11. Verified the published profile on github.com with a real browser, including H1 visibility,
+    every TOC link, image loading, console/network activity, and the 390 px mobile layout.
 
 Raw evidence is under [`docs/evidence/`](.):
 
@@ -262,7 +269,7 @@ it is not read from the repository.
 
 ```text
 $ python3 -m unittest discover -s tests -v
-Ran 18 tests in 0.009s
+Ran 18 tests in 0.011s
 OK
 ```
 
@@ -314,8 +321,8 @@ PASS: every TOC target exists in the GitHub-rendered HTML
 ```
 
 This uses GitHub's actual `/markdown` API, so the HTML is produced by GitHub's parser and
-sanitizer. It is not a hand-written mock. The surrounding page chrome is a local harness because
-the profile was not published. See
+sanitizer. It is not a hand-written mock. The surrounding page chrome is a local harness; the
+deployed page is verified separately in **Live deployment verification** below. See
 [`render-metadata.json`](build-results/render-metadata.json),
 [`readme-rendered.html`](build-results/readme-rendered.html), and
 [`preview.html`](build-results/preview.html).
@@ -405,6 +412,59 @@ Artifacts:
 - [`before/live-profile-desktop.png`](screenshots/before/live-profile-desktop.png)
 - [`before/live-profile-mobile.png`](screenshots/before/live-profile-mobile.png)
 
+### Live deployment verification
+
+A direct push to `main` was rejected by the repository ruleset (`GH013: Changes must be made
+through a pull request`). The commit was moved to `profile-audit-2026-11`, pushed, and merged
+through PR #3. The `validate` GitHub Actions job passed before the merge.
+
+| Item | Result |
+| --- | --- |
+| Pull request | [#3](https://github.com/dbsectrainer/dbsectrainer/pull/3) — merged |
+| Merge commit | `9e7a61113eb45e2483ce63fb194dbebbf8987deb` |
+| CI check | `validate` — pass (10 s) |
+| Live README SHA-256 | `bc70f14a0acae325cfc110d6fef9ae15cae50c4b45985663dde87a0ac4d959dc` |
+| Local `README.md` SHA-256 | `bc70f14a0acae325cfc110d6fef9ae15cae50c4b45985663dde87a0ac4d959dc` |
+
+The published page was then checked with a real browser:
+
+```text
+$ python3 tools/verify_live_profile.py
+Live profile: https://github.com/dbsectrainer
+Title: dbsectrainer (Donnivis Baker) · GitHub
+H1 visible: True
+Images: 10; broken: 0
+TOC: 8 links; visible after click: 8
+Console/network: desktop 0/0/0; mobile 0/0/0
+Mobile layout: {'innerWidth': 390, 'visualWidth': 390, 'clientWidth': 390,
+                'scrollWidth': 390, 'articleWidth': 308}
+PASS: published profile content, images, TOC, console, network, and mobile layout
+```
+
+| Live check | Result |
+| --- | --- |
+| Updated content present | **Pass** — “Selected Work” and “AEGIS” found in the live article |
+| H1 visible on the live profile | **Pass** — “Hi, I'm Donnivis Baker 👋” |
+| Images | **10/10 loaded**, 0 broken |
+| TOC navigation | **8/8 links scrolled to a visible target** |
+| Desktop console/network | **0 errors, 0 failed requests, 0 responses ≥ 400** |
+| Mobile 390 px | **0 px overflow**; article width 308 px; 0 console/network errors |
+| Accessibility | Local GitHub-API preview: **0 axe violations**. Live axe injection was blocked by GitHub's CSP (`script-src`), so the live page was not axe-scanned. |
+
+Clean live screenshots: [`live-profile-header-desktop.png`](screenshots/live/live-profile-header-desktop.png),
+[`live-profile-header-mobile.png`](screenshots/live/live-profile-header-mobile.png), and
+[`live-profile-toc-desktop.png`](screenshots/live/live-profile-toc-desktop.png). The full-page and
+element captures were not used as primary evidence because GitHub's sticky profile navigation
+overlays the top of the README in composite screenshots; the viewport captures show the actual
+rendered page without that artifact.
+
+Artifacts:
+
+- [`live-profile-verification.json`](test-results/live-profile-verification.json)
+- [`live/live-profile-header-desktop.png`](screenshots/live/live-profile-header-desktop.png)
+- [`live/live-profile-header-mobile.png`](screenshots/live/live-profile-header-mobile.png)
+- [`live/live-profile-toc-desktop.png`](screenshots/live/live-profile-toc-desktop.png)
+
 ### Build, lint, and type checking
 
 There is no compiled application, bundler, linter, or type checker in the original repository.
@@ -434,13 +494,16 @@ See [`environment.txt`](build-results/environment.txt).
 - External badge and line images remain third-party requests; they are not vendored and can fail
   if shields.io or raw.githubusercontent.com is unavailable.
 
-### README mobile/table verification limitation
+### Mobile layout verification
 
-The updated profile was not published, so the mobile screenshot is of the **local GitHub-API
-render with a local profile shell**, not of github.com. The content change (a two-column project
-table with stack lines) is real, and the GitHub-rendered HTML is real. GitHub's own mobile table
-CSS could not be exercised against the updated content without publishing. This is called out
-again in the remaining-issues section.
+The updated content was checked in two contexts:
+
+- the local GitHub-API preview at 390 px (0 px overflow; full-page screenshot saved);
+- the **published github.com profile** at 390 px (`scrollWidth=390`, `articleWidth=308`, 0 px
+  overflow, 0 console/network errors).
+
+GitHub's own mobile table CSS is now exercised by the live page. No mobile-rendering limitation
+remains.
 
 ---
 
@@ -454,6 +517,9 @@ again in the remaining-issues section.
 | [`selected-work.png`](screenshots/selected-work.png) | Crop of desktop preview | Current project table and “Also shipped” list. |
 | [`mcp-servers.png`](screenshots/mcp-servers.png) | Crop of desktop preview | Six MCP servers with repository and npm links; no broken install command. |
 | [`homepage-webkit-desktop.png`](screenshots/homepage-webkit-desktop.png) | WebKit preview | Second-engine render and TOC navigation. |
+| [`live/live-profile-header-desktop.png`](screenshots/live/live-profile-header-desktop.png) | **Live github.com**, post-merge | Published header, H1, subtitle, TOC, and About opening; actual github.com capture. |
+| [`live/live-profile-header-mobile.png`](screenshots/live/live-profile-header-mobile.png) | **Live github.com**, post-merge, 390 px | Published mobile header and TOC; no overflow. |
+| [`live/live-profile-toc-desktop.png`](screenshots/live/live-profile-toc-desktop.png) | **Live github.com**, after a TOC click | Published TOC navigation to Selected Work. |
 | [`before/live-profile-desktop.png`](screenshots/before/live-profile-desktop.png) | **Live github.com**, pre-change | Original profile: stale projects, 404 links, placeholder contact/support, old TOC. |
 | [`before/live-profile-mobile.png`](screenshots/before/live-profile-mobile.png) | **Live github.com**, pre-change | Original mobile profile. |
 
@@ -472,30 +538,28 @@ Markdown HTML is from GitHub's API.*
 
 *Updated profile — 390 px mobile preview. No horizontal overflow; 11/11 images loaded.*
 
-The before screenshots are actual captures of the live GitHub profile and are the only screenshots
-in this report that show github.com's surrounding page chrome. The after screenshots deliberately
-identify themselves as local previews; they are not presented as deployed GitHub captures.
+<p>
+  <img src="screenshots/live/live-profile-header-desktop.png" alt="Published GitHub profile header" width="760">
+</p>
+
+*Published profile — actual github.com capture after PR #3 was merged. The H1, subtitle, TOC, and
+About opening are visible at the top of the live page.*
+
+The before screenshots and the live header/TOC screenshots are actual github.com captures. The
+full homepage “after” screenshots are local previews (GitHub Markdown API HTML plus a local
+profile shell); they are labeled as previews and are not presented as deployed captures. The live
+page itself was verified separately with `tools/verify_live_profile.py`.
 
 ---
 
 ## 9. Remaining issues and limitations
 
-### 9.1 Live profile not published
+### 9.1 Live profile published and verified (resolved)
 
-The updated files are **committed locally on `main`**; they were **not pushed**. Publishing the
-profile is a live public change and was not authorized. After review:
-
-```bash
-git status
-git diff --stat
-# commit the changes, then:
-git push origin main
-```
-
-The validation report link in the README points at
-`https://github.com/dbsectrainer/dbsectrainer/blob/main/docs/evidence/verification-report.md`.
-The validator maps that URL to the local file and records “remote publish pending”; it will return
-HTTP 200 after the push.
+The repository blocks direct pushes to `main`. The changes were published through PR #3, which
+passed its `validate` workflow and was squash-merged as `9e7a611`. The live README SHA-256 matches
+the local file, and the published page passed the live browser checks in the previous section.
+The report link in the README now resolves on `main`. No action remains.
 
 ### 9.2 npm MCP tarballs are stale
 
@@ -538,17 +602,18 @@ public contents could not be verified. Remove it if the profile is not public.
 verified through the npm registry API instead; six package pages are linked. A human browser can
 open them.
 
-### 9.6 Preview and actual github.com rendering
+### 9.6 Preview vs live captures
 
-The after screenshots are generated by:
+The full homepage “after” screenshots are generated by:
 
 1. GitHub's real Markdown API for the HTML; and
 2. a local profile shell with GitHub Markdown CSS for the surrounding layout.
 
-They are not captures of github.com. The live profile was not updated, so the exact GitHub mobile
-table CSS and the profile page's surrounding chrome could not be exercised against the new
-README. The content-level fixes (two-column table, shorter descriptions, explicit anchors) are
-independent of that limitation.
+They are previews, not github.com captures. The published page was verified separately with
+`tools/verify_live_profile.py`; the live header/TOC screenshots are actual github.com captures.
+Full-page/element captures of github.com were not used as primary evidence because GitHub's
+sticky profile navigation can overlay the top of the README in composite screenshots. The clean
+viewport captures avoid that artifact.
 
 ### 9.7 Firefox unavailable
 
@@ -556,11 +621,11 @@ Firefox could not launch because the environment denied its sandbox (`sandbox in
 failed: Operation not permitted`). Chromium and WebKit passed. Firefox compatibility remains
 unverified.
 
-### 9.8 GitHub Actions not run remotely
+### 9.8 GitHub Actions validated on PR #3
 
-The workflow was added and its YAML parses locally, but it has not run on GitHub because nothing
-was pushed. The local equivalents (`python -m unittest`, `verify_profile.py`) passed. The first
-push will exercise the workflow.
+The new `Profile checks` workflow ran on PR #3 and its `validate` job passed (18 unit tests +
+10/10 structural/link/MCP metadata checks). It will run on future pushes and pull requests. The
+local `make check` was also green before merge.
 
 ### 9.9 Legacy SVG archive
 
@@ -582,25 +647,26 @@ owner.
 | Gate | Result | Evidence |
 | --- | --- | --- |
 | Dependencies install | **PASS** | `pip install -r requirements-dev.txt`; all pinned requirements satisfied. |
-| Application starts | **N/A / PASS for static profile** | No server. GitHub Markdown API render HTTP 200; preview loads. |
-| Production build | **N/A / PASS for static profile** | No bundler. GitHub-rendered HTML is the production artifact; preview generated successfully. |
+| Application starts | **PASS** | No server. Live github.com profile returns the updated content; H1 and TOC verified. |
+| Production build | **PASS** | No bundler. PR #3 merged; the live page is the production artifact; GitHub Actions passed. |
 | Type checking | **N/A** | No typed application. Python tooling compiles. |
 | Linting | **PASS (custom)** | 10/10 structural checks; no linter was configured in the original repo. |
 | Existing automated tests | **PASS** | 18/18 unit tests. |
 | Critical profile workflows | **PASS** | 8/8 TOC links scroll; links checked; mobile/desktop render. |
-| Browser console | **PASS** | 0 errors, 0 failed requests in Chromium and WebKit. |
+| Browser console | **PASS** | Live Chromium: 0 errors/failures. Local WebKit: 0 errors/failures. Firefox unavailable. |
 | API integrations | **PARTIAL** | npm/MCP metadata 6/6; published runtime 0/6 due to upstream missing `yargs`. |
-| Responsive layouts | **PASS (preview)** | 1440 px and 390 px; 0 px overflow; actual GitHub mobile after publish not tested. |
-| Screenshots saved | **PASS** | Desktop, mobile, TOC, section crops, WebKit, before captures. |
+| Responsive layouts | **PASS** | Live 390 px: 0 px overflow, 0 console/network errors; 1440 px live and local preview verified. |
+| Screenshots saved | **PASS** | Live header/TOC, desktop, mobile, section crops, WebKit, before captures. |
 | README reflects application | **PASS** | 8 TOC sections; current projects; working links; no placeholders. |
 | Verification report reproducible | **PASS** | Commands, environment, artifacts, and limitations recorded. |
 | No secrets committed | **PASS** | Validator secret scan found none. |
 | Remaining issues documented | **PASS** | Section 9. |
 
-**Final verdict: PARTIAL PASS.** The profile source, rendering, links, accessibility, and
-responsive preview pass all local checks. The live profile was not deployed, and the six
-advertised MCP npm packages still fail when installed from the published tarballs. Both are
-documented with concrete remediation; neither is hidden behind a passing claim.
+**Final verdict: PARTIAL PASS.** The profile is published, and the live page, links,
+accessibility, and responsive layout pass. The only remaining failure is external to this
+repository: the six advertised MCP npm packages still fail when installed from their published
+tarballs. The fix is a dependency/version republish, documented with concrete steps; it is not
+hidden behind a passing claim.
 
 ---
 
@@ -616,6 +682,7 @@ python3 -m playwright install chromium
 make check          # unit tests + structure/assets/secrets/links/MCP metadata
 make preview        # GitHub Markdown API render + anchor verification
 make screenshots    # Chromium desktop/mobile + axe + evidence JSON
+make live-check     # verify the published github.com profile + live screenshots
 
 # Optional MCP package audits (network + Node.js required)
 make mcp-metadata    # npm + official MCP registry discovery
@@ -623,9 +690,10 @@ make mcp-runtime     # expected to fail until the npm tarballs are republished
 make mcp-workaround  # proves the missing yargs dependency is the blocker
 ```
 
-`make check` requires network access for the external link and registry checks. If GitHub API
-rate limits are exhausted, set `GITHUB_TOKEN` for `make preview` only; no token is committed or
-required for the profile itself.
+`make check` and `make live-check` require network access. `make live-check` checks the deployed
+github.com page, so it should be run after a profile change is merged. If GitHub API rate limits
+are exhausted, set `GITHUB_TOKEN` for `make preview` only; no token is committed or required for
+the profile itself.
 
 ---
 
@@ -639,6 +707,7 @@ tools/verify_profile.py                        added
 tools/render_preview.py                        added
 tools/capture_screenshots.py                   added
 tools/audit_mcp_packages.py                    added
+tools/verify_live_profile.py                   added
 tools/mcp_packages.json                        added
 tools/vendor/github-markdown.css               added (MIT, GitHub Markdown CSS 5.8.1)
 tools/vendor/README.md                         added
@@ -649,8 +718,11 @@ requirements-dev.txt                           added
 .github/workflows/profile-check.yml            added
 .github/dependabot.yml                         added
 docs/evidence/                                 added (screenshots, build output, test output, this report)
+docs/evidence/screenshots/live/                added (actual github.com post-merge captures)
+docs/evidence/test-results/live-profile-verification.json  added
 ```
 
-No external repository or production service was modified. The recorded MCP probe runs used
-temporary npm caches and databases under `/tmp`. No npm package was published. No GitHub profile
-setting was changed. No live data was altered.
+No external repository or production service was modified. The profile README in this repository
+was published through PR #3. The recorded MCP probe runs used temporary npm caches and databases
+under `/tmp`. No npm package was published. No GitHub profile setting was changed. No other live
+data was altered.

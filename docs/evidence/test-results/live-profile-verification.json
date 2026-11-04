@@ -1,0 +1,250 @@
+{
+  "url": "https://github.com/dbsectrainer",
+  "generated_at": "2026-11-04T01:53:32.138800+00:00",
+  "title": "dbsectrainer (Donnivis Baker) \u00b7 GitHub",
+  "content": {
+    "has_selected_work": true,
+    "has_aegis": true,
+    "h1": "Hi, I'm Donnivis Baker \ud83d\udc4b"
+  },
+  "h1_visible": true,
+  "images": [
+    {
+      "src": "https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png",
+      "alt": "Rainbow divider",
+      "complete": true,
+      "naturalWidth": 900
+    },
+    {
+      "src": "https://camo.githubusercontent.com/324b4cfa68deb1b9c0008c02e910370ae1e1b7141ce0fe77972b6ea034e7abb7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f507974686f6e2d3337373641423f7374796c653d666f722d7468652d6261646765266c6f676f3d707974686f6e266c6f676f436f6c6f723d7768697465",
+      "alt": "Python",
+      "complete": true,
+      "naturalWidth": 98
+    },
+    {
+      "src": "https://camo.githubusercontent.com/2ab4127dedd4ccf7d3dbb0d440cacca4f720cbb4f06c74350a37f6925b828523/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f547970655363726970742d3331373843363f7374796c653d666f722d7468652d6261646765266c6f676f3d74797065736372697074266c6f676f436f6c6f723d7768697465",
+      "alt": "TypeScript",
+      "complete": true,
+      "naturalWidth": 127
+    },
+    {
+      "src": "https://camo.githubusercontent.com/ce63c63937f3f199f362b79a21d615baf5a26f2fbe26855db350f5e235f1277b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4157532d3233324633453f7374796c653d666f722d7468652d6261646765266c6f676f3d616d617a6f6e7765627365727669636573266c6f676f436f6c6f723d7768697465",
+      "alt": "AWS",
+      "complete": true,
+      "naturalWidth": 54
+    },
+    {
+      "src": "https://camo.githubusercontent.com/aeeb5564c92ee2e1341fe3015f06a418dcf9e1b13799a128a659d236873ae2f3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f417a7572652d3030373844343f7374796c653d666f722d7468652d6261646765266c6f676f3d6d6963726f736f6674617a757265266c6f676f436f6c6f723d7768697465",
+      "alt": "Azure",
+      "complete": true,
+      "naturalWidth": 67
+    },
+    {
+      "src": "https://camo.githubusercontent.com/427072c40b9b71a49d4ac3a5fdfd6a30b4a9b609f37f8629ebde9b3c414fc8fd/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4743502d3432383546343f7374796c653d666f722d7468652d6261646765266c6f676f3d676f6f676c65636c6f7564266c6f676f436f6c6f723d7768697465",
+      "alt": "GCP",
+      "complete": true,
+      "naturalWidth": 70
+    },
+    {
+      "src": "https://camo.githubusercontent.com/606236d4e3ca24d32288ab00bbb7ca8f76e00e875896da3695adb704cb35d7bb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5465727261666f726d2d3834344642413f7374796c653d666f722d7468652d6261646765266c6f676f3d7465727261666f726d266c6f676f436f6c6f723d7768697465",
+      "alt": "Terraform",
+      "complete": true,
+      "naturalWidth": 124
+    },
+    {
+      "src": "https://camo.githubusercontent.com/85e3ff712bb08b8e5595b34ecddfd189a51b20f61988aa467a56c5da9a107dda/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f636b65722d3234393645443f7374796c653d666f722d7468652d6261646765266c6f676f3d646f636b6572266c6f676f436f6c6f723d7768697465",
+      "alt": "Docker",
+      "complete": true,
+      "naturalWidth": 98
+    },
+    {
+      "src": "https://camo.githubusercontent.com/d33828f07e6068f5c4eca426fc8a6b8cb7200c5939469eae5417a9ce468a8534/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4b756265726e657465732d3332364345353f7374796c653d666f722d7468652d6261646765266c6f676f3d6b756265726e65746573266c6f676f436f6c6f723d7768697465",
+      "alt": "Kubernetes",
+      "complete": true,
+      "naturalWidth": 131
+    },
+    {
+      "src": "https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png",
+      "alt": "Rainbow divider",
+      "complete": true,
+      "naturalWidth": 900
+    }
+  ],
+  "broken_images": [],
+  "toc": [
+    {
+      "text": "About Me",
+      "href": "#user-content-about-me"
+    },
+    {
+      "text": "Current Focus",
+      "href": "#user-content-current-focus"
+    },
+    {
+      "text": "Selected Work",
+      "href": "#user-content-selected-work"
+    },
+    {
+      "text": "MCP Servers",
+      "href": "#user-content-mcp-servers"
+    },
+    {
+      "text": "Open Source",
+      "href": "#user-content-open-source"
+    },
+    {
+      "text": "Tech Stack",
+      "href": "#user-content-tech-stack"
+    },
+    {
+      "text": "Let's Connect",
+      "href": "#user-content-lets-connect"
+    },
+    {
+      "text": "Repository Verification",
+      "href": "#user-content-repository-verification"
+    }
+  ],
+  "toc_clicks": [
+    {
+      "target": "user-content-about-me",
+      "hash": "#user-content-about-me",
+      "scrollY": 610,
+      "top": 72.4375,
+      "visible": true
+    },
+    {
+      "target": "user-content-current-focus",
+      "hash": "#user-content-current-focus",
+      "scrollY": 973,
+      "top": 97.09375,
+      "visible": true
+    },
+    {
+      "target": "user-content-selected-work",
+      "hash": "#user-content-selected-work",
+      "scrollY": 1088,
+      "top": 146.640625,
+      "visible": true
+    },
+    {
+      "target": "user-content-mcp-servers",
+      "hash": "#user-content-mcp-servers",
+      "scrollY": 1470,
+      "top": 514.546875,
+      "visible": true
+    },
+    {
+      "target": "user-content-open-source",
+      "hash": "#user-content-open-source",
+      "scrollY": 1754,
+      "top": 601.09375,
+      "visible": true
+    },
+    {
+      "target": "user-content-tech-stack",
+      "hash": "#user-content-tech-stack",
+      "scrollY": 1862,
+      "top": 633.140625,
+      "visible": true
+    },
+    {
+      "target": "user-content-lets-connect",
+      "hash": "#user-content-lets-connect",
+      "scrollY": 2088,
+      "top": 700.6875,
+      "visible": true
+    },
+    {
+      "target": "user-content-repository-verification",
+      "hash": "#user-content-repository-verification",
+      "scrollY": 2339,
+      "top": 654.734375,
+      "visible": true
+    }
+  ],
+  "mobile": {
+    "layout": {
+      "innerWidth": 390,
+      "visualWidth": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "articleWidth": 308
+    },
+    "h1_visible": true,
+    "images": [
+      {
+        "src": "https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png",
+        "complete": true,
+        "naturalWidth": 900
+      },
+      {
+        "src": "https://camo.githubusercontent.com/324b4cfa68deb1b9c0008c02e910370ae1e1b7141ce0fe77972b6ea034e7abb7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f507974686f6e2d3337373641423f7374796c653d666f722d7468652d6261646765266c6f676f3d707974686f6e266c6f676f436f6c6f723d7768697465",
+        "complete": true,
+        "naturalWidth": 98
+      },
+      {
+        "src": "https://camo.githubusercontent.com/2ab4127dedd4ccf7d3dbb0d440cacca4f720cbb4f06c74350a37f6925b828523/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f547970655363726970742d3331373843363f7374796c653d666f722d7468652d6261646765266c6f676f3d74797065736372697074266c6f676f436f6c6f723d7768697465",
+        "complete": true,
+        "naturalWidth": 127
+      },
+      {
+        "src": "https://camo.githubusercontent.com/ce63c63937f3f199f362b79a21d615baf5a26f2fbe26855db350f5e235f1277b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4157532d3233324633453f7374796c653d666f722d7468652d6261646765266c6f676f3d616d617a6f6e7765627365727669636573266c6f676f436f6c6f723d7768697465",
+        "complete": true,
+        "naturalWidth": 54
+      },
+      {
+        "src": "https://camo.githubusercontent.com/aeeb5564c92ee2e1341fe3015f06a418dcf9e1b13799a128a659d236873ae2f3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f417a7572652d3030373844343f7374796c653d666f722d7468652d6261646765266c6f676f3d6d6963726f736f6674617a757265266c6f676f436f6c6f723d7768697465",
+        "complete": true,
+        "naturalWidth": 67
+      },
+      {
+        "src": "https://camo.githubusercontent.com/427072c40b9b71a49d4ac3a5fdfd6a30b4a9b609f37f8629ebde9b3c414fc8fd/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4743502d3432383546343f7374796c653d666f722d7468652d6261646765266c6f676f3d676f6f676c65636c6f7564266c6f676f436f6c6f723d7768697465",
+        "complete": true,
+        "naturalWidth": 70
+      },
+      {
+        "src": "https://camo.githubusercontent.com/606236d4e3ca24d32288ab00bbb7ca8f76e00e875896da3695adb704cb35d7bb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5465727261666f726d2d3834344642413f7374796c653d666f722d7468652d6261646765266c6f676f3d7465727261666f726d266c6f676f436f6c6f723d7768697465",
+        "complete": true,
+        "naturalWidth": 124
+      },
+      {
+        "src": "https://camo.githubusercontent.com/85e3ff712bb08b8e5595b34ecddfd189a51b20f61988aa467a56c5da9a107dda/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f636b65722d3234393645443f7374796c653d666f722d7468652d6261646765266c6f676f3d646f636b6572266c6f676f436f6c6f723d7768697465",
+        "complete": true,
+        "naturalWidth": 98
+      },
+      {
+        "src": "https://camo.githubusercontent.com/d33828f07e6068f5c4eca426fc8a6b8cb7200c5939469eae5417a9ce468a8534/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4b756265726e657465732d3332364345353f7374796c653d666f722d7468652d6261646765266c6f676f3d6b756265726e65746573266c6f676f436f6c6f723d7768697465",
+        "complete": true,
+        "naturalWidth": 131
+      },
+      {
+        "src": "https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png",
+        "complete": true,
+        "naturalWidth": 900
+      }
+    ],
+    "broken_images": [],
+    "screenshot": "docs/evidence/screenshots/live/live-profile-header-mobile.png"
+  },
+  "axe": {
+    "run": false,
+    "reason": "GitHub CSP blocks external axe-core injection on github.com; accessibility was verified on the GitHub-API preview (0 violations)."
+  },
+  "desktop_errors": {
+    "console": [],
+    "failed": [],
+    "bad": []
+  },
+  "mobile_errors": {
+    "console": [],
+    "failed": [],
+    "bad": []
+  },
+  "pass": true,
+  "screenshots": [
+    "docs/evidence/screenshots/live/live-profile-header-desktop.png",
+    "docs/evidence/screenshots/live/live-profile-header-mobile.png",
+    "docs/evidence/screenshots/live/live-profile-toc-desktop.png"
+  ]
+}

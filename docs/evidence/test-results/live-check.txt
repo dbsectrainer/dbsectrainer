@@ -1,0 +1,10 @@
+python3 tools/verify_live_profile.py
+Live profile: https://github.com/dbsectrainer
+Title: dbsectrainer (Donnivis Baker) · GitHub
+H1 visible: True
+Images: 10; broken: 0
+TOC: 8 links; visible after click: 8
+Console/network: desktop 0/0/0; mobile 0/0/0
+Mobile layout: {'innerWidth': 390, 'visualWidth': 390, 'clientWidth': 390, 'scrollWidth': 390, 'articleWidth': 308}
+JSON result: docs/evidence/test-results/live-profile-verification.json
+PASS: published profile content, images, TOC, console, network, and mobile layout

@@ -5,7 +5,6 @@
 **Audit date:** 2026-11-03 (America/New_York)
 **Base commit:** `ee01c1c8c8d2a0a15fb928e5febfa04acc2273fb`
 **Initial deployment:** `9e7a61113eb45e2483ce63fb194dbebbf8987deb` (PR #3, squash merge)
-**Latest profile update:** `cee0a343e5daa7c3750ee7706b458961769fe664` (PR #7, MCP install note)
 **Live verification:** 2026-11-04 (UTC)
 **Final status:** **PASS**
 
@@ -265,7 +264,7 @@ it is not read from the repository.
 
 ```text
 $ python3 -m unittest discover -s tests -v
-Ran 18 tests in 0.011s
+Ran 18 tests in 0.010s
 OK
 ```
 
@@ -310,7 +309,7 @@ Artifacts:
 
 ```text
 $ python3 tools/render_preview.py
-GitHub Markdown API: HTTP 200; rendered 21264 bytes
+GitHub Markdown API: HTTP 200; rendered 21300 bytes
 Preview: docs/evidence/build-results/preview.html
 TOC targets: 8; missing: 0
 PASS: every TOC target exists in the GitHub-rendered HTML
@@ -427,8 +426,8 @@ through PR #3. The `validate` GitHub Actions job passed before the merge.
 | Pull requests | [#3](https://github.com/dbsectrainer/dbsectrainer/pull/3) and [#7](https://github.com/dbsectrainer/dbsectrainer/pull/7) — merged |
 | Merge commits | `9e7a61113eb45e2483ce63fb194dbebbf8987deb` (audit), `cee0a343e5daa7c3750ee7706b458961769fe664` (MCP note) |
 | CI check | `validate` — pass on PR #3 (10 s) and PR #7 (8 s) |
-| Live README SHA-256 | `1a5b397e908053998cd22209ffd8daab2b5695c21a056adcee69395527645153` |
-| Local `README.md` SHA-256 | `1a5b397e908053998cd22209ffd8daab2b5695c21a056adcee69395527645153` |
+| Live README SHA-256 (post-PR #7 verification) | `1a5b397e908053998cd22209ffd8daab2b5695c21a056adcee69395527645153` |
+| Local `README.md` SHA-256 (post-PR #7 verification) | `1a5b397e908053998cd22209ffd8daab2b5695c21a056adcee69395527645153` |
 
 After the `1.0.1` MCP install note was merged in PR #7, the published page was re-checked with a real browser:
 
@@ -583,11 +582,12 @@ repositories are not the strongest projects in the portfolio. Recommended manual
 
 These require GitHub profile settings or a token with the `user` scope. They were not changed.
 
-### 9.4 LinkedIn link unverified
+### 9.4 LinkedIn URL owner-confirmed; auth wall blocks automation
 
-`https://www.linkedin.com/in/dbsectrainer/` returned HTTP 999 and redirected to LinkedIn's auth
-wall for automated clients. The link is retained because it is the owner's stated profile, but its
-public contents could not be verified. Remove it if the profile is not public.
+The owner supplied `https://www.linkedin.com/in/donnivis-baker-cissp-pmp/` on 2026-11-03. The URL
+returns HTTP 999 and redirects to LinkedIn's auth wall for automated clients, so its public
+contents could not be machine-verified. The link is retained as owner-confirmed; remove it if the
+profile is not public.
 
 ### 9.5 npm web pages block automation
 

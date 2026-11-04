@@ -5,6 +5,7 @@
 **Audit date:** 2026-11-03 (America/New_York)
 **Base commit:** `ee01c1c8c8d2a0a15fb928e5febfa04acc2273fb`
 **Initial deployment:** `9e7a61113eb45e2483ce63fb194dbebbf8987deb` (PR #3, squash merge)
+**Latest profile update:** `cee0a343e5daa7c3750ee7706b458961769fe664` (PR #7, MCP install note)
 **Live verification:** 2026-11-04 (UTC)
 **Final status:** **PASS**
 
@@ -423,13 +424,13 @@ through PR #3. The `validate` GitHub Actions job passed before the merge.
 
 | Item | Result |
 | --- | --- |
-| Pull request | [#3](https://github.com/dbsectrainer/dbsectrainer/pull/3) — merged |
-| Merge commit | `9e7a61113eb45e2483ce63fb194dbebbf8987deb` |
-| CI check | `validate` — pass (10 s) |
-| Live README SHA-256 | `bc70f14a0acae325cfc110d6fef9ae15cae50c4b45985663dde87a0ac4d959dc` |
-| Local `README.md` SHA-256 | `bc70f14a0acae325cfc110d6fef9ae15cae50c4b45985663dde87a0ac4d959dc` |
+| Pull requests | [#3](https://github.com/dbsectrainer/dbsectrainer/pull/3) and [#7](https://github.com/dbsectrainer/dbsectrainer/pull/7) — merged |
+| Merge commits | `9e7a61113eb45e2483ce63fb194dbebbf8987deb` (audit), `cee0a343e5daa7c3750ee7706b458961769fe664` (MCP note) |
+| CI check | `validate` — pass on PR #3 (10 s) and PR #7 (8 s) |
+| Live README SHA-256 | `1a5b397e908053998cd22209ffd8daab2b5695c21a056adcee69395527645153` |
+| Local `README.md` SHA-256 | `1a5b397e908053998cd22209ffd8daab2b5695c21a056adcee69395527645153` |
 
-The published page was then checked with a real browser:
+After the `1.0.1` MCP install note was merged in PR #7, the published page was re-checked with a real browser:
 
 ```text
 $ python3 tools/verify_live_profile.py
@@ -454,7 +455,7 @@ PASS: published profile content, images, TOC, console, network, and mobile layou
 | Mobile 390 px | **0 px overflow**; article width 308 px; 0 console/network errors |
 | Accessibility | Local GitHub-API preview: **0 axe violations**. Live axe injection was blocked by GitHub's CSP (`script-src`), so the live page was not axe-scanned. |
 
-Clean live screenshots: [`live-profile-header-desktop.png`](screenshots/live/live-profile-header-desktop.png),
+The live screenshots are from the post-PR #7 run. Clean live captures: [`live-profile-header-desktop.png`](screenshots/live/live-profile-header-desktop.png),
 [`live-profile-header-mobile.png`](screenshots/live/live-profile-header-mobile.png), and
 [`live-profile-toc-desktop.png`](screenshots/live/live-profile-toc-desktop.png). The full-page and
 element captures were not used as primary evidence because GitHub's sticky profile navigation

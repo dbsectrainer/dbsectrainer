@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-04T02:37:14.504490+00:00",
-  "commit": "cbaadcd8d5ebc45fc1a2207806da03f9da020a1f",
-  "readme_sha256": "1a5b397e908053998cd22209ffd8daab2b5695c21a056adcee69395527645153",
+  "generated_at": "2026-11-04T02:51:40.074823+00:00",
+  "commit": "d72d76470236db0f6dd505435e4f960717081057",
+  "readme_sha256": "702cb1793ef6aaea89e1120dba6e8d02479d20c5d98868687f0c95a8348b2767",
   "checks": [
     {
       "name": "no placeholder content",
@@ -318,9 +318,9 @@
       "note": ""
     },
     {
-      "url": "https://www.linkedin.com/in/dbsectrainer/",
+      "url": "https://www.linkedin.com/in/donnivis-baker-cissp-pmp/",
       "status": 999,
-      "final_url": "https://www.linkedin.com/in/dbsectrainer/",
+      "final_url": "https://www.linkedin.com/in/donnivis-baker-cissp-pmp/",
       "ok": true,
       "note": "www.linkedin.com blocks automated clients (allowed)"
     },

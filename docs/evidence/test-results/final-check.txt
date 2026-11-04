@@ -19,7 +19,7 @@ test_images_have_alt_text (test_verify_profile.RealReadmeTests.test_images_have_
 test_no_placeholders (test_verify_profile.RealReadmeTests.test_no_placeholders) ... ok
 
 ----------------------------------------------------------------------
-Ran 18 tests in 0.011s
+Ran 18 tests in 0.010s
 
 OK
 python3 tools/verify_profile.py --check-links --check-mcp

@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://github.com/dbsectrainer">GitHub</a> ·
-  <a href="https://www.linkedin.com/in/dbsectrainer/">LinkedIn</a> ·
+  <a href="https://www.linkedin.com/in/donnivis-baker-cissp-pmp/">LinkedIn</a> ·
   <a href="https://www.npmjs.com/~dbsectrainer">npm</a> ·
   <a href="https://registry.modelcontextprotocol.io">MCP Registry</a>
 </p>
@@ -123,7 +123,7 @@ Run any package with `npx -y <package>@latest` (replace `<package>` with the ser
 ## 📬 Let's Connect
 
 - **GitHub:** [@dbsectrainer](https://github.com/dbsectrainer)
-- **LinkedIn:** [dbsectrainer](https://www.linkedin.com/in/dbsectrainer/)
+- **LinkedIn:** [donnivis-baker-cissp-pmp](https://www.linkedin.com/in/donnivis-baker-cissp-pmp/)
 - **npm:** [~dbsectrainer](https://www.npmjs.com/~dbsectrainer)
 - **MCP Registry:** [published servers](https://registry.modelcontextprotocol.io)
 
